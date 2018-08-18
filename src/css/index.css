@@ -1,1 +1,37 @@
-a { color: #333; }
+#pageHeader_t { background: linear-gradient(#fff, #ddd); border-bottom: 1px solid #ccc; }
+
+#pageHeader_t .container { width: 1200px; }
+
+#pageHeader_t .container .header_l li { float: left; height: 32px; line-height: 32px; font-size: 14px; padding-right: 7px; }
+
+#pageHeader_t .container .header_l li a { color: #666666; text-decoration: none; }
+
+#pageHeader_t .container .header_l li:hover { color: #f60; }
+
+#pageHeader_t .container .header_r { float: right; }
+
+#pageHeader_t .container .header_r li { position: relative; float: left; height: 32px; line-height: 32px; padding-right: 10px; }
+
+#pageHeader_t .container .header_r li a { color: #666666; text-decoration: none; }
+
+#pageHeader_t .container .header_r li a span { border-left: 1px solid #ddd; padding-left: 12px; font-size: 14px; font-weight: normal; }
+
+#pageHeader_t .container .header_r li a .jt-down { display: inline-block; margin-left: 8px; font-size: 8px; color: #A8A7A7; }
+
+#pageHeader_t .container .header_r li .phone { display: inline-block; padding-right: 8px; color: #CBD2DC; }
+
+#pageHeader_t .container .header_r li .num { color: #f00; font-weight: bold; font-style: italic; }
+
+#pageHeader_t .container .header_r .header_r_secNav { display: none; }
+
+#pageHeader_t .container .header_r li:first-child:hover { border-right: 1px solid #ddd; border-left: 1px solid #ddd; margin-right: -1px; background-color: #fff; padding-left: 10px; }
+
+#pageHeader_t .container .header_r li:first-child:hover .header_r_secNav { position: absolute; display: block; left: -1px; padding: 2px; border: 1px solid #ddd; border-top-color: #fff; width: 97px; z-index: 100; }
+
+#pageHeader_t .container .header_r li:first-child dt a { display: block; font-size: 13px; padding-top: 4px; font-weight: normal; margin-left: 10px; }
+
+#pageHeader_t .container .header_r li:first-child dt:hover a { text-decoration: underline; color: #f60; }
+
+#pageHeader_b .container { width: 1200px; box-sizing: border-border; }
+
+#pageHeader_b .container .logoBox { float: left; width: 150px; height: 91px; margin: 16px 170px 0 36px; background: url("../images/z-logo.jpg") no-repeat; text-indent: -10000px; }

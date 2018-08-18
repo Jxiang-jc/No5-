@@ -11,24 +11,72 @@
     <script src="js/jquery-3.2.1.js"></script>
     <!-- 第2步：引入插件 -->
     <script src="lib/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
-    <script src="js/index.js"></script>
     
 
 </head>
 <body>
-    <header id="pageHeader">
+    <header id="pageHeader_t">
         <section class="container">
             <ul class="header_l">
                 <li><span class="date"></span>欢迎光临No5时尚广场</li>
                 <li><a href="#">[登录]</a></li>
                 <li><a href="#">[免费注册]</a></li>
             </ul>
-            <div class="header_r"></div>
+            <ul class="header_r clearfix"> 
+                <li>
+                    <a href="#">我的账户<i class="glyphicon glyphicon-menu-down jt-down"></i></a>
+                    <!-- 二级导航 -->
+                    <dl class="header_r_secNav">
+                        <dt><a href="#">我的订单</a></dt>
+                        <dt><a href="#">我的积分</a></dt>
+                        <dt><a href="#">我的优惠卷</a></dt>
+                        <dt><a href="#">我的收藏</a></dt>
+                    </dl>
+                </li>
+                <li><a href="#"><span>收藏本站</span></a></li>
+                <li><a href="#"><span>帮助中心</span></a></li>
+                <li><i class="glyphicon glyphicon-phone-alt phone"></i><span class="num">010-51666655</span></li>
+            </ul>
         </section>
     </header>
+    <header id="pageHeader_b">
+        <section class="container clearfix">
+            <div class="header_b">
+                <div class="logoBox">
+                    <h1>logo</h1>
+                </div>
+                <div class="searchBox">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="input-group">
+                          <input type="text" class="form-control borderColor" placeholder="防晒">
+                          <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">搜索</button>
+                          </span>
+                        </div><!-- /input-group -->
+                      </div><!-- /.col-lg-6 -->
+                    </div><!-- /.row -->
+                    <ul class="hotSearch">
+                        <li>热门搜索：</li>
+                        <li>防晒特卖</li>
+                        <li>防敏感专用</li>
+                        <li>雅诗兰黛</li>
+                        <li>气垫BB</li>
+                        <li>美白</li>
+                        <li>专柜小样</li>
+                        <li>口红</li>
+                    </ul>
+                    <!-- <img src="../src/images/z_" alt="" /> -->
+                </div>
+                <div class="shoppingCar"></div>
+            </div>
+        </section>
+    </header>
+
     <nav id="pageNav"></nav>
     <main id="pageMain"></main>
     <footer id="pageFooter"></footer>
 </body>
 </html>
+<script src="js/index.js"></script>
 
