@@ -9,14 +9,14 @@ gulp.task('compileSass',function(){
     
     //在此把sass编译成css
     //2.找出cass文件
-    gulp.src(['./src/js/*.scss'])  //返回一个文件
+    gulp.src(['./src/sass/*.scss'])  //返回一个文件
 
     //编译scss->css
     .pipe(sass({outputStyle:"compact"}).on('error',sass.logError))   //得到css文件流
 
     
     //输出到硬盘
-    .pipe(gulp.dest('../css'))
+    .pipe(gulp.dest('./src/css/'))
 
 
 });
@@ -24,5 +24,5 @@ gulp.task('compileSass',function(){
 //自动化编译
 //
 gulp.task('autoSass',function(){
-    gulp.watch('./src/js/*.scss',['compileSass'])
+    gulp.watch('./src/sass/*.scss',['compileSass'])
 })
