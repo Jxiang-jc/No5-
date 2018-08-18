@@ -3,19 +3,33 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
   "dependencies": {
+    "babel": "^6.23.0",
     "browser-sync": "^2.24.6",
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.1",
     "gulp-uglify": "^3.0.1",
-    "http-server": "^0.11.1"
+    "http-server": "^0.11.1",
+    "orchestrator": "^0.3.8",
+    "pump": "^3.0.0"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jxiang-jc/No5-.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jxiang-jc/No5-/issues"
+  },
+  "homepage": "https://github.com/Jxiang-jc/No5-#readme"
 }
