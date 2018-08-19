@@ -38,9 +38,9 @@
     }
 }
 #pageHeader_b{
-    overflow:hidden;
     .container{
         width:1200px;box-sizing:border-box;padding:0;
+        // logo
         .logoBox{
             float:left;
             width: 150px;height: 91px;
@@ -48,8 +48,9 @@
             background:url('../images/z-logo.jpg')no-repeat;
             text-indent:-10000px;
         }
+        //搜索框等等
         .searchBox{
-            position:absolute;
+            position:relative;
             float:left;
             width: 504px;
             height:91px;
@@ -91,12 +92,86 @@
                     }
                 }
             }
-        }
-        .qrcode_box{
-            width: 80px;
-            height: 80px;
-            background:url('../images/z_erweima1.png') no-repeat top:12px;
-            
+            .qrcode_box{
+                position:absolute;top:12px;right:-80px;
+                width: 80px;height: 80px;
+                background:url('../images/z_erweima1.png') no-repeat;
+                #mobile-ewm{
+                    position:absolute;
+                    top:4px;
+                    left:-45px;
+                    width: 180px;
+                    background-color:#fff;
+                    border:1px solid #ddd;
+                    z-index:10;
+                    visibility:hidden;
+                    .app{
+                        background:url('../images/z_erweima2.png')no-repeat 5px 5px;
+                        padding-left:90px;
+                        padding-top:5px;
+                        height: 90px;
+                        border-bottom:1px solid #ccc;
+                        font-size:12px;
+                        .android,.ios{
+                            display:inline-block;
+                            width: 25px;height: 25px;
+                            background:url('../images/z_erweima4.png')no-repeat 0 -25px; 
+                        }
+                        .ios{
+                            background-position:0px 0px;
+                        }
+                    }
+                    .gzh{
+                        background:url('../images/z_erweima3.jpg')no-repeat 5px 5px;
+                        padding-left:90px;
+                        padding-top:5px;
+                        height: 90px;
+                        border-bottom:1px solid #ccc;
+                        font-size:12px;
+                    }
+                }   
+            }
         }
     }     
+        .shoppingCar{
+            position:relative;
+            float:right;
+            width: 195px;height: 44px;line-height:44px;
+            margin-top:20px;
+            background:url('../images/z_spirit.gif')no-repeat 0 -30px;
+            text-align:center;
+            p{
+                span{color:#f00;font-style:italic;}
+            }
+            #car{
+                position:relative;
+                display:none;
+                span{
+                    position:absolute;top:-1px;right:0;
+                    display:block;
+                    border-top:1px solid #fff;
+                    width:173px;
+                    height:1px;
+                }
+            }
+            &:hover{
+                display:block;
+                background-position:0 -74px;
+                height: 42px;line-height:43px;
+                padding-top:1px;
+                cursor:pointer;
+                z-index:1000;
+                #car{
+                    position:absolute;left:-96px;top:42px;
+                    display:block;
+                    background:#fff;
+                    width:290px;
+                    line-height:44px;
+                    border:1px solid #ddd;
+                    z-index:-1;
+                    text-align:left;
+                    padding-left:20px;
+                }
+            }
+        }
 }

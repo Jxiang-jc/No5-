@@ -80,5 +80,21 @@
         })
 
     })
+})();
 
+//二维码
+(function(){
+    jQuery(function($){
+        var $box = $('.qrcode_box');
+        var $ul = $('#mobile-ewm');
+        console.log($ul)
+
+        $box.on('mouseover',function(){
+            $ul.css('visibility','visible');
+        });
+        $box.on('mouseout',function(){
+            $ul.css('visibility','hidden');
+        })
+
+    })
 })();

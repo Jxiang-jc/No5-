@@ -32,13 +32,11 @@
 
 #pageHeader_t .container .header_r li:first-child dt:hover a { text-decoration: underline; color: #f60; }
 
-#pageHeader_b { overflow: hidden; }
-
 #pageHeader_b .container { width: 1200px; box-sizing: border-box; padding: 0; }
 
 #pageHeader_b .container .logoBox { float: left; width: 150px; height: 91px; margin: 16px 170px 0 36px; background: url("../images/z-logo.jpg") no-repeat; text-indent: -10000px; }
 
-#pageHeader_b .container .searchBox { float: left; width: 504px; height: 91px; }
+#pageHeader_b .container .searchBox { position: relative; float: left; width: 504px; height: 91px; }
 
 #pageHeader_b .container .searchBox .row .col-lg-6 { width: 432px; padding: 0; margin-left: 15px; }
 
@@ -66,4 +64,26 @@
 
 #pageHeader_b .container .searchBox .hotSearch li a:hover { color: #f00; }
 
-#pageHeader_b .container .qrcode_box { background: url("../images/z_erweima1.png") no-repeat; }
+#pageHeader_b .container .searchBox .qrcode_box { position: absolute; top: 12px; right: -80px; width: 80px; height: 80px; background: url("../images/z_erweima1.png") no-repeat; }
+
+#pageHeader_b .container .searchBox .qrcode_box #mobile-ewm { position: absolute; top: 4px; left: -45px; width: 180px; background-color: #fff; border: 1px solid #ddd; z-index: 10; visibility: hidden; }
+
+#pageHeader_b .container .searchBox .qrcode_box #mobile-ewm .app { background: url("../images/z_erweima2.png") no-repeat 5px 5px; padding-left: 90px; padding-top: 5px; height: 90px; border-bottom: 1px solid #ccc; font-size: 12px; }
+
+#pageHeader_b .container .searchBox .qrcode_box #mobile-ewm .app .android, #pageHeader_b .container .searchBox .qrcode_box #mobile-ewm .app .ios { display: inline-block; width: 25px; height: 25px; background: url("../images/z_erweima4.png") no-repeat 0 -25px; }
+
+#pageHeader_b .container .searchBox .qrcode_box #mobile-ewm .app .ios { background-position: 0px 0px; }
+
+#pageHeader_b .container .searchBox .qrcode_box #mobile-ewm .gzh { background: url("../images/z_erweima3.jpg") no-repeat 5px 5px; padding-left: 90px; padding-top: 5px; height: 90px; border-bottom: 1px solid #ccc; font-size: 12px; }
+
+#pageHeader_b .shoppingCar { position: relative; float: right; width: 195px; height: 44px; line-height: 44px; margin-top: 20px; background: url("../images/z_spirit.gif") no-repeat 0 -30px; text-align: center; }
+
+#pageHeader_b .shoppingCar p span { color: #f00; font-style: italic; }
+
+#pageHeader_b .shoppingCar #car { position: relative; display: none; }
+
+#pageHeader_b .shoppingCar #car span { position: absolute; top: -1px; right: 0; display: block; border-top: 1px solid #fff; width: 173px; height: 1px; }
+
+#pageHeader_b .shoppingCar:hover { display: block; background-position: 0 -74px; height: 42px; line-height: 43px; padding-top: 1px; cursor: pointer; z-index: 1000; }
+
+#pageHeader_b .shoppingCar:hover #car { position: absolute; left: -96px; top: 42px; display: block; background: #fff; width: 290px; line-height: 44px; border: 1px solid #ddd; z-index: -1; text-align: left; padding-left: 20px; }
