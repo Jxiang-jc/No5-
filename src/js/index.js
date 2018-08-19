@@ -21,24 +21,51 @@
     jQuery(function($){
         //获取inpu边框
         var $input = $('#searchInput');
-        var val = $input.val();
 
-        //鼠标移动事件
+        //获取input内容
+        var vals = $input.val();
+
+        //删除按钮
+        var $z_delSearch = $('#pageHeader_b .container .col-lg-6 .z_delSearch');
+
+
+        //鼠标移进input,改变背景颜色,以及显示 ×
         $input.on('mouseover',function(){
 
             $input.addClass('inputBgc');
             
-            $('#pageHeader_b .container .col-lg-6 .z_delSearch').css('visibility',"visible");
+            $z_delSearch.css('visibility',"visible");
+
+            //嵌套事件
+
+            $z_delSearch.on('mousedown',function(){
+                //清空内容
+                $input.val('');
+                
+            })
             
         })
+        //鼠标移出时,清空上面的效果
+        $('.input-group').on('mouseleave',function(){
+
+            $input.removeClass('inputBgc');
+
+            $z_delSearch.css('visibility',"hidden");
+        })
+
+
+
+        //点击清空input内容
         $input.on('click',function(){
              $input.val('');
 
         })
+        //失去焦点时自动填充内容
         $input.on('blur',function(){
+            $input.val(vals);
             
-            console.log(val)
-            // $input.val('面膜');
+            $z_delSearch.css('visibility',"hidden");
+
         })
 
     })
