@@ -37,22 +37,23 @@
             $z_delSearch.css('visibility',"visible");
 
             //嵌套事件
-
-            $z_delSearch.on('mousedown',function(){
+            $z_delSearch.on('click',function(){
                 //清空内容
                 $input.val('');
-                
             })
-            
         })
+
         //鼠标移出时,清空上面的效果
+        //不论鼠标指针离开被选元素还是任何子元素，都会触发 mouseout 事件。
+        //只有在鼠标指针离开被选元素时，才会触发 mouseleave 事件。
         $('.input-group').on('mouseleave',function(){
 
             $input.removeClass('inputBgc');
 
             $z_delSearch.css('visibility',"hidden");
-        })
 
+
+        })
 
 
         //点击清空input内容
@@ -60,10 +61,20 @@
              $input.val('');
 
         })
+
+
+        var newVal;
+
+        //动态获取input的值//借鉴baidu.search在php章节
+        $input.on('input',function(){
+            newVal = $input.val();
+        })
+
         //失去焦点时自动填充内容
         $input.on('blur',function(){
-            $input.val(vals);
-            
+            //如果内容为空,则用一开始的val,如果不为空,则动态获取输入框的val
+            $input.val()!=''?  $input.val(newVal) : $input.val(vals)
+
             $z_delSearch.css('visibility',"hidden");
 
         })

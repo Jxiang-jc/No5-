@@ -38,8 +38,9 @@
     }
 }
 #pageHeader_b{
+    overflow:hidden;
     .container{
-        width:1200px;box-sizing:border-box;
+        width:1200px;box-sizing:border-box;padding:0;
         .logoBox{
             float:left;
             width: 150px;height: 91px;
@@ -47,30 +48,55 @@
             background:url('../images/z-logo.jpg')no-repeat;
             text-indent:-10000px;
         }
-        .col-lg-6{
-            width:432px;padding:0;
-            
-            .input-group{
-                margin-top:23px;position:relative;
-                .z_delSearch{position:absolute;right:60px;top:5px;z-index:100;visibility:hidden;cursor:pointer;padding:2px;}
-                .borderColor{
-                    border:2px solid #02A3F0; border-radius: 0 !important;
-                    &:focus{box-shadow:none;}
+        .searchBox{
+            position:absolute;
+            float:left;
+            width: 504px;
+            height:91px;
+            .row{
+                .col-lg-6{
+                    width:432px;padding:0;margin-left:15px;
+                    .input-group{
+                        margin-top:23px;position:relative;
+                        .z_delSearch{position:absolute;right:60px;top:5px;z-index:100;visibility:hidden;cursor:pointer;padding:2px;}
+                        .borderColor{
+                            border:2px solid #02A3F0; border-radius: 0 !important;
+                            &:focus{box-shadow:none;}
+                        }
+                        .inputBgc{background-color:#FAFAFA;}
+                        .btn-primary{
+                            background:#02A3F0;border-radius: 0 ;box-sizing:border-box;border-color:#02A3F0;
+                            &:focus,
+                            &:active:focus,
+                            &.active:focus,
+                            &.focus,
+                            &:active.focus,
+                            &.active.focus {
+                                outline: none;    
+                                box-shadow:none;
+                            }
+                        }
+                    } 
                 }
-                .inputBgc{background-color:#FAFAFA;}
-                .btn-primary{
-                    background:#02A3F0;border-radius: 0 ;box-sizing:border-box;border-color:#02A3F0;
-                    &:focus,
-                    &:active:focus,
-                    &.active:focus,
-                    &.focus,
-                    &:active.focus,
-                    &.active.focus {
-                        outline: none;    
-                        box-shadow:none;
+            }
+            .hotSearch{
+                float:left;padding-top:7px;
+                li{
+                    float:left;padding-right:12px;color:#666666;
+                    a{
+                        font-size:12px;
+                        color:#666666;
+                        span{color:#f00;}
+                        &:hover{color:#f00;}
                     }
                 }
-            } 
+            }
         }
-    }      
+        .qrcode_box{
+            width: 80px;
+            height: 80px;
+            background:url('../images/z_erweima1.png') no-repeat top:12px;
+            
+        }
+    }     
 }
