@@ -175,3 +175,96 @@
             }
         }
 }
+#pageNav{
+    height: 40px;
+    background:linear-gradient(#535252,#101010);
+    .container{
+        width: 1200px;padding: 0;
+        .z_nav1{
+            >li{
+                float:left;
+                >a{
+                    display:block;
+                    color:#fff;text-decoration:none;           
+                    span{
+                        padding:0 30px 0 28px;
+                        border-right:1px solid #565656;border-left:1px solid #010101;
+                        font-size:15px;line-height:40px;height: 40px;
+                    }
+                }
+
+                &:last-child,&:nth-child(2){
+                    a{
+                        span{   
+                            border:none;
+                        }
+                    }
+                } 
+                &:nth-child(7),&:nth-child(8){
+                    a{
+                        color:#f00;
+                    }
+                }
+                &:nth-child(2),&:nth-child(3),&:nth-child(4),&:nth-child(5),&:nth-child(6),&:nth-child(9){
+                    a{
+                        span:hover{
+                            color:#2ad0ff;
+                        }
+                    }
+                }     
+
+                //二级导航
+                &:first-child{
+                    position:relative;
+                    .z_nav2{
+                        li:first-child{
+                            
+                        }
+                    }
+                }
+            }
+            .first-child{
+                width: 230px;height:40px;line-height:40px;font-size:15px;
+                background:#02B2ED;
+                text-align:center;
+            }            
+        }
+
+        #z_nav2{
+            width: 230px;
+            border:1px solid #ddd;border-top:none;
+            box-sizing:border-box;
+            background:#F8F8F8;
+            .z_nav2-1{
+                height:90px;
+                box-sizing:border-box;
+                padding:13px 0 6px 20px;
+
+                .face{
+                    height:27px;
+                    line-height:27px;
+                    text-align:left;font-weight:bold;
+                    font-size:13px;
+                    >a{
+                        text-decoration:none;
+                        color:#333333;
+                    }
+                }
+                p:nth-child(2){
+                    text-align:left;
+                    height:50px;
+                    height:22px;line-height:22px;font-size:10px;
+                    font-weight:normal;
+                    >a{
+                        white-space: nowrap;
+                        float:left;
+                        display:inline-block;
+                        margin-right:13px;
+                        color:#333333;
+                        text-decoration:none;
+                    }
+                }
+            }
+        }
+    }
+}

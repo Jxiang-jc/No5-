@@ -93,7 +93,7 @@
             $ul.css('visibility','visible');
         });
         $box.on('mouseout',function(){
-            $ul.css('visibility','hidden');
+            $ul.css('visibility','hidden v ');
         })
 
     })

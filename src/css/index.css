@@ -87,3 +87,35 @@
 #pageHeader_b .shoppingCar:hover { display: block; background-position: 0 -74px; height: 42px; line-height: 43px; padding-top: 1px; cursor: pointer; z-index: 1000; }
 
 #pageHeader_b .shoppingCar:hover #car { position: absolute; left: -96px; top: 42px; display: block; background: #fff; width: 290px; line-height: 44px; border: 1px solid #ddd; z-index: -1; text-align: left; padding-left: 20px; }
+
+#pageNav { height: 40px; background: linear-gradient(#535252, #101010); }
+
+#pageNav .container { width: 1200px; padding: 0; }
+
+#pageNav .container .z_nav1 > li { float: left; }
+
+#pageNav .container .z_nav1 > li > a { display: block; color: #fff; text-decoration: none; }
+
+#pageNav .container .z_nav1 > li > a span { padding: 0 30px 0 28px; border-right: 1px solid #565656; border-left: 1px solid #010101; font-size: 15px; line-height: 40px; height: 40px; }
+
+#pageNav .container .z_nav1 > li:last-child a span, #pageNav .container .z_nav1 > li:nth-child(2) a span { border: none; }
+
+#pageNav .container .z_nav1 > li:nth-child(7) a, #pageNav .container .z_nav1 > li:nth-child(8) a { color: #f00; }
+
+#pageNav .container .z_nav1 > li:nth-child(2) a span:hover, #pageNav .container .z_nav1 > li:nth-child(3) a span:hover, #pageNav .container .z_nav1 > li:nth-child(4) a span:hover, #pageNav .container .z_nav1 > li:nth-child(5) a span:hover, #pageNav .container .z_nav1 > li:nth-child(6) a span:hover, #pageNav .container .z_nav1 > li:nth-child(9) a span:hover { color: #2ad0ff; }
+
+#pageNav .container .z_nav1 > li:first-child { position: relative; }
+
+#pageNav .container .z_nav1 .first-child { width: 230px; height: 40px; line-height: 40px; font-size: 15px; background: #02B2ED; text-align: center; }
+
+#pageNav .container #z_nav2 { width: 230px; border: 1px solid #ddd; border-top: none; box-sizing: border-box; background: #F8F8F8; }
+
+#pageNav .container #z_nav2 .z_nav2-1 { height: 90px; box-sizing: border-box; padding: 13px 0 6px 20px; }
+
+#pageNav .container #z_nav2 .z_nav2-1 .face { height: 27px; line-height: 27px; text-align: left; font-weight: bold; font-size: 13px; }
+
+#pageNav .container #z_nav2 .z_nav2-1 .face > a { text-decoration: none; color: #333333; }
+
+#pageNav .container #z_nav2 .z_nav2-1 p:nth-child(2) { text-align: left; height: 50px; height: 22px; line-height: 22px; font-size: 10px; font-weight: normal; }
+
+#pageNav .container #z_nav2 .z_nav2-1 p:nth-child(2) > a { white-space: nowrap; float: left; display: inline-block; margin-right: 13px; color: #333333; text-decoration: none; }
