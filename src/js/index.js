@@ -82,7 +82,7 @@
     })
 })();
 
-//二维码
+//头部二维码
 (function(){
     jQuery(function($){
         var $box = $('.qrcode_box');
