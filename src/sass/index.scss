@@ -236,12 +236,12 @@ body{height: 2000px;margin: 0;padding: 0;}
             background:#F8F8F8;
             // position:relative;
 
-            // 面部护理
+            
             .z_nav2-1{
                 position:relative;
                 height:90px;
                 padding:13px 0 6px 20px;
-                border:1px solid #ddd;border-top:none; 
+                border:1px solid #E7E7E7;border-top:none; 
 
                 >p:first-child{
                     height:27px;
@@ -321,7 +321,7 @@ body{height: 2000px;margin: 0;padding: 0;}
                                     }
                                 }   
                             }        
-                            .xiezhuang,.jiefu,.teshu,.dizhuang,.yanying,.jiemao{
+                            .xiezhuang,.jiefu,.teshu,.dizhuang,.yanying,.jiemao,.shouzu,.mianbu,.caizhuang2{
                                 height:64px;
                                 >p{
                                     line-height:64px;
@@ -365,19 +365,26 @@ body{height: 2000px;margin: 0;padding: 0;}
                         }
                     }
                 }
+                .z_nav3-2{top:-20px;}
+                .z_nav3-3{top:-130px;}
+                .z_nav3-4{top:-190px;}
+                .z_nav3-5{top:-160px;}
+                .z_nav3-6{top:-265px;}
+                .z_nav3-7{top:-270px;}
                 .nav_bk{
                     position:absolute;right:-2px;top:0;
                     display:none;
                     content:"";
                     border:1px solid #fff;
                     width: 1px;
-                    height: 90px;z-index:50;
+                    height: 88px;z-index:50;
                 }
                 &:hover{
                     border-bottom-color:#bdbdbd;
-                    border-top-color:#bdbdbd;
+                    border-top:1px solid #bdbdbd;
                     border-left:2px solid #03AAEA;
                     background:#fff;
+                    padding-top:12px;
                     padding-left:18px;
                     .z_nav3-1,.nav_bk{
                         display:block;
