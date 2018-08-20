@@ -251,6 +251,9 @@
                     >a{
                         text-decoration:none;
                         color:#333333;
+                        &:hover{
+                            color:#0098E0;
+                        }
                     }
                     >i{
                         display:block;float:right;
@@ -264,50 +267,65 @@
                     height:22px;line-height:22px;font-size:10px;
                     font-weight:normal;
                     >a{
-                        white-space: nowrap;
-                        float:left;
+                        white-space: nowrap;float:left;   
                         display:inline-block;
                         margin-right:13px;
-                        color:#333333;
-                        text-decoration:none;
+                        color:#333333;text-decoration:none;   
                         >span{
                             color:#f00;
                         }
-                    }
+                        &:hover{
+                            color:#0098E0;
+                        }
+                    } 
                 }
 
                 // 三级导航
                 .z_nav3-1{
-                    position:absolute;top:0;left:229px;
-                    width:651px;overflow:hidden;
-                    border:1px solid #ddd;border-left:none;
+                    position:absolute;top:20px;left:228px;
+                    width:652px;overflow:hidden;
+                    border:1px solid #ddd;
                     padding-left:20px;
                     .z_nav3-1l{
                         width: 400px;
                         float:left;
-                        .xiezhuang{
-                            width: 380px;
-                            height:64px;float:left;
-                            border-bottom:1px dotted #ddd;
-                            .step1{
-                                float:left;
-                                height: 64px;line-height:64px;
-                                padding-right:20px;font-size:12px;
-                                >a{
-                                    color:#444444;
+                        >ul{
+                            >li{
+                                width: 380px;
+                                height:47px;float:left;
+                                border-bottom:1px dotted #ddd;
+                                >p{
+                                    float:left;
+                                    height:47px;line-height:47px;
+                                    padding-right:20px;font-size:12px;
+                                    >a{
+                                        color:#444444;
+                                        text-decoration:none;
+                                    }
                                 }
-                            }
-                            >div{
-                                width:310px;
-                                float:left;padding-top:10px;height: 64px;
-                                a{
-                                    display:inline-block;float:left;
-                                    padding-right:14px;
-                                    font-size:12px;height:22px;line-height:22px;
-                                    white-space:nowrap;color:#444444;
+                                >div{
+                                    width:310px;
+                                    float:left;padding-top:10px;height:47px;
+                                    a{
+                                        display:inline-block;float:left;
+                                        padding-right:14px;
+                                        font-size:12px;height:22px;line-height:22px;
+                                        white-space:nowrap;color:#444444;
+                                        text-decoration:none; 
+                                        &:hover{
+                                            color:#0098E0;
+                                        }
+                                    }
+                                }   
+                            }        
+                            .xiezhuang,.jiefu,.teshu{
+                                height:64px;
+                                >p{
+                                    line-height:64px;
                                 }
-                            }   
-                        }                        
+                            }           
+
+                        }
                     }
                     .z_nav3-1r{
                         width: 230px;height: 600px;background:#F8F8F8;
