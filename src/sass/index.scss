@@ -406,11 +406,11 @@ body{height: 2000px;margin: 0;padding: 0;}
     width: 100%;background:linear-gradient(#fff,#f5f1f1);
     border-top:1px solid #ddd;
     border-bottom:1px solid #ddd;
-    padding:26px 0;
-    height:202px;
+    
     .container{
         width: 1200px;padding:0;
         .foot_t{
+            margin-top:26px 0;
             .foot_t_l{
                 height:148px;width: 285px;
                 padding-left:44px;
@@ -487,6 +487,18 @@ body{height: 2000px;margin: 0;padding: 0;}
                 padding-left: 33px;
                 background: url('../images/z_footer4.jpg') no-repeat 30px 104px;
             }
+        }
+        .foot_c{
+            border-bottom:1px solid #ddd;
+            height: 160px;
+            >div{
+                height:160px;
+                text-align:center;
+                dl{
+                    display:inline-block;
+                    float:left;
+                }
+            } 
         }
     }
 }

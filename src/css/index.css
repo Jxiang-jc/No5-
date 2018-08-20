@@ -190,36 +190,44 @@ body { height: 2000px; margin: 0; padding: 0; }
 
 #pageMain { width: 100%; height: 2000px; background: #EAADEA; }
 
-#pageFooter { width: 100%; background: linear-gradient(#fff, #f5f1f1); border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; padding: 26px 0; height: 202px; }
+#pageFooter { width: 100%; background: linear-gradient(#fff, #f5f1f1); border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
 
 #pageFooter .container { width: 1200px; padding: 0; }
 
-#pageFooter .container .foot_t_l { height: 148px; width: 285px; padding-left: 44px; border-right: 1px solid #ddd; }
+#pageFooter .container .foot_t { margin-top: 26px 0; }
 
-#pageFooter .container .foot_t_l .tel { background: url("../images/z_spirit.gif") no-repeat 0 -157px; padding-left: 73px; padding-right: 20px; height: 49px; width: 196px; }
+#pageFooter .container .foot_t .foot_t_l { height: 148px; width: 285px; padding-left: 44px; border-right: 1px solid #ddd; }
 
-#pageFooter .container .foot_t_l .tel p:first-child { color: #f00; font-size: 15px; font-style: italic; font-weight: bold; }
+#pageFooter .container .foot_t .foot_t_l .tel { background: url("../images/z_spirit.gif") no-repeat 0 -157px; padding-left: 73px; padding-right: 20px; height: 49px; width: 196px; }
 
-#pageFooter .container .foot_t_l .tel p:nth-child(2) { text-align: right; font-size: 12px; }
+#pageFooter .container .foot_t .foot_t_l .tel p:first-child { color: #f00; font-size: 15px; font-style: italic; font-weight: bold; }
 
-#pageFooter .container .foot_t_l .sina { margin-top: 10px; width: 240px; height: 19px; background: url("../images/z_footer3.jpg") no-repeat; padding-left: 30px; }
+#pageFooter .container .foot_t .foot_t_l .tel p:nth-child(2) { text-align: right; font-size: 12px; }
 
-#pageFooter .container .foot_t_l .sina > p { display: inline-block; font-size: 12px; color: #666666; font-weight: bold; height: 22px; line-height: 22px; padding-right: 6px; }
+#pageFooter .container .foot_t .foot_t_l .sina { margin-top: 10px; width: 240px; height: 19px; background: url("../images/z_footer3.jpg") no-repeat; padding-left: 30px; }
 
-#pageFooter .container .foot_t_l .dingyue { padding-top: 10px; overflow: hidden; }
+#pageFooter .container .foot_t .foot_t_l .sina > p { display: inline-block; font-size: 12px; color: #666666; font-weight: bold; height: 22px; line-height: 22px; padding-right: 6px; }
 
-#pageFooter .container .foot_t_l .dingyue input { height: 26px; width: 138px; float: left; border: 1px solid #ddd; }
+#pageFooter .container .foot_t .foot_t_l .dingyue { padding-top: 10px; overflow: hidden; }
 
-#pageFooter .container .foot_t_l .dingyue a { display: block; float: left; }
+#pageFooter .container .foot_t .foot_t_l .dingyue input { height: 26px; width: 138px; float: left; border: 1px solid #ddd; }
 
-#pageFooter .container .foot_t_l .ps { text-indent: 0.5em; font-size: 12px; margin-top: 7px; color: #9B9B9B; }
+#pageFooter .container .foot_t .foot_t_l .dingyue a { display: block; float: left; }
 
-#pageFooter .container .foot_t_c dl { width: 126px; border-right: 1px solid #ddd; padding-top: 3px; padding-left: 25px; height: 150px; }
+#pageFooter .container .foot_t .foot_t_l .ps { text-indent: 0.5em; font-size: 12px; margin-top: 7px; color: #9B9B9B; }
 
-#pageFooter .container .foot_t_c dl dt > a { display: block; color: #444444; font-size: 15px; margin-bottom: 16px; }
+#pageFooter .container .foot_t .foot_t_c dl { width: 126px; border-right: 1px solid #ddd; padding-top: 3px; padding-left: 25px; height: 150px; }
 
-#pageFooter .container .foot_t_c dl dd { font-size: 12px; height: 22px; line-height: 22px; }
+#pageFooter .container .foot_t .foot_t_c dl dt > a { display: block; color: #444444; font-size: 15px; margin-bottom: 16px; }
 
-#pageFooter .container .foot_t_c dl dd > a { color: #999999; }
+#pageFooter .container .foot_t .foot_t_c dl dd { font-size: 12px; height: 22px; line-height: 22px; }
 
-#pageFooter .container .foot_t_r { width: 125px; height: 150px; padding-top: 11px; padding-left: 33px; background: url("../images/z_footer4.jpg") no-repeat 30px 104px; }
+#pageFooter .container .foot_t .foot_t_c dl dd > a { color: #999999; }
+
+#pageFooter .container .foot_t .foot_t_r { width: 125px; height: 150px; padding-top: 11px; padding-left: 33px; background: url("../images/z_footer4.jpg") no-repeat 30px 104px; }
+
+#pageFooter .container .foot_c { border-bottom: 1px solid #ddd; height: 160px; }
+
+#pageFooter .container .foot_c > div { height: 160px; text-align: center; }
+
+#pageFooter .container .foot_c > div dl { display: inline-block; float: left; }
