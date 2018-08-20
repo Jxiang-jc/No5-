@@ -234,16 +234,16 @@ body{height: 2000px;margin: 0;padding: 0;}
         #z_nav2{
             width: 230px;  
             background:#F8F8F8;
-            position:relative;
+            // position:relative;
 
             // 面部护理
             .z_nav2-1{
-                position:absolute;
+                position:relative;
                 height:90px;
                 padding:13px 0 6px 20px;
                 border:1px solid #ddd;border-top:none; 
 
-                .face{
+                >p:first-child{
                     height:27px;
                     line-height:27px;
                     text-align:left;font-weight:bold;
@@ -261,7 +261,7 @@ body{height: 2000px;margin: 0;padding: 0;}
                         color:#00ADFF;font-size:10px;
                     }
                 }
-                p:nth-child(2){
+                >p:nth-child(2){
                     text-align:left;
                     height:50px;
                     height:22px;line-height:22px;font-size:10px;
@@ -321,7 +321,7 @@ body{height: 2000px;margin: 0;padding: 0;}
                                     }
                                 }   
                             }        
-                            .xiezhuang,.jiefu,.teshu{
+                            .xiezhuang,.jiefu,.teshu,.dizhuang,.yanying,.jiemao{
                                 height:64px;
                                 >p{
                                     line-height:64px;
@@ -365,18 +365,27 @@ body{height: 2000px;margin: 0;padding: 0;}
                         }
                     }
                 }
+                .nav_bk{
+                    position:absolute;right:-2px;top:0;
+                    display:none;
+                    content:"";
+                    border:1px solid #fff;
+                    width: 1px;
+                    height: 90px;z-index:50;
+                }
                 &:hover{
                     border-bottom-color:#bdbdbd;
                     border-top-color:#bdbdbd;
                     border-left:2px solid #03AAEA;
-                    border-right-color:#fff;
                     background:#fff;
-                    margin-left:-2px;
-                    .z_nav3-1{
+                    padding-left:18px;
+                    .z_nav3-1,.nav_bk{
                         display:block;
                     }
+
                 }
             }
+            
         }
     }
 }
