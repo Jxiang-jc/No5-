@@ -1,3 +1,4 @@
+body{height: 2000px;margin: 0;padding: 0;}
 #pageHeader_t{
     background:linear-gradient(#fff ,#ddd);border-bottom:1px solid #ccc;
     .container{
@@ -160,7 +161,7 @@
                 height: 42px;line-height:43px;
                 padding-top:1px;
                 cursor:pointer;
-                z-index:1000;
+                z-index:100;
                 #car{
                     position:absolute;left:-96px;top:42px;
                     display:block;
@@ -231,18 +232,17 @@
         }
         // 二级导航
         #z_nav2{
-            width: 230px;
-            
-            box-sizing:border-box;
+            width: 230px;  
             background:#F8F8F8;
+            position:relative;
 
             // 面部护理
             .z_nav2-1{
-                position:relative;
+                position:absolute;
                 height:90px;
-                box-sizing:border-box;
                 padding:13px 0 6px 20px;
-                border:1px solid #ddd;border-top:none;
+                border:1px solid #ddd;border-top:none; 
+
                 .face{
                     height:27px;
                     line-height:27px;
@@ -284,8 +284,10 @@
                 .z_nav3-1{
                     position:absolute;top:20px;left:228px;
                     width:652px;overflow:hidden;
-                    border:1px solid #ddd;
-                    padding-left:20px;
+                    border:1px solid #BDBDBD;
+                    padding-left:20px;background:#fff;
+                    display:none;
+                    z-index:10;
                     .z_nav3-1l{
                         width: 400px;
                         float:left;
@@ -294,6 +296,7 @@
                                 width: 380px;
                                 height:47px;float:left;
                                 border-bottom:1px dotted #ddd;
+                                &:last-child{border:none;}
                                 >p{
                                     float:left;
                                     height:47px;line-height:47px;
@@ -328,8 +331,49 @@
                         }
                     }
                     .z_nav3-1r{
-                        width: 230px;height: 600px;background:#F8F8F8;
-                        float:right;    
+                        width: 230px;background:#F8F8F8;padding:0 15px;
+                        float:right;overflow:hidden;
+                        h4{
+                            font-size:12px;text-align:left;
+                            font-weight:bold;color:#666;
+                            padding-bottom:9px;padding-top:24px;
+                            border-bottom:1px solid #666666;
+                        }
+                        dl{
+                            float:left;
+                            width: 100px;text-align:left;
+                            padding-top:11px;
+                            >dt{
+                                font-size:12px;
+                                height:22px;line-height:22px;
+                                >a{
+                                    color:#666;text-decoration:none;
+                                    &:hover{color:#0098E0;}
+                                    span{
+                                        color:red;
+                                    }
+                                }
+                            }
+                        }
+                        >a{
+                            display:block;
+                            >img{
+                                display:block;
+                                padding:10px 0 10px 0;
+                                box-sizing:content-box;
+                            }
+                        }
+                    }
+                }
+                &:hover{
+                    border-bottom-color:#bdbdbd;
+                    border-top-color:#bdbdbd;
+                    border-left:2px solid #03AAEA;
+                    border-right-color:#fff;
+                    background:#fff;
+                    margin-left:-2px;
+                    .z_nav3-1{
+                        display:block;
                     }
                 }
             }

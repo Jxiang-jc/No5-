@@ -1,3 +1,5 @@
+body { height: 2000px; margin: 0; padding: 0; }
+
 #pageHeader_t { background: linear-gradient(#fff, #ddd); border-bottom: 1px solid #ccc; }
 
 #pageHeader_t .container { width: 1200px; }
@@ -84,7 +86,7 @@
 
 #pageHeader_b .shoppingCar #car span { position: absolute; top: -1px; right: 0; display: block; border-top: 1px solid #fff; width: 173px; height: 1px; }
 
-#pageHeader_b .shoppingCar:hover { display: block; background-position: 0 -74px; height: 42px; line-height: 43px; padding-top: 1px; cursor: pointer; z-index: 1000; }
+#pageHeader_b .shoppingCar:hover { display: block; background-position: 0 -74px; height: 42px; line-height: 43px; padding-top: 1px; cursor: pointer; z-index: 100; }
 
 #pageHeader_b .shoppingCar:hover #car { position: absolute; left: -96px; top: 42px; display: block; background: #fff; width: 290px; line-height: 44px; border: 1px solid #ddd; z-index: -1; text-align: left; padding-left: 20px; }
 
@@ -108,9 +110,9 @@
 
 #pageNav .container .z_nav1 .first-child { width: 230px; height: 40px; line-height: 40px; font-size: 15px; background: #02B2ED; text-align: center; }
 
-#pageNav .container #z_nav2 { width: 230px; box-sizing: border-box; background: #F8F8F8; }
+#pageNav .container #z_nav2 { width: 230px; background: #F8F8F8; position: relative; }
 
-#pageNav .container #z_nav2 .z_nav2-1 { position: relative; height: 90px; box-sizing: border-box; padding: 13px 0 6px 20px; border: 1px solid #ddd; border-top: none; }
+#pageNav .container #z_nav2 .z_nav2-1 { position: absolute; height: 90px; padding: 13px 0 6px 20px; border: 1px solid #ddd; border-top: none; }
 
 #pageNav .container #z_nav2 .z_nav2-1 .face { height: 27px; line-height: 27px; text-align: left; font-weight: bold; font-size: 13px; }
 
@@ -128,11 +130,13 @@
 
 #pageNav .container #z_nav2 .z_nav2-1 p:nth-child(2) > a:hover { color: #0098E0; }
 
-#pageNav .container #z_nav2 .z_nav2-1 .z_nav3-1 { position: absolute; top: 20px; left: 228px; width: 652px; overflow: hidden; border: 1px solid #ddd; padding-left: 20px; }
+#pageNav .container #z_nav2 .z_nav2-1 .z_nav3-1 { position: absolute; top: 20px; left: 228px; width: 652px; overflow: hidden; border: 1px solid #BDBDBD; padding-left: 20px; background: #fff; display: none; z-index: 10; }
 
 #pageNav .container #z_nav2 .z_nav2-1 .z_nav3-1 .z_nav3-1l { width: 400px; float: left; }
 
 #pageNav .container #z_nav2 .z_nav2-1 .z_nav3-1 .z_nav3-1l > ul > li { width: 380px; height: 47px; float: left; border-bottom: 1px dotted #ddd; }
+
+#pageNav .container #z_nav2 .z_nav2-1 .z_nav3-1 .z_nav3-1l > ul > li:last-child { border: none; }
 
 #pageNav .container #z_nav2 .z_nav2-1 .z_nav3-1 .z_nav3-1l > ul > li > p { float: left; height: 47px; line-height: 47px; padding-right: 20px; font-size: 12px; }
 
@@ -148,4 +152,24 @@
 
 #pageNav .container #z_nav2 .z_nav2-1 .z_nav3-1 .z_nav3-1l > ul .xiezhuang > p, #pageNav .container #z_nav2 .z_nav2-1 .z_nav3-1 .z_nav3-1l > ul .jiefu > p, #pageNav .container #z_nav2 .z_nav2-1 .z_nav3-1 .z_nav3-1l > ul .teshu > p { line-height: 64px; }
 
-#pageNav .container #z_nav2 .z_nav2-1 .z_nav3-1 .z_nav3-1r { width: 230px; height: 600px; background: #F8F8F8; float: right; }
+#pageNav .container #z_nav2 .z_nav2-1 .z_nav3-1 .z_nav3-1r { width: 230px; background: #F8F8F8; padding: 0 15px; float: right; overflow: hidden; }
+
+#pageNav .container #z_nav2 .z_nav2-1 .z_nav3-1 .z_nav3-1r h4 { font-size: 12px; text-align: left; font-weight: bold; color: #666; padding-bottom: 9px; padding-top: 24px; border-bottom: 1px solid #666666; }
+
+#pageNav .container #z_nav2 .z_nav2-1 .z_nav3-1 .z_nav3-1r dl { float: left; width: 100px; text-align: left; padding-top: 11px; }
+
+#pageNav .container #z_nav2 .z_nav2-1 .z_nav3-1 .z_nav3-1r dl > dt { font-size: 12px; height: 22px; line-height: 22px; }
+
+#pageNav .container #z_nav2 .z_nav2-1 .z_nav3-1 .z_nav3-1r dl > dt > a { color: #666; text-decoration: none; }
+
+#pageNav .container #z_nav2 .z_nav2-1 .z_nav3-1 .z_nav3-1r dl > dt > a:hover { color: #0098E0; }
+
+#pageNav .container #z_nav2 .z_nav2-1 .z_nav3-1 .z_nav3-1r dl > dt > a span { color: red; }
+
+#pageNav .container #z_nav2 .z_nav2-1 .z_nav3-1 .z_nav3-1r > a { display: block; }
+
+#pageNav .container #z_nav2 .z_nav2-1 .z_nav3-1 .z_nav3-1r > a > img { display: block; padding: 10px 0 10px 0; box-sizing: content-box; }
+
+#pageNav .container #z_nav2 .z_nav2-1:hover { border-bottom-color: #bdbdbd; border-top-color: #bdbdbd; border-left: 2px solid #03AAEA; border-right-color: #fff; background: #fff; margin-left: -2px; }
+
+#pageNav .container #z_nav2 .z_nav2-1:hover .z_nav3-1 { display: block; }
