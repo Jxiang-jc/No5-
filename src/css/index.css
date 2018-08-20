@@ -108,14 +108,34 @@
 
 #pageNav .container .z_nav1 .first-child { width: 230px; height: 40px; line-height: 40px; font-size: 15px; background: #02B2ED; text-align: center; }
 
-#pageNav .container #z_nav2 { width: 230px; border: 1px solid #ddd; border-top: none; box-sizing: border-box; background: #F8F8F8; }
+#pageNav .container #z_nav2 { width: 230px; box-sizing: border-box; background: #F8F8F8; }
 
-#pageNav .container #z_nav2 .z_nav2-1 { height: 90px; box-sizing: border-box; padding: 13px 0 6px 20px; }
+#pageNav .container #z_nav2 .z_nav2-1 { position: relative; height: 90px; box-sizing: border-box; padding: 13px 0 6px 20px; border: 1px solid #ddd; border-top: none; }
 
 #pageNav .container #z_nav2 .z_nav2-1 .face { height: 27px; line-height: 27px; text-align: left; font-weight: bold; font-size: 13px; }
 
 #pageNav .container #z_nav2 .z_nav2-1 .face > a { text-decoration: none; color: #333333; }
 
+#pageNav .container #z_nav2 .z_nav2-1 .face > i { display: block; float: right; padding-right: 15px; color: #00ADFF; font-size: 10px; }
+
 #pageNav .container #z_nav2 .z_nav2-1 p:nth-child(2) { text-align: left; height: 50px; height: 22px; line-height: 22px; font-size: 10px; font-weight: normal; }
 
 #pageNav .container #z_nav2 .z_nav2-1 p:nth-child(2) > a { white-space: nowrap; float: left; display: inline-block; margin-right: 13px; color: #333333; text-decoration: none; }
+
+#pageNav .container #z_nav2 .z_nav2-1 p:nth-child(2) > a > span { color: #f00; }
+
+#pageNav .container #z_nav2 .z_nav2-1 .z_nav3-1 { position: absolute; top: 0; left: 229px; width: 651px; overflow: hidden; border: 1px solid #ddd; border-left: none; padding-left: 20px; }
+
+#pageNav .container #z_nav2 .z_nav2-1 .z_nav3-1 .z_nav3-1l { width: 400px; float: left; }
+
+#pageNav .container #z_nav2 .z_nav2-1 .z_nav3-1 .z_nav3-1l .xiezhuang { width: 380px; height: 64px; float: left; border-bottom: 1px dotted #ddd; }
+
+#pageNav .container #z_nav2 .z_nav2-1 .z_nav3-1 .z_nav3-1l .xiezhuang .step1 { float: left; height: 64px; line-height: 64px; padding-right: 20px; font-size: 12px; }
+
+#pageNav .container #z_nav2 .z_nav2-1 .z_nav3-1 .z_nav3-1l .xiezhuang .step1 > a { color: #444444; }
+
+#pageNav .container #z_nav2 .z_nav2-1 .z_nav3-1 .z_nav3-1l .xiezhuang > div { width: 310px; float: left; padding-top: 10px; height: 64px; }
+
+#pageNav .container #z_nav2 .z_nav2-1 .z_nav3-1 .z_nav3-1l .xiezhuang > div a { display: inline-block; float: left; padding-right: 14px; font-size: 12px; height: 22px; line-height: 22px; white-space: nowrap; color: #444444; }
+
+#pageNav .container #z_nav2 .z_nav2-1 .z_nav3-1 .z_nav3-1r { width: 230px; height: 600px; background: #F8F8F8; float: right; }

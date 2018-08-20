@@ -91,10 +91,12 @@
 
         $box.on('mouseover',function(){
             $ul.css('visibility','visible');
-        });
-        $box.on('mouseout',function(){
-            $ul.css('visibility','hidden v ');
+            // console.log(666)
         })
-
+        
+        $box.on('mouseout',function(){
+            // console.log(777)
+            $ul.css('visibility','hidden');
+        })
     })
 })();
