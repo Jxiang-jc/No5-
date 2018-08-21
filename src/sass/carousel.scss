@@ -1,37 +1,30 @@
 .banner{
-    width: 100%;background:#B5E2FF;
+    width: 100%;background:#F6EDE4;
+
     >.container{
-        width: 1200px;padding:0;height: 400px;
-        padding-left:230px;
+        width: 1200px;padding:0;
+        padding-left:230px;overflow:hidden;
         .carousel-inner{
-                height:400px;width: 975px;
-                .item{
-                    float:left;position:relative;
-                    .carous2,.carous3,.carous4{
-                        height: 400px;overflow:hidden;float:right;width:205px;
-                        img{
-                            position:absolute;top:10px;right:-200px;z-index:10;
-                            &:nth-child(2){
-                                top:130px;z-index:1;
-                            }
-                            &:nth-child(3){
-                                top:260px;
-                            }
-                        }
-                    }
+                height:400px;width: 970px;
+                .item a:first-child img{
+                    display:inline-block;
                 }
+                .item div{
+                    float:right;width: 205px;height: 400px;
+                    padding-left:10px;padding-top:5px;
+                } 
             }
         }
     }
 .carousel-fade .carousel-inner .item{ opacity:0; -webkit-transition-property:opacity;-moz-transition-property:opacity ; -ms-transition-property:opacity;-o-transition-property:opacity;transition-property:opacity ;}
 
 .carousel-fade .carousel-inner .active{ opacity: 1;}
-.carousel-fade .carousel-inner .active.left,.carousel-fade .carousel-inner .active.right{left: 0;opacity: 0;}
+.carousel-fade .carousel-inner .active.left,.carousel-fade .carousel-inner .active.right{opacity: 0;}
 .carousel-fade .carousel-inner .next.left,
 .carousel-fade .carousel-inner .prev.right {opacity: 1;}
 
 .carousel-indicators{
-    text-align:left;margin-left:-48%;padding-right:5px;
+    text-align:left;margin-left:-48%;padding-right:5px;z-index:5;
 }
 .carousel-indicators li{
     width: 22px;height: 22px;line-height:22px;
@@ -43,4 +36,5 @@
   height: 22px;
   margin: 0;
   background-color:#00B5FF;
+  z-index:5;
 }

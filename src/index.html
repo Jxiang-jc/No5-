@@ -8,7 +8,6 @@
     <link rel="stylesheet" type="text/css" href="css/base.css" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
     <link rel="stylesheet" type="text/css" href="css/carousel.css" />
-
     
 
 </head>
@@ -27,13 +26,13 @@
    <!-- 轮播图 -->
        <section class="banner">
             <div class="container">
-               <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel"  data-interval="2000">
+               <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel"  data-interval="3500" data-pause="null">
                   <!-- Indicators -->
-                  <ol class="carousel-indicators" syelt="width:765px;">
-                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active">1</li>
-                        <li data-target="#carousel-example-generic" data-slide-to="1">2</li>
-                        <li data-target="#carousel-example-generic" data-slide-to="2">3</li>
-                        <li data-target="#carousel-example-generic" data-slide-to="3">4</li>
+                  <ol class="carousel-indicators z_ol" >
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active li1">1</li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1" class="li2">2</li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2" class="li3">3</li>
+                        <li data-target="#carousel-example-generic" data-slide-to="3" class="li4">4</li>
                   </ol>
 
                   <!-- Wrapper for slides -->
@@ -42,12 +41,13 @@
                             <a href="#"><img src="images/z_carousel1.jpg" height="400" width="765" alt=""></a>
                         </div>
                         <div class="item">
-                            <a href="#"><img src="images/z_carousel2.jpg" height="400" width="765" alt="..."></a>
-                            <div class="carous2">
+                            <a href="#"><img src="images/z_carousel2.jpg"></a>
+                            <div class="carous2">                            
                                 <img src="images/z_carousel2_1.jpg" />
                                 <img src="images/z_carousel2_2.jpg" />
                                 <img src="images/z_carousel2_3.jpg" />
                             </div>
+
                         </div>
                         <div class="item">
                             <a href="#"><img src="images/z_carousel3.jpg" height="400" width="765" alt="..."></a>
@@ -70,7 +70,21 @@
                 
             </div>
        </section>
+       <section class>
+            <div id="notice-box" class="notice">
+                <ul>
+                    <li><span></span><a href="#" target="_blank" class="">No5时尚广场提示谨防诈骗</a></li>
+                </ul>
+            </div>
+            <div class="image-box1" id="image-box1" style="width: 969px;">
+                <a href="#" target="_blank"><img src="images/" alt="" /></a>
+                <a href="#" target="_blank"></a>
+                <a href="#" target="_blank"></a>
+            </div>
+       </section>
+
    </main>
+
 
 <!-- 底部 -->
     <footer id="pageFooter">
@@ -101,6 +115,8 @@
 <!-- 第2步：引入插件 -->
 <script src="lib/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
 <script src="js/index.js"></script>
+
+<script src="js/carousel.js"></script>
 
 
 
