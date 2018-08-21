@@ -2,7 +2,7 @@
     width: 100%;background:#F6EDE4;
 
     >.container{
-        width: 1200px;padding:0;
+        padding:0;
         padding-left:230px;overflow:hidden;
         .carousel-inner{
                 height:400px;width: 970px;
@@ -37,4 +37,55 @@
   margin: 0;
   background-color:#00B5FF;
   z-index:5;
+}
+
+/* imgbox */
+.imgbox .container{
+    position:relative;
+    height: 220px;
+    z-index:0;
+    padding: 0 ;
+
+    .notice{
+        height: 33px;line-height:33px;
+        span{
+            display: block;
+            float: left;
+            width: 19px;
+            height: 19px;
+            background: url('../images/z_spirit.gif') no-repeat -409px -30px;
+            margin-top: 6px;
+            margin-left:230px;
+            margin:6px 6px 0 230px;
+        }
+        a{
+            color:#666;font-size:12px;
+
+        }
+    }
+    .img-box1,{
+        position:absolute;left:240px;width: 969px;
+        img{
+            margin:0 2px;
+            }
+    }
+}
+
+/* 限时抢购 */
+.z_limit{
+    .container{
+        padding:0;
+        >p{
+            height:62px;
+            padding-top:27px;padding-bottom:10px;
+            font-size:22px;border-bottom:3px solid #FF8C8F;    
+            span:first-child{
+                color:#f00;padding-right:20px;
+            }
+            span:last-child{
+                color:#C4C4C4;
+            }
+
+        }
+    }
 }

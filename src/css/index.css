@@ -104,7 +104,7 @@
 
 #pageNav .container .z_nav1 > li:nth-child(2) a span:hover, #pageNav .container .z_nav1 > li:nth-child(3) a span:hover, #pageNav .container .z_nav1 > li:nth-child(4) a span:hover, #pageNav .container .z_nav1 > li:nth-child(5) a span:hover, #pageNav .container .z_nav1 > li:nth-child(6) a span:hover, #pageNav .container .z_nav1 > li:nth-child(9) a span:hover { color: #2ad0ff; }
 
-#pageNav .container .z_nav1 > li:first-child { position: relative; }
+#pageNav .container .z_nav1 > li:first-child { position: relative; z-index: 10; }
 
 #pageNav .container .z_nav1 .first-child { width: 230px; height: 40px; line-height: 40px; font-size: 15px; background: #02B2ED; text-align: center; }
 

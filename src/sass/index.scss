@@ -216,7 +216,7 @@
 
                 //二级导航
                 &:first-child{
-                    position:relative;
+                    position:relative;z-index:10;
                     .z_nav2{
                         li:first-child{
                             
