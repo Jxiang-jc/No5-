@@ -1,24 +1,25 @@
-(function(){
-    jQuery(function($){
-    //获取span标签
-    var $span = $('#pageHeader_t .container .header_l  .date');
-        console.log($span)
+// 判断时间
+;(function($){
+     $.prototype.show = function(){
+        //获取span标签
+        var $span = $('#pageHeader_t .container .header_l  .date');
+            // console.log($span)
 
-    //获取当前时间
-    var $now = new Date();
-    var $hour = $now.getHours();  
+        //获取当前时间
+        var $now = new Date();
+        var $hour = $now.getHours();  
 
-    //判断上午或是下午
-    let times = $hour>=12 ? '下午好,':'上午好,';
+        //判断上午或是下午
+        let times = $hour>=12 ? '下午好,':'上午好,';
 
-    //写进页面
-    $span.html(times);
+        //写进页面
+        $span.html(times);
+    }
+})(jQuery);
 
-    })
-})();
 //头部搜索
-(function(){
-    jQuery(function($){
+;(function($){
+    $.prototype.search = function(){
         //获取inpu边框
         var $input = $('#searchInput');
 
@@ -79,12 +80,12 @@
 
         })
 
-    })
-})();
+    }
+})(jQuery);
 
 //头部二维码
-(function(){
-    jQuery(function($){
+;(function($){
+    $.prototype.qrcode = function(){
         var $box = $('.qrcode_box');
         var $ul = $('#mobile-ewm');
         console.log($ul)
@@ -98,5 +99,5 @@
             // console.log(777)
             $ul.css('visibility','hidden');
         })
-    })
-})();
+    }
+})(jQuery);

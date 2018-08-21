@@ -1,5 +1,3 @@
-body { height: 2000px; margin: 0; padding: 0; }
-
 #pageHeader_t { background: linear-gradient(#fff, #ddd); border-bottom: 1px solid #ccc; }
 
 #pageHeader_t .container { width: 1200px; }
@@ -187,8 +185,6 @@ body { height: 2000px; margin: 0; padding: 0; }
 #pageNav .container #z_nav2 .z_nav2-1:hover { border-bottom-color: #bdbdbd; border-top: 1px solid #bdbdbd; border-left: 2px solid #03AAEA; background: #fff; padding-top: 12px; padding-left: 18px; }
 
 #pageNav .container #z_nav2 .z_nav2-1:hover .z_nav3-1, #pageNav .container #z_nav2 .z_nav2-1:hover .nav_bk { display: block; }
-
-#pageMain { width: 100%; height: 2000px; background: #EAADEA; }
 
 #pageFooter #ft1 { width: 100%; background: linear-gradient(#fff, #f5f1f1); border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
 

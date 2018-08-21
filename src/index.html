@@ -7,41 +7,97 @@
     <link rel="stylesheet" type="text/css" href="lib/bootstrap-3.3.7-dist/css/bootstrap.css" />
     <link rel="stylesheet" type="text/css" href="css/base.css" />
     <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <!-- 第1步：引入jquery -->
-    <script src="js/jquery-3.2.1.js"></script>
-    <script type="text/javascript">
-        jQuery($=>{
-            $('#pageHeader_t').load('html/header_t.html');
-            $('#pageHeader_b').load('html/header_b.html');
-            $('#pageNav').load('html/pageNav.html');
-            $('#pageFooter').load('html/pageFooter.html');
-        })
+    <link rel="stylesheet" type="text/css" href="css/carousel.css" />
 
-    </script>
     
 
 </head>
 <body>
 <!-- 头部上 -->
     <header id="pageHeader_t">
-
     </header>
 <!-- 头部下 -->
     <header id="pageHeader_b">
-
     </header>
 <!-- 导航条 -->
     <nav id="pageNav">
-
     </nav>
-    <main id="pageMain"></main>
+
+   <main id="pageMain">
+   <!-- 轮播图 -->
+       <section class="banner">
+            <div class="container">
+               <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel"  data-interval="5000000000000">
+                  <!-- Indicators -->
+                  <ol class="carousel-indicators" syelt="width:765px;">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active">1</li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1">2</li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2">3</li>
+                        <li data-target="#carousel-example-generic" data-slide-to="3">4</li>
+                  </ol>
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <a href="#"><img src="images/z_carousel1.jpg" height="400" width="765" alt=""></a>
+                        </div>
+                        <div class="item">
+                            <!-- <a href="#"><img src="images/z_carousel2.jpg" height="400" width="765" alt="..."></a> -->
+                            <div class="car2">
+                                <img src="images/z_carousel2_1.jpg" />
+                                <img src="images/z_carousel2_2.jpg" />
+                                <img src="images/z_carousel2_3.jpg" />
+                            </div>
+                        </div>
+                        <div class="item">
+                            <a href="#"><img src="images/z_carousel3.jpg" height="400" width="765" alt="..."></a>
+                            <div class="car3">
+                                <img src="images/z_carousel3_1.jpg"/>
+                                <img src="images/z_carousel3_2.jpg"/>
+                                <img src="images/z_carousel3_3.jpg"/>
+                            </div>
+                        </div>   
+                        <div class="item">
+                            <a href="#"><img src="images/z_carousel4.jpg" height="400" width="765" alt="..."></a>
+                            <div class="car4">
+                                <img src="images/z_carousel4_1.jpg"/>
+                                <img src="images/z_carousel4_2.jpg"/>
+                                <img src="images/z_carousel4_3.jpg"/>
+                            </div>
+                        </div>                                            
+                  </div>
+                </div>
+                
+            </div>
+       </section>
+   </main>
+
 <!-- 底部 -->
     <footer id="pageFooter">
 
     </footer>
+
+
 </body>
 </html>
+    <!-- 第1步：引入jquery -->
+<script src="js/jquery-3.2.1.js"></script>
+<!-- 公共part -->
+<script type="text/javascript">
+    jQuery($=>{
+    $('#pageHeader_t').load('html/header_t.html',function(){
+        $('#pageHeader_t').show();
+    });
+    $('#pageHeader_b').load('html/header_b.html',function(){
+        $('#pageHeader_t').search();
+        $('#pageHeader_t').qrcode();
+    });
+    $('#pageNav').load('html/pageNav.html');
+    $('#pageFooter').load('html/pageFooter.html');
+})
 
+
+</script>
 <!-- 第2步：引入插件 -->
 <script src="lib/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
 <script src="js/index.js"></script>
