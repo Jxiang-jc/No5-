@@ -403,102 +403,118 @@ body{height: 2000px;margin: 0;padding: 0;}
     background:#EAADEA; 
 }
 #pageFooter{
-    width: 100%;background:linear-gradient(#fff,#f5f1f1);
-    border-top:1px solid #ddd;
-    border-bottom:1px solid #ddd;
-    
-    .container{
-        width: 1200px;padding:0;
-        .foot_t{
-            margin-top:26px 0;
-            .foot_t_l{
-                height:148px;width: 285px;
-                padding-left:44px;
-                border-right:1px solid #ddd;
-                
-                .tel{
-                    background:url('../images/z_spirit.gif')no-repeat 0 -157px;
-                    
-                    padding-left:73px;
-                    padding-right:20px;
-                    height: 49px;width:196px;
-                    p:first-child{
-                        color:#f00;font-size:15px;font-style:italic;font-weight:bold;
-                    }
-                    p:nth-child(2){
-                        text-align:right;font-size:12px;
-                    }
-                }
-                .sina{
-                    margin-top:10px;
-                    width: 240px;height: 19px;
-                    background:url('../images/z_footer3.jpg')no-repeat;
-                    padding-left:30px;
-                    >p{
-                        display:inline-block;
-                        font-size:12px;color:#666666;font-weight:bold;
-                        height:22px;line-height:22px;
-                        padding-right:6px;
-                    }
-                }
-                .dingyue{
-                    padding-top:10px;
-                    overflow:hidden;
-                    input{
-                        height: 26px;width: 138px;
-                        float:left;border:1px solid #ddd;
-                    }
-                    a{
-                        display:block;
-                        float:left;
-                    }
-                }
-                .ps{
-                    text-indent:0.5em;
-                    font-size:12px;margin-top:7px;
-                    color:#9B9B9B;
-                }
-            }
-            .foot_t_c{
-                dl{
-                    width: 126px;
+    #ft1{
+        width: 100%;background:linear-gradient(#fff,#f5f1f1);
+        border-top:1px solid #ddd;
+        border-bottom:1px solid #ddd;
+        .container{
+            width: 1200px;padding:0;
+            .foot_t{
+                padding:26px 0;overflow:hidden;height:200px;
+                .foot_t_l{
+                    height:150px;width: 285px;
+                    padding-left:44px;
                     border-right:1px solid #ddd;
-                    padding-top:3px;
-                    padding-left:25px;
-                    height:150px;
-                    dt>a{
-                            display:block;
-                            color:#444444;font-size:15px;
-                            margin-bottom:16px;
-                        }
                     
-                    dd{
-                        font-size:12px;height:22px;line-height:22px;
-                        >a{
-                            color:#999999;
+                    .tel{
+                        background:url('../images/z_spirit.gif')no-repeat 0 -157px;
+                        
+                        padding-left:73px;
+                        padding-right:20px;
+                        height: 49px;width:196px;
+                        p:first-child{
+                            color:#f00;font-size:15px;font-style:italic;font-weight:bold;
+                        }
+                        p:nth-child(2){
+                            text-align:right;font-size:12px;
+                        }
+                    }
+                    .sina{
+                        margin-top:10px;
+                        width: 240px;height: 19px;
+                        background:url('../images/z_footer3.jpg')no-repeat;
+                        padding-left:30px;
+                        >p{
+                            display:inline-block;
+                            font-size:12px;color:#666666;font-weight:bold;
+                            height:22px;line-height:22px;
+                            padding-right:6px;
+                        }
+                    }
+                    .dingyue{
+                        padding-top:10px;
+                        overflow:hidden;
+                        input{
+                            height: 26px;width: 138px;
+                            float:left;border:1px solid #ddd;
+                        }
+                        a{
+                            display:block;
+                            float:left;
+                        }
+                    }
+                    .ps{
+                        text-indent:0.5em;
+                        font-size:12px;margin-top:7px;
+                        color:#9B9B9B;
+                    }
+                }
+                .foot_t_c{
+                    dl{
+                        width: 126px;
+                        border-right:1px solid #ddd;
+                        padding-top:3px;
+                        padding-left:25px;
+                        height:150px;
+                        dt>a{
+                                display:block;
+                                color:#444444;font-size:15px;
+                                margin-bottom:16px;
+                            }
+                        
+                        dd{
+                            font-size:12px;height:22px;line-height:22px;
+                            >a{
+                                color:#999999;
+                            }
                         }
                     }
                 }
-            }
-            .foot_t_r{
-                width: 125px;
-                height: 150px;
-                padding-top: 11px;
-                padding-left: 33px;
-                background: url('../images/z_footer4.jpg') no-repeat 30px 104px;
+                .foot_t_r{
+                    width: 125px;
+                    height: 150px;
+                    padding-top: 11px;
+                    padding-left: 33px;
+                    background: url('../images/z_footer4.jpg') no-repeat 30px 104px;
+                }            
             }
         }
-        .foot_c{
+    }
+    #ft2{
+        .container{
+            width:1200px;background:#fff;padding:0;
             border-bottom:1px solid #ddd;
-            height: 160px;
-            >div{
-                height:160px;
-                text-align:center;
-                dl{
-                    display:inline-block;
-                    float:left;
-                }
-            } 
+            .foot_c{
+                height: 160px;background:#fff;
+                >div{
+                    height:160px;
+                    text-align:center;
+                    dl{
+                        display:inline-block;
+                        width: 140px;margin:0 40px;padding-top:30px;font-size:13px;
+                        dt{
+                            padding-bottom:5px;
+                        }
+                        dd{
+                            height:20px;line-height:20px;
+                        }
+                    }
+                } 
+            }
         }
+    }
+    .foot_b{
+        text-align:center;height: 44px;line-height:44px;font-size:13px;
+        color:#444444;
     }
 }
