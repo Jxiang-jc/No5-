@@ -4,24 +4,22 @@
         width: 1200px;padding:0;height: 400px;
         padding-left:230px;
         .carousel-inner{
-
-                .item .car2{
-                    position:relative;
-                    height: 400px;overflow:hidden;float:right;width:205px;
-                    
-
-                     img{
-                        position:absolute;top:10px;right:0px;z-index:10;
-                        &:nth-child(2){
-                            top:130px;z-index:-1;
-                        }
-                        &:nth-child(3){
-                            top:260px;
+                height:400px;width: 975px;
+                .item{
+                    float:left;position:relative;
+                    .carous2,.carous3,.carous4{
+                        height: 400px;overflow:hidden;float:right;width:205px;
+                        img{
+                            position:absolute;top:10px;right:-200px;z-index:10;
+                            &:nth-child(2){
+                                top:130px;z-index:1;
+                            }
+                            &:nth-child(3){
+                                top:260px;
+                            }
                         }
                     }
-                    
                 }
-                
             }
         }
     }
