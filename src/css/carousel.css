@@ -363,3 +363,174 @@
 .makeUp .container .makeUp_b .good-price span:first-child { font-size: 24px; height: 22px; line-height: 18px; font-weight: bold; }
 
 .makeUp .container .makeUp_b .good-price .zhekou { font-size: 13px; }
+
+/* 香水 */
+.perfumes .container { padding: 21px 0 0 0; }
+
+.perfumes .container .perfumes_t { border-bottom: 2px solid #0094FF; overflow: hidden; }
+
+.perfumes .container .perfumes_t h4 { height: 42px; line-height: 42px; font-size: 20px; font-weight: bold; float: left; }
+
+.perfumes .container .perfumes_t h4 span { padding-left: 10px; color: #0094FF; }
+
+.perfumes .container .perfumes_t ul li { height: 40px; line-height: 40px; float: left; font-size: 12px; padding-top: 17px; }
+
+.perfumes .container .perfumes_t ul li a { display: block; color: #666666; height: 12px; line-height: 12px; text-decoration: none; padding: 0 15px; border-right: 1px solid #666; }
+
+.perfumes .container .perfumes_t ul li a span { color: #f00; }
+
+.perfumes .container .perfumes_t ul li:last-child a { border-right: 0 none; }
+
+/* 男士 */
+.mans .container { padding: 21px 0 0 0; }
+
+.mans .container .mans_t { border-bottom: 2px solid #0094FF; overflow: hidden; }
+
+.mans .container .mans_t h4 { height: 42px; line-height: 42px; font-size: 20px; font-weight: bold; float: left; }
+
+.mans .container .mans_t h4 span { padding-left: 10px; color: #0094FF; }
+
+.mans .container .mans_t ul li { height: 40px; line-height: 40px; float: left; font-size: 12px; padding-top: 17px; }
+
+.mans .container .mans_t ul li a { display: block; color: #666666; height: 12px; line-height: 12px; text-decoration: none; padding: 0 15px; border-right: 1px solid #666; }
+
+.mans .container .mans_t ul li a span { color: #f00; }
+
+.mans .container .mans_t ul li:last-child a { border-right: 0 none; }
+
+.mans .container .mans_b { padding-top: 10px; overflow: hidden; }
+
+.mans .container .mans_b .mans_bl { width: 344px; height: 480px; float: left; }
+
+.mans .container .mans_b .mans_bc { float: left; width: 615px; height: 480px; }
+
+.mans .container .mans_b .mans_bc .mans1, .mans .container .mans_b .mans_bc .mans2, .mans .container .mans_b .mans_bc .mans3, .mans .container .mans_b .mans_bc .mans4, .mans .container .mans_b .mans_bc .mans5, .mans .container .mans_b .mans_bc .mans6 { width: 205px; height: 240px; float: left; border-right: 1px solid #f1f1f1; border-bottom: 1px solid #f1f1f1; text-align: center; }
+
+.mans .container .mans_b .mans_bc .mans1 dd, .mans .container .mans_b .mans_bc .mans2 dd, .mans .container .mans_b .mans_bc .mans3 dd, .mans .container .mans_b .mans_bc .mans4 dd, .mans .container .mans_b .mans_bc .mans5 dd, .mans .container .mans_b .mans_bc .mans6 dd { font-family: microsoft yahei; height: 18px; font-size: 16px; line-height: 18px; overflow: hidden; text-overflow: ellipsis; color: #f00; font-weight: bold; margin-bottom: 4px; }
+
+.mans .container .mans_b .mans_bc .mans1 dd a, .mans .container .mans_b .mans_bc .mans2 dd a, .mans .container .mans_b .mans_bc .mans3 dd a, .mans .container .mans_b .mans_bc .mans4 dd a, .mans .container .mans_b .mans_bc .mans5 dd a, .mans .container .mans_b .mans_bc .mans6 dd a { color: #666; display: block; font-size: 13px; text-decoration: none; }
+
+.mans .container .mans_b .mans_bc .mans3, .mans .container .mans_b .mans_bc .mans6 { border-right: 0; }
+
+.mans .container .mans_b .mans_br { float: right; height: 480px; width: 218px; }
+
+.mans .container .mans_b .mans_br h3 { font-size: 16px; line-height: 34px; height: 34px; color: #ff1a3a; text-align: center; border-bottom: 2px solid #d0d0d0; }
+
+.mans .container .mans_b .mans_br li .toplist { display: block; height: 42px; line-height: 42px; border-bottom: 1px solid #e4e4e4; padding: 0 8px; font-size: 12px; color: #666; overflow: hidden; text-overflow: ellipsis; }
+
+.mans .container .mans_b .mans_br li .toplist .num { display: inline-block; border: 2px solid #F00; border-radius: 50%; height: 18px; line-height: 8px; padding: 4px; margin-right: 5px; color: #f00; font-weight: bold; }
+
+.mans .container .mans_b .mans_br li div { display: none; height: 230px; padding: 13px 0; }
+
+.mans .container .mans_b .mans_br li div dl { text-align: center; }
+
+.mans .container .mans_b .mans_br li div dl a { display: inline-block; color: #7D7D7D; text-decoration: none; font-weight: bold; font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 218px; }
+
+.mans .container .mans_b .mans_br li div dl dd:last-child { color: #f00; font-weight: bold; font-size: 13px; padding-top: 10px; }
+
+.mans .container .mans_b .mans_br li:first-child .toplist { display: none; }
+
+.mans .container .mans_b .mans_br li:first-child div { display: block; }
+
+.mans .container .mans_bg { height: 59px; border-bottom: 1px solid #ddd; }
+
+.mans .container .mans_bg span { display: block; float: left; width: 75px; height: 36px; background: url("../images/z_mainSpirit.png") no-repeat 0 -310px; margin: 11px 12px; }
+
+.mans .container .mans_bg a:nth-child(2) span { background-position: -100px -310px; }
+
+.mans .container .mans_bg a:nth-child(3) span { background-position: -200px -310px; }
+
+.mans .container .mans_bg a:nth-child(4) span { background-position: -300px -310px; }
+
+.mans .container .mans_bg a:nth-child(5) span { background-position: -400px -310px; }
+
+.mans .container .mans_bg a:nth-child(6) span { background-position: -500px -310px; }
+
+.mans .container .mans_bg a:nth-child(7) span { background-position: -600px -310px; }
+
+.mans .container .mans_bg a:nth-child(8) span { background-position: -700px -310px; }
+
+.mans .container .mans_bg a:nth-child(9) span { background-position: -800px -310px; }
+
+.mans .container .mans_bg a:nth-child(10) span { background-position: -900 -310px; }
+
+.mans .container .mans_bg a:nth-child(11) span { background-position: -0px -360px; }
+
+.mans .container .mans_bg a:nth-child(12) span { background-position: -100 -360px; }
+
+/* 美体美发 */
+.body_hair .container { padding: 21px 0 0 0; }
+
+.body_hair .container .bHair_t { border-bottom: 2px solid #0094FF; overflow: hidden; }
+
+.body_hair .container .bHair_t h4 { height: 42px; line-height: 42px; font-size: 20px; font-weight: bold; float: left; }
+
+.body_hair .container .bHair_t h4 span { padding-left: 10px; color: #0094FF; }
+
+.body_hair .container .bHair_t ul li { height: 40px; line-height: 40px; float: left; font-size: 12px; padding-top: 17px; }
+
+.body_hair .container .bHair_t ul li a { display: block; color: #666666; height: 12px; line-height: 12px; text-decoration: none; padding: 0 15px; border-right: 1px solid #666; }
+
+.body_hair .container .bHair_t ul li a span { color: #f00; }
+
+.body_hair .container .bHair_t ul li:last-child a { border-right: 0 none; }
+
+.body_hair .container .bHair_b { padding-top: 10px; overflow: hidden; }
+
+.body_hair .container .bHair_b .bHair_bl { width: 344px; height: 480px; float: left; }
+
+.body_hair .container .bHair_b .bHair_bc { float: left; width: 615px; height: 480px; }
+
+.body_hair .container .bHair_b .bHair_bc .bHair1, .body_hair .container .bHair_b .bHair_bc .bHair2, .body_hair .container .bHair_b .bHair_bc .bHair3, .body_hair .container .bHair_b .bHair_bc .bHair4, .body_hair .container .bHair_b .bHair_bc .bHair5, .body_hair .container .bHair_b .bHair_bc .bHair6 { width: 205px; height: 240px; float: left; border-right: 1px solid #f1f1f1; border-bottom: 1px solid #f1f1f1; text-align: center; }
+
+.body_hair .container .bHair_b .bHair_bc .bHair1 dd, .body_hair .container .bHair_b .bHair_bc .bHair2 dd, .body_hair .container .bHair_b .bHair_bc .bHair3 dd, .body_hair .container .bHair_b .bHair_bc .bHair4 dd, .body_hair .container .bHair_b .bHair_bc .bHair5 dd, .body_hair .container .bHair_b .bHair_bc .bHair6 dd { font-family: microsoft yahei; height: 18px; font-size: 16px; line-height: 18px; overflow: hidden; text-overflow: ellipsis; color: #f00; font-weight: bold; margin-bottom: 4px; }
+
+.body_hair .container .bHair_b .bHair_bc .bHair1 dd a, .body_hair .container .bHair_b .bHair_bc .bHair2 dd a, .body_hair .container .bHair_b .bHair_bc .bHair3 dd a, .body_hair .container .bHair_b .bHair_bc .bHair4 dd a, .body_hair .container .bHair_b .bHair_bc .bHair5 dd a, .body_hair .container .bHair_b .bHair_bc .bHair6 dd a { color: #666; display: block; font-size: 13px; text-decoration: none; }
+
+.body_hair .container .bHair_b .bHair_bc .bHair3, .body_hair .container .bHair_b .bHair_bc .bHair6 { border-right: 0; }
+
+.body_hair .container .bHair_b .bHair_br { float: right; height: 480px; width: 218px; }
+
+.body_hair .container .bHair_b .bHair_br h3 { font-size: 16px; line-height: 34px; height: 34px; color: #ff1a3a; text-align: center; border-bottom: 2px solid #d0d0d0; }
+
+.body_hair .container .bHair_b .bHair_br li .toplist { display: block; height: 42px; line-height: 42px; border-bottom: 1px solid #e4e4e4; padding: 0 8px; font-size: 12px; color: #666; overflow: hidden; text-overflow: ellipsis; }
+
+.body_hair .container .bHair_b .bHair_br li .toplist .num { display: inline-block; border: 2px solid #F00; border-radius: 50%; height: 18px; line-height: 8px; padding: 4px; margin-right: 5px; color: #f00; font-weight: bold; }
+
+.body_hair .container .bHair_b .bHair_br li div { display: none; height: 230px; padding: 13px 0; }
+
+.body_hair .container .bHair_b .bHair_br li div dl { text-align: center; }
+
+.body_hair .container .bHair_b .bHair_br li div dl a { display: inline-block; color: #7D7D7D; text-decoration: none; font-weight: bold; font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 218px; }
+
+.body_hair .container .bHair_b .bHair_br li div dl dd:last-child { color: #f00; font-weight: bold; font-size: 13px; padding-top: 10px; }
+
+.body_hair .container .bHair_b .bHair_br li:first-child .toplist { display: none; }
+
+.body_hair .container .bHair_b .bHair_br li:first-child div { display: block; }
+
+.body_hair .container .bHair_bg { height: 59px; border-bottom: 1px solid #ddd; }
+
+.body_hair .container .bHair_bg span { display: block; float: left; width: 75px; height: 36px; background: url("../images/z_mainSpirit.png") no-repeat 0 -210px; margin: 11px 12px; }
+
+.body_hair .container .bHair_bg a:nth-child(2) span { background-position: -100px -210px; }
+
+.body_hair .container .bHair_bg a:nth-child(3) span { background-position: -200px -210px; }
+
+.body_hair .container .bHair_bg a:nth-child(4) span { background-position: -300px -210px; }
+
+.body_hair .container .bHair_bg a:nth-child(5) span { background-position: -400px -210px; }
+
+.body_hair .container .bHair_bg a:nth-child(6) span { background-position: -500px -210px; }
+
+.body_hair .container .bHair_bg a:nth-child(7) span { background-position: -600px -210px; }
+
+.body_hair .container .bHair_bg a:nth-child(8) span { background-position: -700px -210px; }
+
+.body_hair .container .bHair_bg a:nth-child(9) span { background-position: -800px -210px; }
+
+.body_hair .container .bHair_bg a:nth-child(10) span { background-position: -900 -210px; }
+
+.body_hair .container .bHair_bg a:nth-child(11) span { background-position: -0px -260px; }
+
+.body_hair .container .bHair_bg a:nth-child(12) span { background-position: -100 -260px; }

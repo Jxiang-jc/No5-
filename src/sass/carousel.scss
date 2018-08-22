@@ -673,6 +673,284 @@
     }
 } 
 
+/* 香水 */
+.perfumes{
+    .container{
+        padding:21px 0 0 0 ;
+        .perfumes_t{
+            border-bottom:2px solid #0094FF;overflow:hidden;
+            h4{
+                height:42px;line-height:42px;
+                font-size:20px;font-weight:bold;float:left;
+                span{
+                    padding-left:10px;color:#0094FF;
+                }
+            }
+            ul{
+                li{
+                    height:40px;line-height:40px;
+                    float:left;font-size:12px;
+                    padding-top:17px;
+                    a{
+                        display:block;color:#666666;
+                        height:12px;line-height:12px;
+                        text-decoration:none;padding:0 15px;
+                        border-right:1px solid #666;
+                        span{
+                            color:#f00;
+                        }
+                    }
+                    &:last-child a{
+                            border-right:0 none;
+                        }
+                }
+            }
+        }
+        .perfumes_b{
+            
+        }
+        // .perfumes_b{
+        //     padding-top:10px;
+        //     overflow:hidden;
+        //     .perfumes_bl{
+        //         width: 344px;height: 480px;
+        //         float:left;
+        //     }
+        //     .perfumes_bc{
+        //         float:left;width: 615px;height: 480px;
+        //         .perfumes1,.perfumes2,.perfumes3,.perfumes4,.perfumes5,.perfumes6{
+        //                 width:205px;height:240px;float:left;
+        //                 border-right:1px solid #f1f1f1;
+        //                 border-bottom: 1px solid #f1f1f1;
+        //                 text-align:center;
+        //                 dd{
+        //                     font-family: microsoft yahei;
+        //                     height: 18px;font-size:16px;line-height:18px;
+        //                     overflow: hidden;text-overflow: ellipsis;
+        //                     color:#f00;font-weight:bold;margin-bottom:4px;
+        //                     a{
+        //                         color:#666;display:block;
+        //                         font-size:13px;text-decoration:none;
+        //                     } 
+        //                 }
+        //         }
+        //         .perfumes3,.perfumes6{
+        //             border-right:0;
+        //         }
+        //     }
+        //     .perfumes_br{
+        //         float:right;
+        //         height:480px;width: 218px;
+        //         h3{
+        //             font-size: 16px;
+        //             line-height: 34px;height: 34px;
+        //             color: #ff1a3a;
+        //             text-align: center;
+        //             border-bottom: 2px solid #d0d0d0;
+        //         }
+        //         li{
+        //             .toplist{
+        //                 display: block;
+        //                 // display:none;
+        //                 height: 42px;line-height: 42px;
+        //                 border-bottom: 1px solid #e4e4e4;
+        //                 padding: 0 8px;font-size:12px;color:#666;
+        //                 overflow: hidden;text-overflow: ellipsis;
+        //                 .num{
+        //                     display:inline-block;
+        //                     border:2px solid #F00;border-radius:50%;
+        //                     height: 18px;line-height:8px;padding:4px;
+        //                     margin-right:5px;
+        //                     color:#f00;font-weight:bold;
+        //                 }
+
+        //             }
+        //             div{
+        //                 display:none;
+        //                 height:230px;padding:13px 0;
+        //                 dl{
+        //                     text-align:center;
+        //                     a{
+        //                         display:inline-block;
+        //                         color:#7D7D7D;text-decoration:none;
+        //                         font-weight:bold;font-size:13px;
+        //                         overflow: hidden;text-overflow: ellipsis;
+        //                         white-space:nowrap;width: 218px;
+    
+        //                     }
+        //                     dd:last-child{
+        //                         color:#f00;font-weight:bold;font-size:13px;
+        //                         padding-top:10px;
+        //                     }
+        //                 }
+
+        //             }
+        //         &:first-child .toplist{display:none;}
+        //         &:first-child div{display:block;}
+        //         }
+        //     }
+        // }
+        // .perfumes_bg{
+        //     height: 59px;border-bottom:1px solid #ddd;
+        //     span{
+        //     display:block;float:left;
+        //     width: 75px;height: 36px;
+        //     background:url('../images/z_mainSpirit.png')no-repeat 0 -310px ;
+        //     margin:11px 12px;
+        //     }
+        //     a:nth-child(2) span{background-position:-100px -310px;}
+        //     a:nth-child(3) span{background-position:-200px -310px;}
+        //     a:nth-child(4) span{background-position:-300px -310px;}
+        //     a:nth-child(5) span{background-position:-400px -310px;}
+        //     a:nth-child(6) span{background-position:-500px -310px;}
+        //     a:nth-child(7) span{background-position:-600px -310px;}
+        //     a:nth-child(8) span{background-position:-700px -310px;}
+        //     a:nth-child(9) span{background-position:-800px -310px;}
+        //     a:nth-child(10) span{background-position:-900 -310px;}
+        //     a:nth-child(11) span{background-position:-0px -360px;}
+        //     a:nth-child(12) span{background-position:-100 -360px;}
+        // }
+    }
+}
+
+
+/* 男士 */
+.mans{
+    .container{
+        padding:21px 0 0 0 ;
+        .mans_t{
+            border-bottom:2px solid #0094FF;overflow:hidden;
+            h4{
+                height:42px;line-height:42px;
+                font-size:20px;font-weight:bold;float:left;
+                span{
+                    padding-left:10px;color:#0094FF;
+                }
+            }
+            ul{
+                li{
+                    height:40px;line-height:40px;
+                    float:left;font-size:12px;
+                    padding-top:17px;
+                    a{
+                        display:block;color:#666666;
+                        height:12px;line-height:12px;
+                        text-decoration:none;padding:0 15px;
+                        border-right:1px solid #666;
+                        span{
+                            color:#f00;
+                        }
+                    }
+                    &:last-child a{
+                            border-right:0 none;
+                        }
+                }
+            }
+        }
+        .mans_b{
+            padding-top:10px;
+            overflow:hidden;
+            .mans_bl{
+                width: 344px;height: 480px;
+                float:left;
+            }
+            .mans_bc{
+                float:left;width: 615px;height: 480px;
+                .mans1,.mans2,.mans3,.mans4,.mans5,.mans6{
+                        width:205px;height:240px;float:left;
+                        border-right:1px solid #f1f1f1;
+                        border-bottom: 1px solid #f1f1f1;
+                        text-align:center;
+                        dd{
+                            font-family: microsoft yahei;
+                            height: 18px;font-size:16px;line-height:18px;
+                            overflow: hidden;text-overflow: ellipsis;
+                            color:#f00;font-weight:bold;margin-bottom:4px;
+                            a{
+                                color:#666;display:block;
+                                font-size:13px;text-decoration:none;
+                            } 
+                        }
+                }
+                .mans3,.mans6{
+                    border-right:0;
+                }
+            }
+            .mans_br{
+                float:right;
+                height:480px;width: 218px;
+                h3{
+                    font-size: 16px;
+                    line-height: 34px;height: 34px;
+                    color: #ff1a3a;
+                    text-align: center;
+                    border-bottom: 2px solid #d0d0d0;
+                }
+                li{
+                    .toplist{
+                        display: block;
+                        // display:none;
+                        height: 42px;line-height: 42px;
+                        border-bottom: 1px solid #e4e4e4;
+                        padding: 0 8px;font-size:12px;color:#666;
+                        overflow: hidden;text-overflow: ellipsis;
+                        .num{
+                            display:inline-block;
+                            border:2px solid #F00;border-radius:50%;
+                            height: 18px;line-height:8px;padding:4px;
+                            margin-right:5px;
+                            color:#f00;font-weight:bold;
+                        }
+
+                    }
+                    div{
+                        display:none;
+                        height:230px;padding:13px 0;
+                        dl{
+                            text-align:center;
+                            a{
+                                display:inline-block;
+                                color:#7D7D7D;text-decoration:none;
+                                font-weight:bold;font-size:13px;
+                                overflow: hidden;text-overflow: ellipsis;
+                                white-space:nowrap;width: 218px;
+    
+                            }
+                            dd:last-child{
+                                color:#f00;font-weight:bold;font-size:13px;
+                                padding-top:10px;
+                            }
+                        }
+
+                    }
+                &:first-child .toplist{display:none;}
+                &:first-child div{display:block;}
+                }
+            }
+        }
+        .mans_bg{
+            height: 59px;border-bottom:1px solid #ddd;
+            span{
+            display:block;float:left;
+            width: 75px;height: 36px;
+            background:url('../images/z_mainSpirit.png')no-repeat 0 -310px ;
+            margin:11px 12px;
+            }
+            a:nth-child(2) span{background-position:-100px -310px;}
+            a:nth-child(3) span{background-position:-200px -310px;}
+            a:nth-child(4) span{background-position:-300px -310px;}
+            a:nth-child(5) span{background-position:-400px -310px;}
+            a:nth-child(6) span{background-position:-500px -310px;}
+            a:nth-child(7) span{background-position:-600px -310px;}
+            a:nth-child(8) span{background-position:-700px -310px;}
+            a:nth-child(9) span{background-position:-800px -310px;}
+            a:nth-child(10) span{background-position:-900 -310px;}
+            a:nth-child(11) span{background-position:-0px -360px;}
+            a:nth-child(12) span{background-position:-100 -360px;}
+        }
+    }
+}
+
 
 /* 美体美发 */
 .body_hair{
@@ -711,66 +989,29 @@
             padding-top:10px;
             overflow:hidden;
             .bHair_bl{
-                width: 268px;height: 480px;
+                width: 344px;height: 480px;
                 float:left;
             }
             .bHair_bc{
-                float:left;width: 690px;height: 480px;
-                .bHair1,.bHair2{
-                        width: 345px;height: 181px;float:left;
+                float:left;width: 615px;height: 480px;
+                .bHair1,.bHair2,.bHair3,.bHair4,.bHair5,.bHair6{
+                        width:205px;height:240px;float:left;
                         border-right:1px solid #f1f1f1;
                         border-bottom: 1px solid #f1f1f1;
-                        dt{
-                            float:left;
-                        }
+                        text-align:center;
                         dd{
-                            &:nth-child(2){
-                                padding-top:28px;
-                                margin-bottom:10px;
-                                a{
-                                    color:#666;
-                                }
-                            }
-                            &:nth-child(3){
-                                height:32px;
-                                margin-bottom:30px;
-                                a{
-                                    color:#000;
-                                }
-                            }
-                        }
-                }
-                .bHair2{
-                    border-right:0;
-                }
-                .bHair3,.bHair4,.bHair5{
-                    float:left;width: 230px;height: 299px;
-                    border-right:1px solid #f1f1f1;
-                    border-bottom: 1px solid #f1f1f1;
-                    padding-left:25px;
-                        dt{
-                            padding-top:15px;
-                        }
-                        dd{  
+                            font-family: microsoft yahei;
+                            height: 18px;font-size:16px;line-height:18px;
+                            overflow: hidden;text-overflow: ellipsis;
+                            color:#f00;font-weight:bold;margin-bottom:4px;
                             a{
-                                box-sizing:content-box;
-                                display:block;
-                                height:13px;line-height:13px;font-size:13px;
-                                text-decoration:none;
-                                font-family: microsoft yahei;
-                            }
-                            &:nth-child(1) a{
-                                color:#666666;
-                                padding-top:20px;margin-bottom:10px;
-                            }
-                            &:nth-child(2) a{
-                                color:#000;margin-bottom:20px;
-                            }
-                        }  
-
+                                color:#666;display:block;
+                                font-size:13px;text-decoration:none;
+                            } 
+                        }
                 }
-                .bHair5{
-                    border:0;
+                .bHair3,.bHair6{
+                    border-right:0;
                 }
             }
             .bHair_br{
@@ -830,23 +1071,20 @@
             span{
             display:block;float:left;
             width: 75px;height: 36px;
-            background:url('../images/z_mainSpirit.png')no-repeat 0 -110px ;
+            background:url('../images/z_mainSpirit.png')no-repeat 0 -210px ;
             margin:11px 12px;
             }
-            a:nth-child(2) span{background-position:-100px -110px;}
-            a:nth-child(3) span{background-position:-200px -110px;}
-            a:nth-child(4) span{background-position:-300px -110px;}
-            a:nth-child(5) span{background-position:-400px -110px;}
-            a:nth-child(6) span{background-position:-500px -110px;}
-            a:nth-child(7) span{background-position:-600px -110px;}
-            a:nth-child(8) span{background-position:-700px -110px;}
-            a:nth-child(9) span{background-position:-800px -110px;}
-            a:nth-child(10) span{background-position:-900 -110px;}
-            a:nth-child(11) span{background-position:-0px -160px;}
-            a:nth-child(12) span{background-position:-100 -160px;}
-           
-
-
+            a:nth-child(2) span{background-position:-100px -210px;}
+            a:nth-child(3) span{background-position:-200px -210px;}
+            a:nth-child(4) span{background-position:-300px -210px;}
+            a:nth-child(5) span{background-position:-400px -210px;}
+            a:nth-child(6) span{background-position:-500px -210px;}
+            a:nth-child(7) span{background-position:-600px -210px;}
+            a:nth-child(8) span{background-position:-700px -210px;}
+            a:nth-child(9) span{background-position:-800px -210px;}
+            a:nth-child(10) span{background-position:-900 -210px;}
+            a:nth-child(11) span{background-position:-0px -260px;}
+            a:nth-child(12) span{background-position:-100 -260px;}
         }
     }
 }
