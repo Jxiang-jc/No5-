@@ -345,7 +345,123 @@
                 width: 268px;height: 480px;
                 float:left;
             }
-        }
+            .skin_bc{
+                float:left;width: 690px;height: 480px;
+                .hufu1,.hufu2{
+                        width: 345px;height: 181px;float:left;
+                        border-right:1px solid #f1f1f1;
+                        border-bottom: 1px solid #f1f1f1;
+                        dt{
+                            float:left;
+                        }
+                        dd{
+                            &:nth-child(2){
+                                padding-top:28px;
+                                margin-bottom:10px;
+                                a{
+                                    color:#666;
+                                }
+                            }
+                            &:nth-child(3){
+                                height:32px;
+                                margin-bottom:30px;
+                                a{
+                                    color:#000;
+                                }
+                            }
+                        }
+                }
+                .hufu2{
+                    border-right:0;
+                }
+                .hufu3,.hufu4,.hufu5{
+                    float:left;width: 230px;height: 299px;
+                    border-right:1px solid #f1f1f1;
+                    border-bottom: 1px solid #f1f1f1;
+                    padding-left:25px;
+                        dt{
+                            padding-top:15px;
+                        }
+                        dd{  
+                            a{
+                                box-sizing:content-box;
+                                display:block;
+                                height:13px;line-height:13px;font-size:13px;
+                                text-decoration:none;
+                                font-family: microsoft yahei;
+                            }
+                            &:nth-child(1) a{
+                                color:#666666;
+                                padding-top:20px;margin-bottom:10px;
+                            }
+                            &:nth-child(2) a{
+                                color:#000;margin-bottom:20px;
+                            }
+                        }  
 
+                }
+                .hufu5{
+                    border:0;
+                }
+            }
+            .skin_br{
+                float:right;
+                height:480px;width: 218px;
+                h3{
+                    font-size: 16px;
+                    line-height: 34px;height: 34px;
+                    color: #ff1a3a;
+                    text-align: center;
+                    border-bottom: 2px solid #d0d0d0;
+                }
+                li{
+                    .toplist{
+                        display: block;
+                        // display:none;
+                        height: 42px;line-height: 42px;
+                        border-bottom: 1px solid #e4e4e4;
+                        padding: 0 8px;font-size:12px;color:#666;
+                        overflow: hidden;text-overflow: ellipsis;
+                        .num{
+                            display:inline-block;
+                            border:2px solid #F00;border-radius:50%;
+                            height: 18px;line-height:8px;padding:4px;
+                            margin-right:5px;
+                            color:#f00;font-weight:bold;
+                        }
+
+                    }
+                    div{
+                        display:none;
+                        height:230px;padding:13px 0;
+                        dl{
+                            text-align:center;
+                            a{
+                                color:#7D7D7D;text-decoration:none;
+                                font-weight:bold;font-size:13px;
+                            }
+                            dd:last-child{
+                                color:#f00;font-weight:bold;font-size:13px;
+                                padding-top:10px;
+                            }
+                        }
+
+                    }
+                &:first-child .toplist{display:none;}
+                &:first-child div{display:block;}
+                }
+            }
+        }
     }
 }
+
+/* 品牌活动公共样式 */
+.skin .container .skin_b .good-price{
+   font-size:18px;color:#f00;height:22px;line-height:22px;
+    span:first-child{
+        font-size:24px;height:22px;line-height:18px;font-weight:bold;
+    }
+    .zhekou{
+        font-size:13px;
+    }
+} 

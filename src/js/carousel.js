@@ -20,7 +20,7 @@
                 
                 i=0
             }
-            console.log(res[i])
+            // console.log(res[i])
 
         },3500);
 
@@ -67,6 +67,30 @@
      
 
         
+
+    })
+})();
+
+// 手风琴
+;(function(){
+    jQuery(function($){
+        //获取当前span
+        var $span = $('.toplist');
+        var $z_hf = $('.z_hf');
+
+
+        $span.on('mouseover',function(){
+
+            var $res = $(this).next('.z_hf').css('display','block');
+
+            $res.closest('.hover').siblings('.hover').find('.z_hf').css('display','none')
+
+            $(this).css('display','none').closest('.hover').siblings('.hover').find('.toplist').css('display','block');;
+
+        
+        });
+            
+
 
     })
 })();
