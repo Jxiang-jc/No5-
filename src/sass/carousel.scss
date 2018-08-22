@@ -56,14 +56,14 @@
             background: url('../images/z_spirit.gif') no-repeat -409px -30px;
             margin-top: 6px;
             margin-left:230px;
-            margin:6px 6px 0 230px;
+            margin:6px 6px 0 231px;
         }
         a{
             color:#666;font-size:12px;
 
         }
     }
-    .img-box1,{
+    .img-box1{
         position:absolute;left:240px;width: 969px;
         img{
             margin:0 2px;
@@ -85,7 +85,112 @@
             span:last-child{
                 color:#C4C4C4;
             }
+        }
+        >div{
+            height:467px;border-bottom:1px solid #ddd;
+            .goodsBox{
+                display:block;float:left;
+                position: relative;
+                width: 287px;height: 404px;
+                border: 1px solid #e4e4e4;
+                margin-right: 12px;text-decoration:none;
+                margin-top:10px;
 
+                .times{
+                    width: 285px;height: 38px;color: #999;
+                    line-height: 38px;
+                    background: #f8f7f5 url('../images/z_limitBuy_5.jpg') no-repeat 33px 5px;
+                    padding-left: 73px;
+                }
+                >img{
+                    margin: 13px;
+                }
+                .goodsContent{
+                    padding: 0 13px;
+                    font-size:12px;font-weight:bold;color:#666666;
+                    overflow: hidden;text-overflow: ellipsis;
+                    height:32px;width: 260px;
+                }
+                .price{
+                    position: absolute;top: 362px;left: -1px;
+                    background: url('../images/z_limitBuy_6.jpg') no-repeat;
+                    width: 287px;height: 55px;color: #fff;line-height:55px;
+                    font-size: 18px;font-weight: bold;
+                    font-family: microsoft yahei;
+                    padding-left: 20px;
+                    >span{
+                        font-size:36px;font-family:Arial;
+                    }
+                }
+                .purchased{
+                    position: absolute;top: 424px;right: 10px;
+                    color:#666;
+                    strong{
+                        color:#f00;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* tab上 */
+.sale-box_t{
+    margin-top:20px;
+    .container{
+        padding:0;border-bottom:2px solid #D0D0D0;
+        background:linear-gradient(#fff, #f5f1f1);
+        >ul{
+            overflow:hidden;height:42px;
+            li{
+                float:left;
+                height:40px;line-height:40px;padding:0 82px;
+                font-weight:bold;font-size:18px;
+            }
+        }
+        .salebox{
+            .weekSale{
+                width: 100%;height: 436px;padding-top:20px;
+            }
+        }
+    }
+}
+/* tab下 */
+.sale-box_b{
+    padding-top:20px;
+    .container{
+        padding:0;padding-bottom:23px;border-bottom:1px solid #f1f1f1;
+        .salebox-1{
+            width: 240px;border-right:1px solid #f1f1f1;overflow:hidden;
+            dd{
+                padding-left:12px;
+                a{
+                    color:#666;font-size:13px;
+                    text-decoration:none;
+                }
+            }
+            .good-exce{
+                margin-top:10px;
+                >a{
+                    display:block;
+                    color:#f00;margin-bottom:40px;
+                }
+            }
+            .good-price{
+                font-size:18px;color:#f00;height:22px;line-height:22px;
+                span:first-child{
+                    font-size:24px;height:22px;line-height:18px;font-weight:bold;
+                }
+                .zhekou{
+                    font-size:13px;
+                }
+            }
+        }
+        .salebox-2{
+            float:left;width: 480px;
+            .salebox-2l{width: 240px;height: 210px;}
+            .salebox-2r{width: 240px;height: 210px;}
+            .salebox-2b{width: 480px}
         }
     }
 }

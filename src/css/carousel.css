@@ -28,7 +28,7 @@
 
 .imgbox .container .notice { height: 33px; line-height: 33px; }
 
-.imgbox .container .notice span { display: block; float: left; width: 19px; height: 19px; background: url("../images/z_spirit.gif") no-repeat -409px -30px; margin-top: 6px; margin-left: 230px; margin: 6px 6px 0 230px; }
+.imgbox .container .notice span { display: block; float: left; width: 19px; height: 19px; background: url("../images/z_spirit.gif") no-repeat -409px -30px; margin-top: 6px; margin-left: 230px; margin: 6px 6px 0 231px; }
 
 .imgbox .container .notice a { color: #666; font-size: 12px; }
 
@@ -44,3 +44,61 @@
 .z_limit .container > p span:first-child { color: #f00; padding-right: 20px; }
 
 .z_limit .container > p span:last-child { color: #C4C4C4; }
+
+.z_limit .container > div { height: 467px; border-bottom: 1px solid #ddd; }
+
+.z_limit .container > div .goodsBox { display: block; float: left; position: relative; width: 287px; height: 404px; border: 1px solid #e4e4e4; margin-right: 12px; text-decoration: none; margin-top: 10px; }
+
+.z_limit .container > div .goodsBox .times { width: 285px; height: 38px; color: #999; line-height: 38px; background: #f8f7f5 url("../images/z_limitBuy_5.jpg") no-repeat 33px 5px; padding-left: 73px; }
+
+.z_limit .container > div .goodsBox > img { margin: 13px; }
+
+.z_limit .container > div .goodsBox .goodsContent { padding: 0 13px; font-size: 12px; font-weight: bold; color: #666666; overflow: hidden; text-overflow: ellipsis; height: 32px; width: 260px; }
+
+.z_limit .container > div .goodsBox .price { position: absolute; top: 362px; left: -1px; background: url("../images/z_limitBuy_6.jpg") no-repeat; width: 287px; height: 55px; color: #fff; line-height: 55px; font-size: 18px; font-weight: bold; font-family: microsoft yahei; padding-left: 20px; }
+
+.z_limit .container > div .goodsBox .price > span { font-size: 36px; font-family: Arial; }
+
+.z_limit .container > div .goodsBox .purchased { position: absolute; top: 424px; right: 10px; color: #666; }
+
+.z_limit .container > div .goodsBox .purchased strong { color: #f00; }
+
+/* tab上 */
+.sale-box_t { margin-top: 20px; }
+
+.sale-box_t .container { padding: 0; border-bottom: 2px solid #D0D0D0; background: linear-gradient(#fff, #f5f1f1); }
+
+.sale-box_t .container > ul { overflow: hidden; height: 42px; }
+
+.sale-box_t .container > ul li { float: left; height: 40px; line-height: 40px; padding: 0 82px; font-weight: bold; font-size: 18px; }
+
+.sale-box_t .container .salebox .weekSale { width: 100%; height: 436px; padding-top: 20px; }
+
+/* tab下 */
+.sale-box_b { padding-top: 20px; }
+
+.sale-box_b .container { padding: 0; padding-bottom: 23px; border-bottom: 1px solid #f1f1f1; }
+
+.sale-box_b .container .salebox-1 { width: 240px; border-right: 1px solid #f1f1f1; overflow: hidden; }
+
+.sale-box_b .container .salebox-1 dd { padding-left: 12px; }
+
+.sale-box_b .container .salebox-1 dd a { color: #666; font-size: 13px; text-decoration: none; }
+
+.sale-box_b .container .salebox-1 .good-exce { margin-top: 10px; }
+
+.sale-box_b .container .salebox-1 .good-exce > a { display: block; color: #f00; margin-bottom: 40px; }
+
+.sale-box_b .container .salebox-1 .good-price { font-size: 18px; color: #f00; height: 22px; line-height: 22px; }
+
+.sale-box_b .container .salebox-1 .good-price span:first-child { font-size: 24px; height: 22px; line-height: 18px; font-weight: bold; }
+
+.sale-box_b .container .salebox-1 .good-price .zhekou { font-size: 13px; }
+
+.sale-box_b .container .salebox-2 { float: left; width: 480px; }
+
+.sale-box_b .container .salebox-2 .salebox-2l { width: 240px; height: 210px; }
+
+.sale-box_b .container .salebox-2 .salebox-2r { width: 240px; height: 210px; }
+
+.sale-box_b .container .salebox-2 .salebox-2b { width: 480px; }
