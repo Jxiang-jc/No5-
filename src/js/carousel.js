@@ -24,11 +24,7 @@
 
         },3500);
 
-        (function(){
-            for(let j = 0;j<$lis.length;j++){
-                
-            }
-        })()
+
 
 
 
