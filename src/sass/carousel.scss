@@ -176,15 +176,6 @@
                     color:#f00;margin-bottom:40px;
                 }
             }
-            .good-price{
-                font-size:18px;color:#f00;height:22px;line-height:22px;
-                span:first-child{
-                    font-size:24px;height:22px;line-height:18px;font-weight:bold;
-                }
-                .zhekou{
-                    font-size:13px;
-                }
-            }
         }
         .salebox-2{
             float:left;width: 480px;height:398px;
@@ -199,15 +190,7 @@
                             text-decoration:none;
                         }
                     }
-                    .good-price{
-                        font-size:18px;color:#f00;height:22px;line-height:22px;
-                        span:first-child{
-                            font-size:24px;height:22px;line-height:18px;font-weight:bold;
-                        }
-                        .zhekou{
-                            font-size:13px;
-                        }
-                    }
+
                 }
             }
             .salebox-2b{
@@ -253,16 +236,116 @@
                     padding-right:13px;
                     a{color:#f00;}
                 }
-                .good-price{
-                    font-size:18px;color:#f00;height:22px;line-height:22px;
-                    span:first-child{
-                        font-size:24px;height:22px;line-height:18px;font-weight:bold;
+
+            }
+        }
+        .salebox-4{
+            float:right;width: 239px;height: 411px;
+            
+            dl{
+                padding-left:13px;
+                dt{text-align:center;margin-left:-13px;}
+                dd{
+                    a{
+                        color:#666;font-size:14px;
+                        text-decoration:none;
                     }
-                    .zhekou{
-                        font-size:13px;
-                    }
+                }
+
+                &:first-child{
+                    padding-bottom:10px;
+                    border-bottom:1px solid #ddd;
                 }
             }
         }
+    }
+}
+/* weekSale的公共样式 */
+.sale-box_b .container .weekSale .good-price{
+   font-size:18px;color:#f00;height:22px;line-height:22px;
+    span:first-child{
+        font-size:24px;height:22px;line-height:18px;font-weight:bold;
+    }
+    .zhekou{
+        font-size:13px;
+    }
+}
+
+/* 品牌活动 */
+.brand{
+    .container{
+        padding:20px 0 0 0 ;
+        .brand_t{
+            border-bottom:2px solid #D0D0D0;overflow:hidden;
+            h4{
+                height:40px;line-height:40px;
+                font-size:18px;font-weight:bold;float:left;
+            }
+            ul{
+                li{
+                    height:40px;line-height:40px;
+                    float:left;font-size:12px;
+                    padding-top:17px;
+                    a{
+                        display:block;color:#666666;
+                        height:12px;line-height:12px;
+                        text-decoration:none;padding:0 15px;
+                        border-right:1px solid #666;
+                    }
+                    &:last-child a{
+                            border-right:0 none;
+                        }
+                }
+            }
+        }
+        .brand_b{
+            padding-top:10px;
+        }
+    }
+}
+
+/* 护肤 */
+/* 品牌活动 */
+.skin{
+    .container{
+        padding:21px 0 0 0 ;
+        .skin_t{
+            border-bottom:2px solid #0094FF;overflow:hidden;
+            h4{
+                height:42px;line-height:42px;
+                font-size:20px;font-weight:bold;float:left;
+                span{
+                    padding-left:10px;color:#0094FF;
+                }
+            }
+            ul{
+                li{
+                    height:40px;line-height:40px;
+                    float:left;font-size:12px;
+                    padding-top:17px;
+                    a{
+                        display:block;color:#666666;
+                        height:12px;line-height:12px;
+                        text-decoration:none;padding:0 15px;
+                        border-right:1px solid #666;
+                        span{
+                            color:#f00;
+                        }
+                    }
+                    &:last-child a{
+                            border-right:0 none;
+                        }
+                }
+            }
+        }
+        .skin_b{
+            padding-top:10px;
+            overflow:hidden;
+            .skin_bl{
+                width: 268px;height: 480px;
+                float:left;
+            }
+        }
+
     }
 }
