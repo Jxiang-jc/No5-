@@ -229,9 +229,137 @@
 
 .skin .container .skin_b .skin_br li:first-child div { display: block; }
 
+.skin .container .skin_bg { height: 59px; border-bottom: 1px solid #ddd; }
+
+.skin .container .skin_bg span { display: block; float: left; width: 75px; height: 36px; background: url("../images/z_skinSpirit.png") no-repeat 0 0; margin: 11px 12px; }
+
+.skin .container .skin_bg a:nth-child(2) span { background-position: -100px 0; }
+
+.skin .container .skin_bg a:nth-child(3) span { background-position: -190px 0; }
+
+.skin .container .skin_bg a:nth-child(4) span { background-position: -280px 0; }
+
+.skin .container .skin_bg a:nth-child(5) span { background-position: -365px 0; }
+
+.skin .container .skin_bg a:nth-child(6) span { background-position: -450px 0; }
+
+.skin .container .skin_bg a:nth-child(7) span { background-position: -535px 0; }
+
+.skin .container .skin_bg a:nth-child(8) span { background-position: -620px 0; }
+
+.skin .container .skin_bg a:nth-child(9) span { background-position: -705px 0; }
+
+.skin .container .skin_bg a:nth-child(10) span { background-position: -790px 0; }
+
+.skin .container .skin_bg a:nth-child(11) span { background-position: -875px 0; }
+
+.skin .container .skin_bg a:nth-child(12) span { background-position: 0 -60px; }
+
 /* 品牌活动公共样式 */
 .skin .container .skin_b .good-price { font-size: 18px; color: #f00; height: 22px; line-height: 22px; }
 
 .skin .container .skin_b .good-price span:first-child { font-size: 24px; height: 22px; line-height: 18px; font-weight: bold; }
 
 .skin .container .skin_b .good-price .zhekou { font-size: 13px; }
+
+/* 彩妆 */
+.makeUp .container { padding: 21px 0 0 0; }
+
+.makeUp .container .makeUp_t { border-bottom: 2px solid #0094FF; overflow: hidden; }
+
+.makeUp .container .makeUp_t h4 { height: 42px; line-height: 42px; font-size: 20px; font-weight: bold; float: left; }
+
+.makeUp .container .makeUp_t h4 span { padding-left: 10px; color: #0094FF; }
+
+.makeUp .container .makeUp_t ul li { height: 40px; line-height: 40px; float: left; font-size: 12px; padding-top: 17px; }
+
+.makeUp .container .makeUp_t ul li a { display: block; color: #666666; height: 12px; line-height: 12px; text-decoration: none; padding: 0 15px; border-right: 1px solid #666; }
+
+.makeUp .container .makeUp_t ul li a span { color: #f00; }
+
+.makeUp .container .makeUp_t ul li:last-child a { border-right: 0 none; }
+
+.makeUp .container .makeUp_b { padding-top: 10px; overflow: hidden; }
+
+.makeUp .container .makeUp_b .makeUp_bl { width: 268px; height: 480px; float: left; }
+
+.makeUp .container .makeUp_b .makeUp_bc { float: left; width: 690px; height: 480px; }
+
+.makeUp .container .makeUp_b .makeUp_bc .makeUp1, .makeUp .container .makeUp_b .makeUp_bc .makeUp2 { width: 345px; height: 181px; float: left; border-right: 1px solid #f1f1f1; border-bottom: 1px solid #f1f1f1; }
+
+.makeUp .container .makeUp_b .makeUp_bc .makeUp1 dt, .makeUp .container .makeUp_b .makeUp_bc .makeUp2 dt { float: left; }
+
+.makeUp .container .makeUp_b .makeUp_bc .makeUp1 dd:nth-child(2), .makeUp .container .makeUp_b .makeUp_bc .makeUp2 dd:nth-child(2) { padding-top: 28px; margin-bottom: 10px; }
+
+.makeUp .container .makeUp_b .makeUp_bc .makeUp1 dd:nth-child(2) a, .makeUp .container .makeUp_b .makeUp_bc .makeUp2 dd:nth-child(2) a { color: #666; }
+
+.makeUp .container .makeUp_b .makeUp_bc .makeUp1 dd:nth-child(3), .makeUp .container .makeUp_b .makeUp_bc .makeUp2 dd:nth-child(3) { height: 32px; margin-bottom: 30px; }
+
+.makeUp .container .makeUp_b .makeUp_bc .makeUp1 dd:nth-child(3) a, .makeUp .container .makeUp_b .makeUp_bc .makeUp2 dd:nth-child(3) a { color: #000; }
+
+.makeUp .container .makeUp_b .makeUp_bc .makeUp2 { border-right: 0; }
+
+.makeUp .container .makeUp_b .makeUp_bc .makeUp3, .makeUp .container .makeUp_b .makeUp_bc .makeUp4, .makeUp .container .makeUp_b .makeUp_bc .makeUp5 { float: left; width: 230px; height: 299px; border-right: 1px solid #f1f1f1; border-bottom: 1px solid #f1f1f1; padding-left: 25px; }
+
+.makeUp .container .makeUp_b .makeUp_bc .makeUp3 dt, .makeUp .container .makeUp_b .makeUp_bc .makeUp4 dt, .makeUp .container .makeUp_b .makeUp_bc .makeUp5 dt { padding-top: 15px; }
+
+.makeUp .container .makeUp_b .makeUp_bc .makeUp3 dd a, .makeUp .container .makeUp_b .makeUp_bc .makeUp4 dd a, .makeUp .container .makeUp_b .makeUp_bc .makeUp5 dd a { box-sizing: content-box; display: block; height: 13px; line-height: 13px; font-size: 13px; text-decoration: none; font-family: microsoft yahei; }
+
+.makeUp .container .makeUp_b .makeUp_bc .makeUp3 dd:nth-child(1) a, .makeUp .container .makeUp_b .makeUp_bc .makeUp4 dd:nth-child(1) a, .makeUp .container .makeUp_b .makeUp_bc .makeUp5 dd:nth-child(1) a { color: #666666; padding-top: 20px; margin-bottom: 10px; }
+
+.makeUp .container .makeUp_b .makeUp_bc .makeUp3 dd:nth-child(2) a, .makeUp .container .makeUp_b .makeUp_bc .makeUp4 dd:nth-child(2) a, .makeUp .container .makeUp_b .makeUp_bc .makeUp5 dd:nth-child(2) a { color: #000; margin-bottom: 20px; }
+
+.makeUp .container .makeUp_b .makeUp_bc .makeUp5 { border: 0; }
+
+.makeUp .container .makeUp_b .makeUp_br { float: right; height: 480px; width: 218px; }
+
+.makeUp .container .makeUp_b .makeUp_br h3 { font-size: 16px; line-height: 34px; height: 34px; color: #ff1a3a; text-align: center; border-bottom: 2px solid #d0d0d0; }
+
+.makeUp .container .makeUp_b .makeUp_br li .toplist { display: block; height: 42px; line-height: 42px; border-bottom: 1px solid #e4e4e4; padding: 0 8px; font-size: 12px; color: #666; overflow: hidden; text-overflow: ellipsis; }
+
+.makeUp .container .makeUp_b .makeUp_br li .toplist .num { display: inline-block; border: 2px solid #F00; border-radius: 50%; height: 18px; line-height: 8px; padding: 4px; margin-right: 5px; color: #f00; font-weight: bold; }
+
+.makeUp .container .makeUp_b .makeUp_br li div { display: none; height: 230px; padding: 13px 0; }
+
+.makeUp .container .makeUp_b .makeUp_br li div dl { text-align: center; }
+
+.makeUp .container .makeUp_b .makeUp_br li div dl a { display: inline-block; color: #7D7D7D; text-decoration: none; font-weight: bold; font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; width: 218px; }
+
+.makeUp .container .makeUp_b .makeUp_br li div dl dd:last-child { color: #f00; font-weight: bold; font-size: 13px; padding-top: 10px; }
+
+.makeUp .container .makeUp_b .makeUp_br li:first-child .toplist { display: none; }
+
+.makeUp .container .makeUp_b .makeUp_br li:first-child div { display: block; }
+
+.makeUp .container .makeUp_bg { height: 59px; border-bottom: 1px solid #ddd; }
+
+.makeUp .container .makeUp_bg span { display: block; float: left; width: 75px; height: 36px; background: url("../images/z_mainSpirit.png") no-repeat 0 -110px; margin: 11px 12px; }
+
+.makeUp .container .makeUp_bg a:nth-child(2) span { background-position: -100px -110px; }
+
+.makeUp .container .makeUp_bg a:nth-child(3) span { background-position: -200px -110px; }
+
+.makeUp .container .makeUp_bg a:nth-child(4) span { background-position: -300px -110px; }
+
+.makeUp .container .makeUp_bg a:nth-child(5) span { background-position: -400px -110px; }
+
+.makeUp .container .makeUp_bg a:nth-child(6) span { background-position: -500px -110px; }
+
+.makeUp .container .makeUp_bg a:nth-child(7) span { background-position: -600px -110px; }
+
+.makeUp .container .makeUp_bg a:nth-child(8) span { background-position: -700px -110px; }
+
+.makeUp .container .makeUp_bg a:nth-child(9) span { background-position: -800px -110px; }
+
+.makeUp .container .makeUp_bg a:nth-child(10) span { background-position: -900 -110px; }
+
+.makeUp .container .makeUp_bg a:nth-child(11) span { background-position: -0px -160px; }
+
+.makeUp .container .makeUp_bg a:nth-child(12) span { background-position: -100 -160px; }
+
+/* 彩妆公共样式 */
+.makeUp .container .makeUp_b .good-price { font-size: 18px; color: #f00; height: 22px; line-height: 22px; }
+
+.makeUp .container .makeUp_b .good-price span:first-child { font-size: 24px; height: 22px; line-height: 18px; font-weight: bold; }
+
+.makeUp .container .makeUp_b .good-price .zhekou { font-size: 13px; }
