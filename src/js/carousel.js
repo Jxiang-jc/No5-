@@ -24,50 +24,6 @@
 
         },3500);
 
-
-
-
-
-        // $lis.each(function(idx,item){
-        //     console.log(idx,item)
-            
-        //     if($lis.index(item) == 0 &&  $lis.eq(idx).hasClass('active')){
-        //         $banner.css('background','#F6EDE4');
-        //     }if($lis.index(item) == 1 &&  $lis.eq(idx).hasClass('active')){
-        //         $banner.css('background','red');
-
-        //     }
-
-            // console.log($lis.index(item))
-            // if($lis.index(item) == 0){
-            //     $banner.css('background','#F6EDE4');
-            // }
-            // if($lis.index(item) == 1){
-            //     $banner.css('background','red');
-            // }
-        // })
-
-        // idx.eq(1).closest('.banner').css('background','red');
-        // idx.eq(2).closest('.banner').css('background','green');
-
-
-        // for(let i = 0;i<$lis.length;i++){
-        //     if($lis.eq(i).html() == 1 && $lis.eq(i).hasClass('active')){
-        //         console.log($lis.eq(1).hasClass('active'))
-        //         console.log(i)
-        //         $banner.css('background','#F6EDE4');
-        //     }
-        //     else if($lis.eq(i).html() == 2 && $lis.eq(i).hasClass('active')){
-        //         console.log($lis.eq(1).hasClass('active'))
-        //         console.log(i)
-        //         $banner.css('background','red');
-        //     }
-        // };
-
-     
-
-        
-
     })
 })();
 
