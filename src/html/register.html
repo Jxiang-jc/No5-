@@ -146,7 +146,7 @@
                         <label><input type="checkbox" id="btnAgree" checked="checked">我已阅读并同意<a href="#">《NO5用户注册协议》</a></label>
                     </div>          
                     <div class="form-group last">
-                        <button class="btn btn-primary btnReg">注册</button>
+                        <button class="btn btn-primary btnReg2">注册</button>
                     </div>
                 </div>
             </div>
@@ -199,7 +199,7 @@
                 $showCode2.on('click',function(){
                     $showCode2.html(createCode);
                     $showCode2[0].style.color = randomColor();
-                    
+
                 })   
                 
                 
@@ -224,11 +224,12 @@
             var $btnReg1 = $('.btnReg1');
             var $btnReg2 = $('.btnReg2');
             var $yzm1 = $('#yzm1');
+            var $yzm2 = $('#yzm2');
 
+                //登录按钮
                 $btnReg1.click(function(){
                     //获取输入的值
                     var $_yzm1 = $yzm1.val();
-                    console.log($_yzm1)
                     
                     if($('#username1').val() === ''){
                         $('#username1').siblings('.help-block').html('请输入用户名');
@@ -238,6 +239,23 @@
                          return false;
                     }else if($_yzm1 != $showCode1.html()){
                         $yzm1.siblings('.help-block').html('验证码输入错误!');
+                        return false;
+                    }
+                })
+                //注册按钮
+                $btnReg2.click(function(){
+                    //获取输入的值
+                    var $_yzm2 = $yzm2.val();
+                    console.log($_yzm2,$showCode2.html(),$yzm2.siblings('.help-block'))
+                    
+                    if($('#username2').val() === ''){
+                        $('#username2').siblings('.help-block').html('请输入用户名');
+                        return false;
+                    }else if($('#password2-1').val() === ''){
+                         $('#password2-1').siblings('.help-block').html('密码不能为空');
+                         return false;
+                    }else if($_yzm2 != $showCode2.html()){
+                        $yzm2.siblings('.help-block').html('验证码输入错误!');
                         return false;
                     }
                 })

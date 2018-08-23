@@ -38,19 +38,19 @@
 
 .container .reg_r .form { width: 455px; padding-left: 50px; }
 
-.container .reg_r .form .form-group { margin-bottom: 33px; }
+.container .reg_r .form .form-group { margin-bottom: 33px; position: relative; }
 
 .container .reg_r .form .form-group > label { font-weight: normal; font-size: 12px; display: inline-block; width: 60px; }
 
 .container .reg_r .form .form-group > input { width: 206px; border: 1px solid #7F9DB9; }
+
+.container .reg_r .form .form-group .help-block { position: absolute; top: 25px; left: 65px; color: #f00; font-size: 12px; }
 
 .container .reg_r .form .form-group #yzm2 { width: 56px; }
 
 .container .reg_r .form .form-group #yzm2 + span { display: inline-block; margin-left: 2px; height: 13px; line-height: 13px; background-color: #ccc; padding: 0 4px; font-size: 14px; font-weight: bold; }
 
 .container .reg_r .form .form-group #yzm2 + span:hover { cursor: pointer; }
-
-.container .reg_r .form .form-group .help-block { padding: 0; margin: 0; }
 
 .container .reg_r .form .last { text-align: center; padding-right: 50px; }
 

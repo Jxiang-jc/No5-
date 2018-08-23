@@ -71,13 +71,14 @@
         .form{
             width: 455px;padding-left:50px;
             .form-group{
-                margin-bottom:33px;
+                margin-bottom:33px;position:relative;
                 >label{
                     font-weight:normal;font-size:12px;display:inline-block;width: 60px;
                 }
                 >input{
                     width: 206px;border:1px solid #7F9DB9;
                 }
+                .help-block{position:absolute;top:25px;left:65px;color:#f00;font-size:12px;}
                 #yzm2{
                     width: 56px;
                     &+span{
@@ -86,7 +87,7 @@
                         &:hover{cursor:pointer;}
                     }               
                 }
-                .help-block{padding: 0;margin: 0;}
+
             }
             .last{
                 text-align:center;padding-right:50px;
