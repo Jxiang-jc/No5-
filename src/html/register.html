@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>登录NO5时尚广场</title>
     <link rel="stylesheet" href="../lib/bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/register.css" />
 <!--     <script type="text/javascript">
         document.addEventListener('DOMContentLoaded',()=>{
             let username = document.querySelector('#username');
@@ -74,46 +75,174 @@
             }
         // });
     </script> -->
+
+
 </head>
 <body>
-<!--     <div class="container">
-        <h1>用户注册</h1>
-        <div class="form">
-            <div class="form-group">
-                <label for="username">用户名：</label>
-                <input type="text" id="username" name="username" class="form-control">
-                <span class="help-block"></span>
-            </div>
-            <div class="form-group">
-                <label for="password">密码：</label>
-                <input type="password" id="password" name="password" class="form-control">
-            </div>
-            <div class="form-group">
-                <button class="btn btn-success btnReg">注册</button>
-            </div>
-        </div>
-    </div> -->
     <section class="register">
         <div class="container">
             <div class="reg_l">
+                <div class="form_bg"></div>
                 <div class="form">
                     <div class="form-group">
-                        <label for="username">用户名：</label>
-                        <input type="text" id="username" name="username" class="form-control">
+                        <label for="username1">用户名：</label>
+                        <input type="text" id="username1" name="username1" >
                         <span class="help-block"></span>
                     </div>
                     <div class="form-group">
-                        <label for="password">密码：</label>
-                        <input type="password" id="password" name="password" class="form-control">
+                        <label for="password1">密&nbsp;&nbsp;&nbsp;码：</label>
+                        <input type="password1" id="password1" name="password1" ><a href="#">&nbsp;忘记密码?</a>
+                        <span class="help-block"></span>
                     </div>
                     <div class="form-group">
-                        <button class="btn btn-success btnReg">登录</button>
+                        <label for="yzm1">验证码：</label>
+                        <input type="text" id="yzm1" name="yzm1" ><span id="showCode1" class="btnShow"></span>
+                        <span class="help-block"></span>
+                    </div>                    
+                    <div class="form-group last">
+                        <button class="btn btn-primary btnReg1">登&nbsp;&nbsp;录</button>
+                    </div>
+                </div>
+                
+                <div class="hezuo">
+                    <p>使用合作网站账号登录NO5时尚广场</p>
+                    <a href="#"><img src="../images/z_register_1.jpg" height="25" width="115" alt="" /></a>
+                    <a href="#"><img src="../images/z_register_2.jpg" alt="" /></a>
+                    <a href="#"><img src="../images/z_register_3.jpg" alt="" /></a>
+                </div>
+            </div>
+            <div class="reg_c">
+                
+            </div>
+            <div class="reg_r">
+                <div class="form_bg"></div>
+                <div class="form">
+                    <div class="form-group">
+                        <label for="username2">用户名：</label>
+                        <input type="text" id="username2" name="username2" >
+                        <span class="help-block"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password2-1">输入密码:</label>
+                        <input type="password2-1" id="password2-1" name="password2-1" >
+                        <span class="help-block"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="password2-2">重复密码:</label>
+                        <input type="password2-2" id="password2-2" name="password2-2" >
+                        <span class="help-block"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">电子邮件:</label>
+                        <input type="email" id="email" name="email" >
+                        <span class="help-block"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="yzm2">验证码：</label>
+                        <input type="text" id="yzm2" name="yzm2" ><span id="showCode2" class="btnShow"></span>
+                        <span class="help-block"></span>
+                    </div>          
+                    <div class="form-indents">
+                        <label><input type="checkbox" id="btnAgree" checked="checked">我已阅读并同意<a href="#">《NO5用户注册协议》</a></label>
+                    </div>          
+                    <div class="form-group last">
+                        <button class="btn btn-primary btnReg">注册</button>
                     </div>
                 </div>
             </div>
-            <div class="reg_r"></div>
         </div>
     </section>
 
 </body>
 </html>
+    <!-- 第1步：引入jquery -->
+<script src="../js/jquery-3.2.1.js"></script>
+<!-- 第2步：引入插件 -->
+<script src="../lib/bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script src="../js/common.js"></script>
+    <script type="text/javascript">
+    ;(function(){
+        jQuery(function($){
+             //获取所有的input除了btn以外
+             var $input = $("input:not(.btn)");
+            
+                 //聚焦时背景变蓝
+                $input.focus(function(){
+                    $(this).css('background','#eaf5ff');
+                })
+                 
+                //失去焦点时,清空背景颜色
+                $input.blur(function(){
+                    $(this).css('background','#fff');
+                    if($(this).val() != ''){
+                        $(this).siblings('.help-block').html('');
+                    }
+                })
+
+/*------------------------------------------------------*/
+
+            //获取showCode
+            var $showCode1 = $('#showCode1');
+            var $showCode2 = $('#showCode2');
+                console.log($showCode1[0],$showCode2)
+                //页面初始化
+                $showCode1.html(createCode);
+                $showCode2.html(createCode);
+                
+                //点击重新生成验证码
+                $showCode1.click(function(){
+                    $showCode1.html(createCode);
+                    $showCode1[0].style.color = randomColor();
+
+
+                })
+                $showCode2.on('click',function(){
+                    $showCode2.html(createCode);
+                    $showCode2[0].style.color = randomColor();
+                    
+                })   
+                
+                
+                //随机验证码
+                function createCode(){ 
+                    var res = '';
+                    
+                    
+                    for(var i =0;i<4;i++){
+                        //随机数字
+                        var num = randomNumber(0,9);
+                        res += num;
+
+                    }
+                    //随机颜色
+
+                    return res;
+                }
+
+
+            //点击登录,判断验证码是否正确
+            var $btnReg1 = $('.btnReg1');
+            var $btnReg2 = $('.btnReg2');
+            var $yzm1 = $('#yzm1');
+
+                $btnReg1.click(function(){
+                    //获取输入的值
+                    var $_yzm1 = $yzm1.val();
+                    console.log($_yzm1)
+                    
+                    if($('#username1').val() === ''){
+                        $('#username1').siblings('.help-block').html('请输入用户名');
+                        return false;
+                    }else if($('#password1').val() === ''){
+                         $('#password1').siblings('.help-block').html('密码不能为空');
+                         return false;
+                    }else if($_yzm1 != $showCode1.html()){
+                        $yzm1.siblings('.help-block').html('验证码输入错误!');
+                        return false;
+                    }
+                })
+            
+
+        })
+    })();
+    </script>
