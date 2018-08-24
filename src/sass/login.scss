@@ -1,0 +1,88 @@
+#register{
+    .container{
+        width: 980px;overflow:hidden;
+        border:1px solid #C6E6F3;padding:10px;
+        margin-top:10px;text-align:center;
+        margin-bottom:30px;
+        height: 635px;
+
+        .reg_r{
+            width: 671px;display:inline-block;
+            // margin-top:40px;padding-left:10px;
+            .form_bg{
+                height: 41px;
+                width: 620px;
+                background: url(../images/z_register.png)no-repeat -162px -69px;
+                margin:40px auto 37px;
+                
+            }
+            .form{
+                width: 500px;padding-left:110px;
+                .form-group{
+                    margin-bottom:25px;position:relative;
+                    >label{
+                        font-weight:normal;font-size:12px;display:inline-block;width: 60px;
+                    }
+                    >input{
+                        width: 206px;border:1px solid #7F9DB9;
+                    }
+
+                    .help-block{position:absolute;top:25px;left:65px;color:#f00;font-size:12px;}
+                    #yzm2{
+                        width: 56px;
+                        &+span{
+                            display:inline-block;margin-left:2px;height:13px;line-height:13px;
+                            background-color:#ccc;padding:0 4px;font-size:14px;font-weight:bold;
+                            &:hover{cursor:pointer;}
+                        }               
+                    }
+                    .z_right{display:none;}
+
+                }
+                .last-child{float:left;padding-left:59px;}
+                .last{
+                    text-align:center;padding-left:50px;
+
+
+                    .btnReg2{
+                        height: 30px;line-height:15px;width:100px;background:linear-gradient(#59B8F5,#2B93D6);font-size:14px;
+                    }
+                }
+                .form-indents{
+                    margin-bottom:40px;color:#666;font-family:FangSong;margin-left:95px;font-size:12px;
+                    &:before{
+                        content:"";
+                        width: 60px;
+                        height: 25px;
+                        display:inline-block;
+                        float:left;
+                    }
+                    a:hover{color:#FF9900;}
+                }
+                .reg{
+                    font-size:12px;color:#666;
+                    a{
+                        color:#00B6F2;
+                        &:hover{
+                            color:#FF9900;
+                        }
+                    }
+                }
+            }
+            .reg_img{
+                height:3px;
+                width: 620px;
+                background: url(../images/z_register.png)no-repeat -161px -435px;
+                margin:40px auto 37px;
+            }
+        }
+    }
+}
+#pageNav>.container #z_nav2{
+         max-height:0px;z-index:20;transition:max-height 0.5s linear;visibility:hidden;width:230px;
+            // position:relative;
+    }
+ 
+#pageNav .container .z_nav1 >li:first-child:hover #z_nav2{
+    visibility:visible;max-height:650px;
+}

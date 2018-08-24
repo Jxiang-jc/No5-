@@ -43,7 +43,7 @@
             }
             .last{
                 text-align:center;padding-right:50px;
-                .btnReg{
+                .btnReg1{
                     height: 30px;line-height:15px;width: 90px;background:linear-gradient(#59B8F5,#2B93D6);font-size:14px;
                 }
             }
@@ -96,7 +96,7 @@
             .last{
                 text-align:center;padding-right:50px;
 
-                .btnReg{
+                .btnReg2{
                     height: 30px;line-height:15px;width: 90px;background:linear-gradient(#59B8F5,#2B93D6);font-size:14px;
                 }
             }
@@ -116,13 +116,11 @@
     }
 }
 
-    // #pageNav{display:none;}
 
 
 #pageNav>.container #z_nav2{
          max-height:0px;z-index:20;transition:max-height 0.5s linear;visibility:hidden;width:230px;
             // position:relative;
-            // display:none;
     }
  
 #pageNav .container .z_nav1 >li:first-child:hover #z_nav2{
