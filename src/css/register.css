@@ -52,6 +52,8 @@
 
 .container .reg_r .form .form-group #yzm2 + span:hover { cursor: pointer; }
 
+.container .reg_r .form .form-group .z_right { display: none; }
+
 .container .reg_r .form .last { text-align: center; padding-right: 50px; }
 
 .container .reg_r .form .last .btnReg { height: 30px; line-height: 15px; width: 90px; background: linear-gradient(#59B8F5, #2B93D6); font-size: 14px; }

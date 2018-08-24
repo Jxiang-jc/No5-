@@ -8,15 +8,15 @@
     /* 
         验证用户名是否存在
         所需参数:
-            *username
+            *username2
     */
     $conn->set_charset('utf8');
 
     // 有则用,无则null
-    $username = isset($_GET['username']) ? $_GET['username'] : null;
+    $username = isset($_GET['username2']) ? $_GET['username2'] : null;
 
     //查找数据库中是否存在同名用户
-    $sql = "select * from username where name= '$username' ";
+    $sql = "select * from register where username= '$username' ";
     // var_dump($sql);
 
     //执行sql语句

@@ -1,4 +1,8 @@
 <?php
+
+    //响应头
+    header('Content-Type:text/html;charset=utf-8'); 
+
     /*连接数据库*/
 
     $servername = "localhost";
@@ -9,6 +13,8 @@
     //创建连接
     $conn = new mysqli($servername,$username,$password,$dbname);
 
+    //解决中文乱码
+    mysqli_query($conn,"set names utf8");
 
     // var_dump($conn);
 

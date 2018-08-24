@@ -5,77 +5,6 @@
     <title>登录NO5时尚广场</title>
     <link rel="stylesheet" href="../lib/bootstrap-3.3.7-dist/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="../css/register.css" />
-<!--     <script type="text/javascript">
-        document.addEventListener('DOMContentLoaded',()=>{
-            let username = document.querySelector('#username');
-            let password = document.querySelector('#password');
-            let btnReg = document.querySelector('.btnReg');
-
-            let status = [200,304];
-
-            let isok = false;
-            // 注册
-            btnReg.onclick = ()=>{
-                if(!isok){
-                    alert('lalal')
-
-
-                    return false;
-                }
-
-                // 获取用户名/密码
-                let _username = username.value;
-                var _password = password.value;
-
-                let xhr = new XMLHttpRequest();
-                xhr.onload = ()=>{
-                    if(status.indexOf(xhr.status) >= 0){
-                        console.log(xhr.responseText);
-                    }
-                }
-                xhr.open('post','../api/reg.php',true);
-
-                // 设置请求头，以便后端接收post数据
-                xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
-
-
-                xhr.send(`username=${_username}&password=${_password}`);
-            }
-
-
-            // 验证用户名是否存在
-            username.onblur = ()=>{
-                let _username = username.value;
-
-                let xhr = new XMLHttpRequest();
-                
-                xhr.onload = ()=>{
-                    if(status.indexOf(xhr.status) >= 0){
-                        var formGroup = username.parentNode;
-                            console.log(xhr.responseText);
-                        if(xhr.responseText === 'yes'){
-
-                            isok = true;
-
-                            // 成功：添加has-success类
-                            formGroup.classList.remove('has-error');
-                            formGroup.classList.add('has-success');
-                            username.nextElementSibling.innerText = '';
-                        }else if(xhr.responseText === 'no'){
-                            isok = false;
-                            formGroup.classList.remove('has-success');
-                            formGroup.classList.add('has-error');
-                            username.nextElementSibling.innerText = '用户名已存在';
-                        }
-                    }
-                }
-                xhr.open('get','../api/check_username.php?username='+_username,true);
-                xhr.send();
-
-            }
-        // });
-    </script> -->
-
 
 </head>
 <body>
@@ -111,39 +40,44 @@
                     <a href="#"><img src="../images/z_register_3.jpg" alt="" /></a>
                 </div>
             </div>
-            <div class="reg_c">
-                
-            </div>
+
+            <div class="reg_c"><!-- 中间边框 --></div>
+
             <div class="reg_r">
                 <div class="form_bg"></div>
                 <div class="form">
                     <div class="form-group">
                         <label for="username2">用户名：</label>
-                        <input type="text" id="username2" name="username2" >
+                        <input type="text" id="username2" name="username2" class="username2" required="required">
+                        <img src="../images/z_register_4.jpg" class="z_right z_right1"/>
                         <span class="help-block"></span>
                     </div>
                     <div class="form-group">
                         <label for="password2-1">输入密码:</label>
-                        <input type="password2-1" id="password2-1" name="password2-1" >
+                        <input type="password" id="password2-1" name="password2-1" class="password2-1" required="required">
+                        <img src="../images/z_register_4.jpg" class="z_right z_right2"/>
                         <span class="help-block"></span>
                     </div>
                     <div class="form-group">
                         <label for="password2-2">重复密码:</label>
-                        <input type="password2-2" id="password2-2" name="password2-2" >
+                        <input type="password" id="password2-2" name="password2-2" class="password2-2" required="required">
+                        <img src="../images/z_register_4.jpg" class="z_right z_right3"/>
                         <span class="help-block"></span>
                     </div>
                     <div class="form-group">
                         <label for="email">电子邮件:</label>
-                        <input type="email" id="email" name="email" >
+                        <input type="email" id="email" name="email" class="email">
+                        <img src="../images/z_register_4.jpg" class="z_right z_right4"/>
                         <span class="help-block"></span>
                     </div>
                     <div class="form-group">
                         <label for="yzm2">验证码：</label>
-                        <input type="text" id="yzm2" name="yzm2" ><span id="showCode2" class="btnShow"></span>
+                        <input type="text" id="yzm2" name="yzm2" ><span id="showCode2" class="btnShow" required="required"></span>
+                        <img src="../images/z_register_4.jpg" class="z_right z_right5"/>
                         <span class="help-block"></span>
                     </div>          
                     <div class="form-indents">
-                        <label><input type="checkbox" id="btnAgree" checked="checked">我已阅读并同意<a href="#">《NO5用户注册协议》</a></label>
+                        <label><input type="checkbox" id="btnAgree" checked="checked" class="checked" required="required">我已阅读并同意<a href="#">《NO5用户注册协议》</a></label>
                     </div>          
                     <div class="form-group last">
                         <button class="btn btn-primary btnReg2">注册</button>
@@ -163,15 +97,38 @@
     <script type="text/javascript">
     ;(function(){
         jQuery(function($){
-             //获取所有的input除了btn以外
-             var $input = $("input:not(.btn)");
-            
+            //获取所有的input除了btn以外
+            var $input = $("input:not(.btn)");
+            //获取注册from的input.
+            var $zhuCeInput = $(".reg_r :input:not(.btn)");
+
+            // 获取登录form下的.help-block
+            var $userSpan1 = $('#username1').siblings('.help-block');
+            var $passSpan1 = $('#password1').siblings('.help-block');
+
+            //获取注册form下的 .help-block
+            var $userSpan2 = $('#username2').siblings('.help-block');
+            var $passSpan2 = $('#password2-1').siblings('.help-block');
+            var $emailSpan2 = $('#email').siblings('.help-block');
+            var $yzm2Span = $('#yzm2').siblings('.help-block');
+
+
                  //聚焦时背景变蓝
                 $input.focus(function(){
                     $(this).css('background','#eaf5ff');
+                    //用户名
+                    if($(this).hasClass("username2")){
+                        $userSpan2.html('3~30位,由汉字、字母、数字、减号、下划线及\"@\"组成！');
+                        $userSpan2.css('color','#000')
+                    }
+                    //密码
+                    if($(this).hasClass("password2-1")){
+                        $passSpan2.html('6~16位,建议使用字母、数字、特殊符号组合');
+                        $passSpan2.css('color','#000')
+                    }
                 })
-                 
-                //失去焦点时,清空背景颜色
+                     
+                //失去焦点时,清空背景颜色.一定要放在下面的函数之前,不然会覆盖
                 $input.blur(function(){
                     $(this).css('background','#fff');
                     if($(this).val() != ''){
@@ -179,43 +136,89 @@
                     }
                 })
 
-/*------------------------------------------------------*/
+                //注册from失去焦点时触发     
+                $zhuCeInput.blur(function(){
+
+                    if($(this).html('')){
+                        $(this).css('background','#FFFDDF');
+                        // console.log($(this))
+                        // 用户名
+                        if($(this).hasClass("username2") && $(this).val()==""){
+                            $userSpan2.html('用户名的长度应为3～30个字符之间(汉字占两个字符)');
+                            $userSpan2.css('color','#f00');
+                        }
+                        //密码
+                        if($(this).hasClass("password2-1") && $(this).val()==""){
+                            $passSpan2.html('密码的长度应该为6～16个字符之间');
+                            $passSpan2.css('color','#f00');
+                        }
+                        //email
+                        if($(this).hasClass("email") && $(this).val()==""){
+                            $emailSpan2.html('请您输入邮件地址!')
+                        }
+                    }
+                })
+                    
+                //用户名失去焦点后ajax请求,单独对用户名进行判断
+                $("#username2").change(function(){
+                    var _username2 = $("#username2").val();
+                    // console.log(_username2)
+                    $.ajax({
+                            type:'get',
+                            url:'../api/check_username.php',
+                            data:{username2:_username2},
+                            success:function(xhr){
+                                    // console.log(xhr);
+                                if(xhr === 'no'){
+                                    $userSpan2.html('对不起，用户名已被注册，请您重新输入!');
+                                    $userSpan2.css('color','#f00');
+                                    $('.z_right1').css('display','none');
+                                    return false;
+                                }else{
+                                    $userSpan2.html('');
+                                    $('.z_right1').css('display','inline-block');
+                                    $("#username2").css('background','#fff')
+                                }
+                            }
+                        })
+                })
+
+                    
+
+    /*------------------------------------------------------------------------------*/
 
             //获取showCode
             var $showCode1 = $('#showCode1');
             var $showCode2 = $('#showCode2');
-                console.log($showCode1[0],$showCode2)
+                    
                 //页面初始化
                 $showCode1.html(createCode);
                 $showCode2.html(createCode);
-                
+                    
                 //点击重新生成验证码
                 $showCode1.click(function(){
                     $showCode1.html(createCode);
+                    //随机颜色
                     $showCode1[0].style.color = randomColor();
-
 
                 })
                 $showCode2.on('click',function(){
                     $showCode2.html(createCode);
+                    //随机颜色
                     $showCode2[0].style.color = randomColor();
 
                 })   
-                
-                
+                    
+                    
                 //随机验证码
                 function createCode(){ 
                     var res = '';
-                    
-                    
+
                     for(var i =0;i<4;i++){
                         //随机数字
                         var num = randomNumber(0,9);
                         res += num;
-
                     }
-                    //随机颜色
-
                     return res;
                 }
 
@@ -232,11 +235,13 @@
                     var $_yzm1 = $yzm1.val();
                     
                     if($('#username1').val() === ''){
-                        $('#username1').siblings('.help-block').html('请输入用户名');
+                        $userSpan1.html('请输入用户名');
                         return false;
+
                     }else if($('#password1').val() === ''){
-                         $('#password1').siblings('.help-block').html('密码不能为空');
+                         $passSpan1.html('密码不能为空');
                          return false;
+
                     }else if($_yzm1 != $showCode1.html()){
                         $yzm1.siblings('.help-block').html('验证码输入错误!');
                         return false;
@@ -246,20 +251,44 @@
                 $btnReg2.click(function(){
                     //获取输入的值
                     var $_yzm2 = $yzm2.val();
-                    console.log($_yzm2,$showCode2.html(),$yzm2.siblings('.help-block'))
+                    // console.log($_yzm2,$showCode2.html(),$yzm2.siblings('.help-block'))
                     
                     if($('#username2').val() === ''){
-                        $('#username2').siblings('.help-block').html('请输入用户名');
+                        $userSpan2.html('请输入用户名');
                         return false;
+
                     }else if($('#password2-1').val() === ''){
-                         $('#password2-1').siblings('.help-block').html('密码不能为空');
+                         $passSpan2.html('密码不能为空');
                          return false;
+
                     }else if($_yzm2 != $showCode2.html()){
-                        $yzm2.siblings('.help-block').html('验证码输入错误!');
+                        $yzm2Span.html('验证码输入错误!');
                         return false;
                     }
+
+                    //获取用户名/密码/email的值
+                    var _username2 = $("#username2").val();
+                    var _password2 = $("#password2-1").val();
+                    var _email = $("#email").val();
+
+                    $.ajax({
+                        type:'post',
+                        url:'../api/reg.php',
+                        data:{
+                            username2:_username2,
+                            password2:_password2,
+                            email:_email
+                        },
+                        success:function(xhr){
+                           // console.log(xhr);
+                           if(xhr == 'success'){
+                                alert('恭喜你注册成功');
+                           }
+                        }
+                    });
+
                 })
-            
+                
 
         })
     })();
