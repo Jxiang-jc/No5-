@@ -1,65 +1,69 @@
-.container { width: 980px; overflow: hidden; border: 1px solid #C6E6F3; padding: 10px; margin-top: 10px; text-align: left; }
+#register .container { width: 980px; overflow: hidden; border: 1px solid #C6E6F3; padding: 10px; margin-top: 10px; text-align: left; margin-bottom: 30px; }
 
-.container .reg_l { width: 476px; height: 475px; float: left; margin-top: 40px; padding-left: 10px; }
+#register .container .reg_l { width: 476px; height: 475px; float: left; margin-top: 40px; padding-left: 10px; }
 
-.container .reg_l .form_bg { height: 43px; width: 439px; background: url(../images/z_register.png) no-repeat -162px -153px; margin-bottom: 37px; }
+#register .container .reg_l .form_bg { height: 43px; width: 439px; background: url(../images/z_register.png) no-repeat -162px -153px; margin-bottom: 37px; }
 
-.container .reg_l .form { width: 455px; height: 230px; padding-left: 65px; }
+#register .container .reg_l .form { width: 455px; height: 230px; padding-left: 65px; }
 
-.container .reg_l .form .form-group { margin-bottom: 33px; position: relative; }
+#register .container .reg_l .form .form-group { margin-bottom: 33px; position: relative; }
 
-.container .reg_l .form .form-group > label { font-weight: normal; font-size: 12px; display: inline-block; width: 50px; }
+#register .container .reg_l .form .form-group > label { font-weight: normal; font-size: 12px; display: inline-block; width: 50px; }
 
-.container .reg_l .form .form-group > input { width: 206px; border: 1px solid #7F9DB9; }
+#register .container .reg_l .form .form-group > input { width: 206px; border: 1px solid #7F9DB9; }
 
-.container .reg_l .form .form-group .help-block { position: absolute; top: 25px; left: 50px; color: #f00; font-size: 12px; }
+#register .container .reg_l .form .form-group .help-block { position: absolute; top: 25px; left: 50px; color: #f00; font-size: 12px; }
 
-.container .reg_l .form .form-group #yzm1 { width: 56px; }
+#register .container .reg_l .form .form-group #yzm1 { width: 56px; }
 
-.container .reg_l .form .form-group #yzm1 + span { display: inline-block; margin-left: 2px; height: 13px; line-height: 13px; background-color: #bbb; padding: 0 4px; font-size: 14px; font-weight: bold; }
+#register .container .reg_l .form .form-group #yzm1 + span { display: inline-block; margin-left: 2px; height: 13px; line-height: 13px; background-color: #bbb; padding: 0 4px; font-size: 14px; font-weight: bold; }
 
-.container .reg_l .form .form-group #yzm1 + span:hover { cursor: pointer; }
+#register .container .reg_l .form .form-group #yzm1 + span:hover { cursor: pointer; }
 
-.container .reg_l .form .form-group #password + a { font-size: 12px; color: #00B6F2; font-family: FangSong; }
+#register .container .reg_l .form .form-group #password + a { font-size: 12px; color: #00B6F2; font-family: FangSong; }
 
-.container .reg_l .form .form-group #password + a:hover { color: #f70; }
+#register .container .reg_l .form .form-group #password + a:hover { color: #f70; }
 
-.container .reg_l .form .last { text-align: center; padding-right: 50px; }
+#register .container .reg_l .form .last { text-align: center; padding-right: 50px; }
 
-.container .reg_l .form .last .btnReg { height: 30px; line-height: 15px; width: 90px; background: linear-gradient(#59B8F5, #2B93D6); font-size: 14px; }
+#register .container .reg_l .form .last .btnReg { height: 30px; line-height: 15px; width: 90px; background: linear-gradient(#59B8F5, #2B93D6); font-size: 14px; }
 
-.container .reg_l .hezuo { padding-left: 65px; font-size: 13px; }
+#register .container .reg_l .hezuo { padding-left: 65px; font-size: 13px; }
 
-.container .reg_c { background: url(../images/z_register.png) no-repeat -928px -83px; height: 403px; width: 1px; float: left; }
+#register .container .reg_c { background: url(../images/z_register.png) no-repeat -928px -83px; height: 403px; width: 1px; float: left; }
 
-.container .reg_r { width: 475px; height: 515px; float: left; margin-top: 40px; padding-left: 10px; }
+#register .container .reg_r { width: 475px; height: 515px; float: left; margin-top: 40px; padding-left: 10px; }
 
-.container .reg_r .form_bg { height: 43px; width: 439px; background: url(../images/z_register.png) no-repeat -163px -197px; margin-left: 16px; margin-bottom: 37px; }
+#register .container .reg_r .form_bg { height: 43px; width: 439px; background: url(../images/z_register.png) no-repeat -163px -197px; margin-left: 16px; margin-bottom: 37px; }
 
-.container .reg_r .form { width: 455px; padding-left: 50px; }
+#register .container .reg_r .form { width: 455px; padding-left: 50px; }
 
-.container .reg_r .form .form-group { margin-bottom: 33px; position: relative; }
+#register .container .reg_r .form .form-group { margin-bottom: 33px; position: relative; }
 
-.container .reg_r .form .form-group > label { font-weight: normal; font-size: 12px; display: inline-block; width: 60px; }
+#register .container .reg_r .form .form-group > label { font-weight: normal; font-size: 12px; display: inline-block; width: 60px; }
 
-.container .reg_r .form .form-group > input { width: 206px; border: 1px solid #7F9DB9; }
+#register .container .reg_r .form .form-group > input { width: 206px; border: 1px solid #7F9DB9; }
 
-.container .reg_r .form .form-group .help-block { position: absolute; top: 25px; left: 65px; color: #f00; font-size: 12px; }
+#register .container .reg_r .form .form-group .help-block { position: absolute; top: 25px; left: 65px; color: #f00; font-size: 12px; }
 
-.container .reg_r .form .form-group #yzm2 { width: 56px; }
+#register .container .reg_r .form .form-group #yzm2 { width: 56px; }
 
-.container .reg_r .form .form-group #yzm2 + span { display: inline-block; margin-left: 2px; height: 13px; line-height: 13px; background-color: #ccc; padding: 0 4px; font-size: 14px; font-weight: bold; }
+#register .container .reg_r .form .form-group #yzm2 + span { display: inline-block; margin-left: 2px; height: 13px; line-height: 13px; background-color: #ccc; padding: 0 4px; font-size: 14px; font-weight: bold; }
 
-.container .reg_r .form .form-group #yzm2 + span:hover { cursor: pointer; }
+#register .container .reg_r .form .form-group #yzm2 + span:hover { cursor: pointer; }
 
-.container .reg_r .form .form-group .z_right { display: none; }
+#register .container .reg_r .form .form-group .z_right { display: none; }
 
-.container .reg_r .form .last { text-align: center; padding-right: 50px; }
+#register .container .reg_r .form .last { text-align: center; padding-right: 50px; }
 
-.container .reg_r .form .last .btnReg { height: 30px; line-height: 15px; width: 90px; background: linear-gradient(#59B8F5, #2B93D6); font-size: 14px; }
+#register .container .reg_r .form .last .btnReg { height: 30px; line-height: 15px; width: 90px; background: linear-gradient(#59B8F5, #2B93D6); font-size: 14px; }
 
-.container .reg_r .form .form-indents { margin-bottom: 35px; font-weight: normal; color: #666; font-family: FangSong; }
+#register .container .reg_r .form .form-indents { margin-bottom: 35px; font-weight: normal; color: #666; font-family: FangSong; }
 
-.container .reg_r .form .form-indents:before { content: ""; width: 60px; height: 25px; display: inline-block; float: left; }
+#register .container .reg_r .form .form-indents:before { content: ""; width: 60px; height: 25px; display: inline-block; float: left; }
 
-.container .reg_r .form .form-indents a:hover { color: #f70; }
+#register .container .reg_r .form .form-indents a:hover { color: #f70; }
+
+#pageNav > .container #z_nav2 { max-height: 0px; z-index: 20; transition: max-height 0.5s linear; visibility: hidden; width: 230px; }
+
+#pageNav .container .z_nav1 > li:first-child:hover #z_nav2 { visibility: visible; max-height: 650px; }

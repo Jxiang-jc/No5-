@@ -1,7 +1,10 @@
-.container{
+#register{
+
+    .container{
     width: 980px;overflow:hidden;
     border:1px solid #C6E6F3;padding:10px;
     margin-top:10px;text-align:left;
+    margin-bottom:30px;
     .reg_l{
         width: 476px;height: 475px;float:left;
         margin-top:40px;
@@ -110,4 +113,20 @@
             }
         }
     }
+    }
 }
+
+    // #pageNav{display:none;}
+
+
+#pageNav>.container #z_nav2{
+         max-height:0px;z-index:20;transition:max-height 0.5s linear;visibility:hidden;width:230px;
+            // position:relative;
+            // display:none;
+    }
+ 
+#pageNav .container .z_nav1 >li:first-child:hover #z_nav2{
+    visibility:visible;max-height:650px;
+}
+    
+
