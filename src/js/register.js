@@ -56,7 +56,7 @@
                             $userSpan2.css('color','#f00');
                             $('.z_right1').css('display','none');
                             return false;
-                        }else if(xhr === 'yes'){
+                        }else if(xhr === 'yes' && $("#username2").val() != ""){
                             // $userSpan2.html('');
                             $('.z_right1').css('display','inline-block');
                             $("#username2").css('background','#fff')
@@ -128,7 +128,7 @@
 
                         return false;
                       }
-                      //这个正则的意思就是任意的字母或数字或下划线（捕获为组1）0次到多次跟着一个任意的字母或数字或下划线（捕获为组2）紧跟着“\2{2}”是指反向捕获 组2（就是这里的内容要和组2一样的并且出现2次，所以就等于三个重复的）后面跟着一个任意的字母或数字或下划线0次到多次
+                      //这个正则的意思就是任意的字母或数字或下划线（捕获为组1）0次到多次跟着一个任意的字母或数字或下划线（捕获为组2）紧跟着“\2{3}”是指反向捕获 组2（就是这里的内容要和组2一样的并且出现3次，所以就等于四个重复的）后面跟着一个任意的字母或数字或下划线0次到多次
                       else if(/^(\w)*(\w)\2{3}(\w)*$/g.test(_password2)){
                         $passSpan2.html('密码过于简单，为保证您的帐户安全请重设密码!');
 
@@ -142,7 +142,7 @@
 
                     }
                     //确认密码
-                    if(_password3 != _password2 ){
+                    if(_password3 != _password2 && _password3 != ""){
                             $('#password2-2').siblings('.help-block').html('两次密码不一致');
 
                             $('.z_right3').css('display','none');

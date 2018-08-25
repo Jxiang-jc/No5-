@@ -1,4 +1,4 @@
-<?php
+ <?php
     //引入connect.php
     
     include 'connect.php';

@@ -51,9 +51,62 @@
                     height: 34px;line-height:34px;width: 100%;
                     text-align:center;font-weight:bold;border-bottom:1px solid #ddd;
                 }
-                ul{
-                    height: 500px;background: #7093db;
+                .ul_1{
+                    text-align:center;
+                    li{
+                        width: 228px;height: 193px;
+                        padding:6px;border-bottom:1px dotted #ddd;
+                        >p{
+                            width:100%;text-overflow:ellipsis;
+                            overflow:hidden; white-space:nowrap;height:20px;line-height:20px;padding:0 3px;
+                            a{color:#666;font-size:13px;display:inline-block;text-decoration:none;}
+                        }
+                        img{padding-top:10px;}
+                        .price{
+                            font-family: microsoft yahei;
+                            color: #ff1a3a;
+                            font-size: 14px;
+                            font-weight: bold;
+                            height:20px;line-height:20px;
+                            &:before{
+                                content:"￥";
+                            }
+                        }
+                    }
                 }
+                .ul_2{
+                    li{
+                        width: 228px;height: 113px;
+                         padding:15px 10px;border-bottom:1px dotted #ddd;
+                         text-align:right;
+                    }
+                    img{
+                        width: 82px;height: 82px;
+                        float:left;
+                    }
+                    .content{
+                        text-align:left;line-height:16px;
+                        font-size:12px;
+                        a{
+                            color:#666;
+                            text-decoration:none;
+                            &:hover{color:#f70;}
+                        }
+
+                    }
+                    .price{
+                        font-family: microsoft yahei;
+                        color: #ff1a3a;
+                        font-size: 14px;
+                        font-weight: bold;
+                        height:20px;line-height:20px;
+                        
+                        &:before{
+                            content:"￥";
+                        }
+                    }
+                }
+                
             }       
         }
         .page_r{
@@ -85,6 +138,78 @@
                 .filter_r{
                     li{
                         float:left;
+                    }
+                }
+            }
+            .cplist{
+                ul{
+                    li{
+                        float:left;width: 240px;height: 333px;padding:13px;background: #fff;
+                        img{vertical-align:top;padding:7px;}
+                        .content{
+                            height:36px;line-height:18px;overflow:hidden;font-size:12px;
+                            a{
+                                color:#666;
+                                &:hover{
+                                    text-decoration:underline;
+                                    color:#ff1a3a;
+                                }
+                            }
+                        }
+                        >div{
+                            margin:10px 0 3px 0;
+                            color:#f00;
+                            .price{
+                                font-size:16px;
+                                font-weight:bold;font-family: verdana;
+                                &:before{
+                                    content:"￥";
+                                    display:inline-block;
+
+                                }
+                            }
+                            .zhekou{
+                                font-size:12px;
+                            }
+                        }
+                        .pushCar{
+                            display:inline-block;
+                            width: 90px;height: 24px;
+                            background:#fc1c5a;
+                            color:#fff;font-size:14px;line-height:12px;text-align:center;
+                        }
+                        .collect{
+                            display:inline-block;
+                            width: 56px;height: 24px;line-height:12px;
+                            font-size:14px;margin-left:10px;
+                        }
+
+                        &:hover{
+                            background:#f4f4f4;
+                        }
+
+                    }
+                }
+            }
+            .page_below{
+                
+                .z_page{
+                    float:right;margin-top:20px;
+                    a{
+                        float:left;display:block;
+                        height: 26px;line-height: 20px;font-size: 12px;
+                        padding: 2px 10px;margin-left: 2px;
+                        border: 1px solid #ccc;    
+                        font-family: arial;
+                        overflow: hidden;
+                        color: #005aa0;background: #fff;
+                        cursor:pointer;
+                    }  
+                    .z_active{
+                        background: #02a3f0;
+                        color: #fff;
+                        border: 1px solid #02a3f0;
+                        font-weight: bold;   
                     }
                 }
             }

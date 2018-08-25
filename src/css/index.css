@@ -186,6 +186,8 @@
 
 #pageNav .container #z_nav2 .z_nav2-1:hover .z_nav3-1, #pageNav .container #z_nav2 .z_nav2-1:hover .nav_bk { display: block; }
 
+#pageFooter { margin-top: 30px; }
+
 #pageFooter #ft1 { width: 100%; background: linear-gradient(#fff, #f5f1f1); border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
 
 #pageFooter #ft1 .container { width: 1200px; padding: 0; }

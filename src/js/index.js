@@ -88,7 +88,7 @@
     $.prototype.qrcode = function(){
         var $box = $('.qrcode_box');
         var $ul = $('#mobile-ewm');
-        console.log($ul)
+        // console.log($ul)
 
         $box.on('mouseover',function(){
             $ul.css('visibility','visible');

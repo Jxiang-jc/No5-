@@ -97,7 +97,7 @@ var Element = {
 
 	},
 	next:function(ele){}
-}
+};
 
 // Element.children(box);//得到box下面的所有子元素
 // Element.prev(box);//得到box的前一个元素
@@ -116,7 +116,7 @@ function getCss(ele,attr){
 		// 内联样式
 		return ele.style[attr];
 	}
-}
+};
 
 // 先用
 // getCss(box,'font-size');
@@ -140,7 +140,7 @@ function bind(ele,type,handler,isCapture){
 		// 其他浏览器
 		ele['on' + type] = handler;
 	}
-}
+};
 
 // 给元素绑定事件的效果
 // 同名事件不覆盖
@@ -149,7 +149,7 @@ function bind(ele,type,handler,isCapture){
 // 只生效一次的事件
 function one(ele,type,handler,isCapture){
 
-}
+};
 
 // Cooie的操作
 var Cookie = {
@@ -238,7 +238,7 @@ var Cookie = {
 		document.cookie = str;
 	},
 
-}
+};
 
 // Cookie.get('username');//laoxie
 // Cookie.set('passowrd','123456',{path:'/'});//laoxie
@@ -326,7 +326,7 @@ function animate(ele,opt,callback){
 		})(attr);
 
 	}
-}
+};
 
 /**
  * 数据类型判断终极版
@@ -335,4 +335,4 @@ function animate(ele,opt,callback){
  */
 function type(data){
 	return Object.prototype.toString.call(data).slice(8,-1).toLowerCase();
-}
+};
