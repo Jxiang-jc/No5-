@@ -1,0 +1,45 @@
+@charset "UTF-8";
+#pageNav > .container #z_nav2 { max-height: 0px; z-index: 20; transition: max-height 0.5s linear; visibility: hidden; width: 230px; }
+
+#pageNav .container .z_nav1 > li:first-child:hover #z_nav2 { visibility: visible; max-height: 650px; }
+
+/* 列表页 */
+#pageList .container { padding: 0; }
+
+#pageList .container > p { line-height: 34px; height: 34px; color: #999; margin-top: 15px; }
+
+#pageList .container > p span { color: #4e7fc2; }
+
+#pageList .container > p a { color: #333; }
+
+#pageList .container > p a:hover { color: #ff1a3a; }
+
+#pageList .container .page_l { width: 230px; height: 1500px; margin-right: 10px; float: left; }
+
+#pageList .container .page_l .panel { margin: 0; }
+
+#pageList .container .page_l .panel .panel-heading { width: 228px; height: 36px; border-radius: 0; background: url("../images/z_pagelist1.jpg") repeat-x; }
+
+#pageList .container .page_l .panel .panel-heading h4 { font-size: 13px; }
+
+#pageList .container .page_l .panel .panel-heading h4 a { text-decoration: none; font-weight: bold; }
+
+#pageList .container .page_l .panel .panel-heading h4 a:before { content: ""; background: url("../images/z_spirit.gif") no-repeat 0 -248px; width: 15px; height: 14px; float: left; margin-right: 10px; }
+
+#pageList .container .page_l .page_lSalebox, #pageList .container .page_l .page_lReadbox { width: 230px; overflow: hidden; border: 1px solid #ddd; padding: 1px; }
+
+#pageList .container .page_l .page_lSalebox > h3, #pageList .container .page_l .page_lReadbox > h3 { background: linear-gradient(#fff, #f5f1f1); height: 34px; line-height: 34px; width: 100%; text-align: center; font-weight: bold; border-bottom: 1px solid #ddd; }
+
+#pageList .container .page_l .page_lSalebox ul, #pageList .container .page_l .page_lReadbox ul { height: 500px; background: #7093db; }
+
+#pageList .container .page_r { float: left; width: 960px; }
+
+#pageList .container .page_r .selectBox { border: 3px solid #F4F4F4; height: 210px; padding: 20px; }
+
+#pageList .container .page_r .filterBox { float: left; margin-top: 10px; border: 1px solid #eee; border-top: 2px solid #15ade0; padding: 5px 10px; background: linear-gradient(#fff, #f5f1f1); height: 39px; line-height: 27px; width: 100%; }
+
+#pageList .container .page_r .filterBox .filter_l li { float: left; border: 1px solid #cecbce; padding: 0 10px; height: 22px; line-height: 22px; margin-right: 5px; margin-top: 3px; }
+
+#pageList .container .page_r .filterBox .filter_l li:first-child { border: 0; }
+
+#pageList .container .page_r .filterBox .filter_r li { float: left; }

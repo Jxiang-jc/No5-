@@ -1,0 +1,93 @@
+#pageNav>.container #z_nav2{
+         max-height:0px;z-index:20;transition:max-height 0.5s linear;visibility:hidden;width:230px;
+            // position:relative;
+    }
+
+#pageNav .container .z_nav1 >li:first-child:hover #z_nav2{
+    visibility:visible;max-height:650px;
+}
+/* 列表页 */
+#pageList{
+    .container{
+        padding:0;
+        >p{
+            line-height: 34px;height: 34px;
+            color: #999;
+            margin-top: 15px;
+            span{color:#4e7fc2;}
+            a{
+                color:#333;
+                &:hover{color:#ff1a3a;}
+            }
+        }
+        .page_l{
+            width: 230px;height: 1500px;margin-right:10px;
+            float:left;
+            .panel{
+                margin: 0;
+                .panel-heading{
+                    width: 228px;height: 36px;
+                    border-radius:0;background:url('../images/z_pagelist1.jpg')repeat-x;
+                    
+                    h4{
+                        font-size:13px;
+                        
+                        a{
+                            text-decoration:none;font-weight:bold;
+                            &:before{
+                            content:"";
+                            background:url('../images/z_spirit.gif')no-repeat 0 -248px;
+                            width:15px;height: 14px;float:left;margin-right:10px;
+                        }
+                        }
+                    }
+                }
+            }
+            .page_lSalebox,.page_lReadbox{
+                width: 230px;overflow:hidden;
+                border:1px solid #ddd;padding:1px;
+                >h3{
+                    background:linear-gradient(#fff,#f5f1f1);
+                    height: 34px;line-height:34px;width: 100%;
+                    text-align:center;font-weight:bold;border-bottom:1px solid #ddd;
+                }
+                ul{
+                    height: 500px;background: #7093db;
+                }
+            }       
+        }
+        .page_r{
+            float:left;
+            width:960px;
+            .selectBox{
+                border:3px solid #F4F4F4;
+                height: 210px;padding:20px;
+            }
+            .filterBox{
+                float:left;
+                margin-top:10px;
+                border: 1px solid #eee;
+                border-top: 2px solid #15ade0;
+                padding: 5px 10px;
+                background:linear-gradient(#fff,#f5f1f1);
+                height:39px;line-height:27px;width: 100%;
+                .filter_l{
+                    li{
+                        float:left;
+                        border:1px solid #cecbce;
+                        padding:0 10px;height:22px;line-height:22px;
+                        margin-right:5px;margin-top:3px;
+                        &:first-child{
+                            border:0;
+                        }
+                    }
+                }
+                .filter_r{
+                    li{
+                        float:left;
+                    }
+                }
+            }
+        }
+    }
+}
