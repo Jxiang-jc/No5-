@@ -6,6 +6,7 @@
         var _rank = 3;
         var _read = 5;
 
+        //页面初始化
         sendAjax();
         weekAjax();
 
@@ -23,13 +24,12 @@
                     $('.cplist').html('');
                     $('.page_below').html('');
 
-
                     // console.log(res)
                     // 创建ul
                     let ul = document.createElement('ul');
                     ul.innerHTML = res.data.map(item=>{
                         return `<li class="data-${item.id}">
-                            <a href="#"><img src="${item.imgurl}"></a>
+                            <a href="#" class="jump"><img src="${item.imgurl}"></a>
                             <p class="content"><a href="#">${item.name}</a></p>
                             <div><span class="price">${item.price}</span><span class="zhekou">${item.zhekou}</span></div>
                             <button class="pushCar btn">加入购物车</button><button class="collect btn">收藏</button>
@@ -58,11 +58,34 @@
                             $page.append($page_a);
                         }
                         $('.page_below').append($page);
+
+/*-----------------------------------跳转详情页面----------------------------------*/
+                        //获取a标签-
+                        var $links = $('.cplist .jump');
+                        // console.log($links);
+                        for(let j = 0;j<$links.length;j++){
+                            $links.eq(j).on('click',function(){
+                                // 通过索引值获取商品信息
+                                let goods = res.data[j].id;
+                                
+
+                                var params = '';
+                                for(var key in goods){
+                                    params += key + '=' + goods[key] + '&';
+                                }
+                                // 去除多余的&
+                                params = params.slice(0,-1);
+
+                                // 在js中跳到goods.html
+                                location.href = 'goods.html?id=' + goods ;
+
+                            })
+                        }
                 }
             })
         }
 
-        // 一周销量排行榜
+        //侧边数据生成列表
         function weekAjax(){
             $.ajax({
                 url:'../api/rankList.php',
@@ -86,11 +109,12 @@
                             arr.push(rank.data[i]);
                         }
                     }
-                    arr = arr.slice(0,3);
-                    ary = ary.slice(0,5);
-                    console.log(ary,arr);
+                    arr = arr.slice(0,_rank);
+                    ary = ary.slice(0,_read);
+                    // console.log(ary,arr);
 
                     // 创建ul
+                    // 一周销量排行榜
                     let ul_1 = document.createElement('ul');
                     ul_1.innerHTML = arr.map(item=>{
                         return `<li class="data-${item.id}">
@@ -103,6 +127,7 @@
                     $('.rankList').append(ul_1);
 
 
+                    //浏览过的还购买
                     let ul_2 = document.createElement('ul');
                     ul_2.innerHTML = ary.map(item=>{
                         return `<li class="data-${item.id}">
@@ -130,5 +155,7 @@
                     sendAjax();
                 }
             })
-        })
+
+            
+    })
 })();
