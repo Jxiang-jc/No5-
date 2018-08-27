@@ -37,17 +37,54 @@
                 >p{
                     text-align:right;
                     margin-top:8px;
+                    a{
+                        color:#4063a7;font-size:12px;
+                        text-decoration:none;
+                    }
                 }
                 .share{
                     width: 200px;height: 19px;margin:0 auto 15px;
+                    a{
+                        display:block;float:right;
+                        background:url(../images/z_goods.gif)no-repeat -93px -24px;
+                        width: 23px;height: 23px;overflow:hidden;line-height:100px;
+                        &:nth-child(2){background-position:0 -24px;}
+                        &:nth-child(3){background-position:-47px -24px;}
+                        &:nth-child(4){background-position:-70px -24px;}
+                        &:nth-child(5){background-position:-24px -24px;}
+                        &:nth-child(6){background-position:-139px -24px;}
+                        &:nth-child(2):hover{background-position:0 0;}
+                        &:nth-child(3):hover{background-position:-47px 0px;}
+                        &:nth-child(4):hover{background-position:-70px 0px;}
+                        &:nth-child(5):hover{background-position:-24px -0px;}
+                        &:nth-child(6):hover{background-position:-139px 0px;}
+                        &:nth-child(7):hover{background-position:-93px 0;}
+                    }
+
                 }
             }
-            // .goods_tr{
-            //     float:right;
-            //     height: 500px;
-            //     width:503px;
-            //     // background:#324edf;
-            // }
+            .goods_tr{
+                float:right; width:503px;
+                h2{
+                    font-size: 16px;line-height: 20px;
+                    color: #333;
+                    padding: 10px;
+                    word-break: break-all;word-wrap: break-word;
+               }
+               .priceNow,.details{
+                    padding: 12px 10px 2px 10px;
+                    border-top: 1px dotted #e4e4e4;
+                    width: 483px;box-sizing:content-box;
+               }
+               .buyBox{
+                    background: #fffcf3;
+                    border: 1px solid #f5debc;
+                    height: 72px;
+                    line-height: 72px;
+                    padding-left: 21px;
+               }
+
+            }
         }
     }
 

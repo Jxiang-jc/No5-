@@ -5,6 +5,8 @@
     // 数量
     $rank = isset($_GET['rank'])? $_GET['rank'] : null;
     $read = isset($_GET['read'])? $_GET['read'] : null;
+ 
+
     
 
     //sql语句,获取数据库中全部数据

@@ -84,14 +84,16 @@
                 }
             })
         }
+            var _idx = 1;
 
         //侧边数据生成列表
         function weekAjax(){
             $.ajax({
-                url:'../api/rankList.php',
+                url:'../api/details.php',
                 data:{
                     rank:_rank,
-                    read:_read
+                    read:_read,
+                    pageNo:_pageNo
                 },
                 dataType:'json',
                 success:function(rank){
@@ -144,6 +146,18 @@
                     
                 }
             })
+
+
+             $.ajax({
+                url:'../api/details.php',
+                data:{
+                    pageNo:_pageNo
+                },
+                // dataType:'json',
+                success:function(qqq){
+                    console.log(qqq);
+                }
+            });
         }
 
             $(document).on('click','a',function(){
@@ -159,3 +173,6 @@
             
     })
 })();
+
+
+

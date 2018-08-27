@@ -77,8 +77,8 @@
 			console.log($small.offset().top)
 
 			// 定义样式
-			if(bitTop===214){
-				bitTop=246;
+			if(bigTop!=246){
+				bigTop=246;
 			}
 			$big.css({
 				width:opt.width,
