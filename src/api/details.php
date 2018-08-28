@@ -1,15 +1,12 @@
 <?php 
-
+    header("Content-type=text/html;charset=utf-8");
     include 'connect.php';
+    // var_dump($_GET['pageNo']);
 
-    $idx=isset($_GET['idx']) ? $_GET['idx'] : null;
+    $idx=isset($_POST['id']) ? $_POST['id'] : null;
     
-    echo(666666);
-    var_dump($idx);
 
     $sql = "select * from goods where id='$idx'";
-
-    // var_dump($sql);
 
 
     $result = $conn->query($sql);
@@ -20,7 +17,6 @@
     
     $result->close();
     
-
 
     echo json_encode($row);
  ?>
