@@ -1,22 +1,26 @@
-.banner { width: 100%; background: #F6EDE4; }
+#banner { width: 100%; overflow: hidden; z-index: -100; }
 
-.banner > .container { padding: 0; padding-left: 230px; overflow: hidden; }
+#banner > .container { padding: 0; width: 100%; overflow: hidden; height: 400px; }
 
-.banner > .container .carousel-inner { height: 400px; width: 970px; }
+#banner > .container .item { width: 100%; height: 400px; z-index: -10; }
 
-.banner > .container .carousel-inner .item a:first-child img { display: inline-block; }
+#banner > .container .item .imgBox { position: relative; display: block; width: 1070px; height: 400px; margin: 0 auto; padding: 0; z-index: 1000; float: left; }
 
-.banner > .container .carousel-inner .item div { float: right; width: 205px; height: 400px; padding-left: 10px; padding-top: 5px; }
+#banner > .container .item .imgBox .bannerImg { position: absolute; left: 300px; top: 0; display: block; z-index: -1; height: 400px; float: left; }
 
-.carousel-fade .carousel-inner .item { opacity: 0; -webkit-transition-property: opacity; -moz-transition-property: opacity; -ms-transition-property: opacity; -o-transition-property: opacity; transition-property: opacity; }
+#banner > .container .item div { float: left; width: 205px; height: 400px; padding-left: 10px; padding-top: 5px; }
 
-.carousel-fade .carousel-inner .active { opacity: 1; }
+.carousel-fade .carousel-inner { z-index: -1; }
 
-.carousel-fade .carousel-inner .active.left, .carousel-fade .carousel-inner .active.right { opacity: 0; }
+.carousel-fade .carousel-inner .item { opacity: 0.3; -webkit-transition-property: opacity; -moz-transition-property: opacity; -ms-transition-property: opacity; -o-transition-property: opacity; transition-property: opacity; }
 
-.carousel-fade .carousel-inner .next.left, .carousel-fade .carousel-inner .prev.right { opacity: 1; }
+.carousel-fade .carousel-inner .active { opacity: .9; }
 
-.carousel-indicators { text-align: left; margin-left: -48%; padding-right: 5px; z-index: 5; }
+.carousel-fade .carousel-inner .active.left, .carousel-fade .carousel-inner .active.right { left: 0; opacity: 0.3; }
+
+.carousel-fade .carousel-inner .next.left, .carousel-fade .carousel-inner .prev.right { opacity: .9; }
+
+.carousel-indicators { text-align: center; margin-left: -51%; padding-right: 5px; z-index: 5; }
 
 .carousel-indicators li { width: 22px; height: 22px; line-height: 22px; text-indent: 0px; border-radius: 50%; background: #E8E8E8; text-align: center; font-size: 12px; }
 

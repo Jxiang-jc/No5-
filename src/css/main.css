@@ -2,11 +2,11 @@
 /* imgbox */
 .imgbox .container { position: relative; height: 220px; z-index: 0; padding: 0; }
 
-.imgbox .container .notice { height: 33px; line-height: 33px; }
+.imgbox .container .notice { height: 33px; line-height: 33px; position: relative; }
 
-.imgbox .container .notice span { display: block; float: left; width: 19px; height: 19px; background: url("../images/z_spirit.gif") no-repeat -409px -30px; margin-top: 6px; margin-left: 230px; margin: 6px 6px 0 231px; }
+.imgbox .container .notice span { display: block; float: left; width: 19px; height: 19px; background: url("../images/z_spirit.gif") no-repeat -409px -30px; margin-top: 6px; margin-left: 230px; margin: 6px 6px 0 231px; z-index: -100; }
 
-.imgbox .container .notice a { color: #666; font-size: 12px; }
+.imgbox .container .notice a { position: absolute; color: #666; font-size: 12px; }
 
 .imgbox .container .img-box1 { position: absolute; left: 240px; width: 969px; }
 
@@ -25,7 +25,9 @@
 
 .z_limit .container > div .goodsBox { display: block; float: left; position: relative; width: 287px; height: 404px; border: 1px solid #e4e4e4; margin-right: 12px; text-decoration: none; margin-top: 10px; }
 
-.z_limit .container > div .goodsBox .times { width: 285px; height: 38px; color: #999; line-height: 38px; background: #f8f7f5 url("../images/z_limitBuy_5.jpg") no-repeat 33px 5px; padding-left: 73px; }
+.z_limit .container > div .goodsBox .times { width: 285px; height: 38px; color: #999; line-height: 38px; background: #f8f7f5 url("../images/z_limitBuy_5.jpg") no-repeat 33px 5px; padding-left: 73px; font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif; }
+
+.z_limit .container > div .goodsBox .times > span { font-size: 18px; color: red; }
 
 .z_limit .container > div .goodsBox > img { margin: 13px; }
 

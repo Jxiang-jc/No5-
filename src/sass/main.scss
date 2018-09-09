@@ -6,7 +6,8 @@
     padding: 0 ;
 
     .notice{
-        height: 33px;line-height:33px;
+        height: 33px;line-height:33px;position:relative;
+
         span{
             display: block;
             float: left;
@@ -16,8 +17,10 @@
             margin-top: 6px;
             margin-left:230px;
             margin:6px 6px 0 231px;
+            z-index:-100;
         }
         a{
+            position:absolute;
             color:#666;font-size:12px;
 
         }
@@ -60,6 +63,10 @@
                     line-height: 38px;
                     background: #f8f7f5 url('../images/z_limitBuy_5.jpg') no-repeat 33px 5px;
                     padding-left: 73px;
+                    font-family:"Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+                    >span{
+                        font-size:18px;color:red;
+                    }
                 }
                 >img{
                     margin: 13px;

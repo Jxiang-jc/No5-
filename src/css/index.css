@@ -128,7 +128,7 @@
 
 #pageNav .container #z_nav2 .z_nav2-1 > p:nth-child(2) > a:hover { color: #0098E0; }
 
-#pageNav .container #z_nav2 .z_nav2-1 .z_nav3-1 { position: absolute; top: 20px; left: 228px; width: 652px; overflow: hidden; border: 1px solid #BDBDBD; padding-left: 20px; background: #fff; display: none; z-index: 10; }
+#pageNav .container #z_nav2 .z_nav2-1 .z_nav3-1 { position: absolute; top: 20px; left: 228px; width: 652px; overflow: hidden; border: 1px solid #BDBDBD; padding-left: 20px; background: #fff; z-index: 10; opacity: 0; transition: top 1s ease ,opacity 0.5s ease; visibility: hidden; }
 
 #pageNav .container #z_nav2 .z_nav2-1 .z_nav3-1 .z_nav3-1l { width: 400px; float: left; }
 
@@ -168,23 +168,25 @@
 
 #pageNav .container #z_nav2 .z_nav2-1 .z_nav3-1 .z_nav3-1r > a > img { display: block; padding: 10px 0 10px 0; box-sizing: content-box; }
 
-#pageNav .container #z_nav2 .z_nav2-1 .z_nav3-2 { top: -20px; }
-
-#pageNav .container #z_nav2 .z_nav2-1 .z_nav3-3 { top: -130px; }
-
-#pageNav .container #z_nav2 .z_nav2-1 .z_nav3-4 { top: -190px; }
-
-#pageNav .container #z_nav2 .z_nav2-1 .z_nav3-5 { top: -160px; }
-
-#pageNav .container #z_nav2 .z_nav2-1 .z_nav3-6 { top: -265px; }
-
-#pageNav .container #z_nav2 .z_nav2-1 .z_nav3-7 { top: -270px; }
-
 #pageNav .container #z_nav2 .z_nav2-1 .nav_bk { position: absolute; right: -2px; top: 0; display: none; content: ""; border: 1px solid #fff; width: 1px; height: 88px; z-index: 50; }
 
 #pageNav .container #z_nav2 .z_nav2-1:hover { border-bottom-color: #bdbdbd; border-top: 1px solid #bdbdbd; border-left: 2px solid #03AAEA; background: #fff; padding-top: 12px; padding-left: 18px; }
 
-#pageNav .container #z_nav2 .z_nav2-1:hover .z_nav3-1, #pageNav .container #z_nav2 .z_nav2-1:hover .nav_bk { display: block; }
+#pageNav .container #z_nav2 .z_nav2-1:hover .nav_bk { display: block; }
+
+#pageNav .container #z_nav2 .z_nav2-1:hover .z_nav3-1 { opacity: 1; top: -20px; visibility: visible; }
+
+#pageNav .container #z_nav2 .z_nav2-1:hover .z_nav3-2 { top: -20px; }
+
+#pageNav .container #z_nav2 .z_nav2-1:hover .z_nav3-3 { top: -130px; }
+
+#pageNav .container #z_nav2 .z_nav2-1:hover .z_nav3-4 { top: -190px; }
+
+#pageNav .container #z_nav2 .z_nav2-1:hover .z_nav3-5 { top: -160px; }
+
+#pageNav .container #z_nav2 .z_nav2-1:hover .z_nav3-6 { top: -265px; }
+
+#pageNav .container #z_nav2 .z_nav2-1:hover .z_nav3-7 { top: -270px; }
 
 #pageFooter { margin-top: 30px; }
 

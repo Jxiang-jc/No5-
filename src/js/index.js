@@ -102,3 +102,5 @@
         $span.html(times);
     }
 })(jQuery);
+
+//谨防诈骗

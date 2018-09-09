@@ -4,9 +4,12 @@
     // var_dump($_GET['pageNo']);
 
     $idx=isset($_POST['id']) ? $_POST['id'] : null;
+
+    // echo($idx);
     
 
     $sql = "select * from goods where id='$idx'";
+    
 
 
     $result = $conn->query($sql);
