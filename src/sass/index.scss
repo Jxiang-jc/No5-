@@ -147,6 +147,7 @@
             #car{
                 position:relative;
                 display:none;
+
                 span{
                     position:absolute;top:-1px;right:0;
                     display:block;
@@ -162,6 +163,15 @@
                 padding-top:1px;
                 cursor:pointer;
                 z-index:100;
+                >p:before{
+                    content:'';
+                    position:absolute;
+                    top:42px;
+                    display:inline-block;
+                    width: 172px;height:1px;
+                    border:1px solid #fff;
+                    margin-left:-40px;
+                }
                 #car{
                     position:absolute;left:-96px;top:42px;
                     display:block;
@@ -171,7 +181,31 @@
                     border:1px solid #ddd;
                     z-index:-1;
                     text-align:left;
-                    padding-left:20px;
+                    .ulCar{
+                        background:#fff;
+                        li{
+                            width: 270px;height:68px;margin:0 8px;border-bottom:1px dotted #ddd;
+                            font-size:12px;padding-top:20px;
+                            img{width: 35px;height:45px;float:left;margin-top:-5px;margin-left:20px;}
+                            .carName{
+                                width: 130px;font-size:12px;float:left;
+                                display:block;line-height:18px;padding-left:20px;
+                                text-align:left;height:35px;overflow:hidden;
+                            }
+                            .carPrice{
+                                
+                                float:right;line-height:15px;
+                                color:#f00;
+                                font-weight:bold;
+                            }
+                            .btnDel{
+                                height:12px;
+                                float:left;line-height:24px;
+                                padding-left:55px;color:#02A3F0;
+                            }
+                            
+                        }   
+                    }
                 }
             }
         }

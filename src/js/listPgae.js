@@ -29,7 +29,7 @@
                     // 创建ul
                     let ul = document.createElement('ul');
                     ul.innerHTML = res.data.map(item=>{
-                        return `<li class="data-${item.id}">
+                        return `<li data-guid="data-${item.id}">
                             <a href="#" class="jump"><img src="${item.imgurl}"></a>
                             <p class="content"><a href="#" class="name">${item.name}</a></p>
                             <div><span class="price">${item.price}</span><span class="zhekou">${item.zhekou}</span></div>
@@ -95,7 +95,7 @@
                 },
                 dataType:'json',
                 success:function(rank){
-                    console.log(rank);
+                    // console.log(rank);
                 
                     //一周销量排行 
                     var arr = [];
@@ -111,7 +111,7 @@
                     }
                     arr = arr.slice(0,_rank);
                     ary = ary.slice(0,_read);
-                    console.log(ary,arr);
+                    // console.log(ary,arr);
 
                     // 创建ul
                     // 一周销量排行榜
@@ -137,7 +137,7 @@
                         </li>`
                     }).join('');
                     ul_2.classList.add('ul_2');
-                    console.log(ul_2)
+                    // console.log(ul_2)
                     $('.liuLanBox').append(ul_2);             
                 }
             })
@@ -155,46 +155,127 @@
             }
         })
 
-/*--------------------------------添加cookie,写进购物车------------------------------------------*/
-        var listPage = Cookie.get('listPage');
-
-        if(listPage === ''){
-            listPage = []
-        }else{
-            listPage = JSON.parse(listPage);//listPage必须为json字符串
-        }
+/*--------------------------------添加cookie,写进购物车---------------------------*/
 
 
         $(document).on('click','.pushCar',function(e){
-            let currentLi = $(this).closest('li')[0];
-            var guid = currentLi.getAttribute('data-guid')
-            console.log($currentLi);
+
+            var listPage = Cookie.get('listPage');
+
+            if(listPage === ''){
+                listPage = []
+            }else{
+                listPage = JSON.parse(listPage);//listPage必须为json字符串
+            }
+
+            let $currentLi = $(this).parent('li');
+            var $guid = $currentLi.attr('data-guid')
+            // console.log($currentLi,$guid);
 
             var currentGoods = listPage.filter(function(g){
-                return g.guid = guid; 
+                    return  g.guid === $guid
             })
-            console.log(currentGoods)
+            // console.log(currentGoods)
 
             if(currentGoods.length>0){
                 //存在,数量+1
-                currentGoods.qty++
+                currentGoods[0].qty++;
             }else{
                 //不存在,添加商品
                 var goods = {
-                    guid : guid,
+                    guid : $guid,
                     imgurl : $currentLi.find('img')[0].src,
                     name : $currentLi.find('.name').text(),
                     price : $currentLi.find('.price').text(),
                     qty:1
                 }
-                currentGoods.push(goods);
+                listPage.push(goods);
             }
-            Cookie.set('currentGoods',JSON.stringify(currentGoods));
+            Cookie.set('listPage',JSON.stringify(listPage));
 
         })
- 
+
+        
+        
+        
     })
 })();
 
+//购物车
+;(function($){
+    $.prototype.shoppingCar = function(){
+        //获取购物车元素
+        var $shoppingCar = $('.shoppingCar');
+        var $car = $('#car');
+        var listPage;
+        
+        $car.html('');
+        // render();
 
+        $('.shoppingCar p').on('mouseover',()=>{
+            render();
+        })
+        
+
+        //// 删除单个商品
+        // * 找出删除的商品 -> 从数组中移除 -> 重写cookie -> 渲染页面
+         $('#car').on('click','.btnDel',function(){
+                //获取当前的li
+                let $currentLi = $(this).parent('li');
+
+                // 获取当前商品的guid
+                var guid = $currentLi.attr('data-guid')
+
+                // 找出数组中对应商品并移除
+                for(var i=0;i<listPage.length;i++){
+                    if(listPage[i].guid === guid){
+                        listPage.splice(i,1);
+                        break;
+                    }
+                }
+                // 重写cookie
+                Cookie.set('listPage',JSON.stringify(listPage));
+
+                //重新渲染页面
+                render();
+         })
+        
+
+        function render(){
+
+            listPage = Cookie.get('listPage');
+
+            if(listPage === ''){
+                console.log(666)
+                listPage = []
+            }else{
+                listPage = JSON.parse(listPage);
+            }
+
+            //创建ul
+            var $ul = $('<ul class="ulCar"/>');
+
+            //计算总价
+            var total = 0;
+
+            $ul.html(
+                listPage.map(function(item){
+                    return `
+                    <li data-guid=${item.guid}>
+                        <img src="${item.imgurl}">
+                        <p class="carName">${item.name}</p>
+                        <p class="carPrice">￥${item.price} X ${item.qty}</p>
+                        <p class="btnDel">删除</p>
+                    </li>`
+                }).join('')
+            )
+            $car.html('')
+            $car.append($ul)
+        }
+
+    }
+})(jQuery);
+
+
+ 
 

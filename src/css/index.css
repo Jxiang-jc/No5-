@@ -86,7 +86,21 @@
 
 #pageHeader_b .shoppingCar:hover { display: block; background-position: 0 -74px; height: 42px; line-height: 43px; padding-top: 1px; cursor: pointer; z-index: 100; }
 
-#pageHeader_b .shoppingCar:hover #car { position: absolute; left: -96px; top: 42px; display: block; background: #fff; width: 290px; line-height: 44px; border: 1px solid #ddd; z-index: -1; text-align: left; padding-left: 20px; }
+#pageHeader_b .shoppingCar:hover > p:before { content: ''; position: absolute; top: 42px; display: inline-block; width: 172px; height: 1px; border: 1px solid #fff; margin-left: -40px; }
+
+#pageHeader_b .shoppingCar:hover #car { position: absolute; left: -96px; top: 42px; display: block; background: #fff; width: 290px; line-height: 44px; border: 1px solid #ddd; z-index: -1; text-align: left; }
+
+#pageHeader_b .shoppingCar:hover #car .ulCar { background: #fff; }
+
+#pageHeader_b .shoppingCar:hover #car .ulCar li { width: 270px; height: 68px; margin: 0 8px; border-bottom: 1px dotted #ddd; font-size: 12px; padding-top: 20px; }
+
+#pageHeader_b .shoppingCar:hover #car .ulCar li img { width: 35px; height: 45px; float: left; margin-top: -5px; margin-left: 20px; }
+
+#pageHeader_b .shoppingCar:hover #car .ulCar li .carName { width: 130px; font-size: 12px; float: left; display: block; line-height: 18px; padding-left: 20px; text-align: left; height: 35px; overflow: hidden; }
+
+#pageHeader_b .shoppingCar:hover #car .ulCar li .carPrice { float: right; line-height: 15px; color: #f00; font-weight: bold; }
+
+#pageHeader_b .shoppingCar:hover #car .ulCar li .btnDel { height: 12px; float: left; line-height: 24px; padding-left: 55px; color: #02A3F0; }
 
 #pageNav { height: 40px; background: linear-gradient(#535252, #101010); }
 
