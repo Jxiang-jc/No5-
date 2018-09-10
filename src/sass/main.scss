@@ -125,9 +125,10 @@
 .sale-box_b{
     padding-top:20px;
     .container{
-        padding:0;padding-bottom:23px;border-bottom:1px solid #f1f1f1;
+        padding:0;border-bottom:1px solid #f1f1f1;
         .salebox-1{
             width: 240px;border-right:1px solid #f1f1f1;overflow:hidden;float:left;
+            margin-bottom:23px;
             dd{
                 padding-left:12px;
                 a{
@@ -224,8 +225,23 @@
                 }
             }
         }
+
+        .stars{
+            float:left;width: 228px;height:418px;
+            overflow:hidden;margin-right:15px;
+            .whotui{
+                display:block;padding:5px 0;
+                a{color:#666;}
+            }
+            .neir{
+                text-overflow:ellipsis;overflow:hidden;width:228px;
+            }
+        }
+        .lastdl{margin-right:0;}    
     }
 }
+
+
 /* weekSale的公共样式 */
 .sale-box_b .container .weekSale .good-price{
    font-size:18px;color:#f00;height:22px;line-height:22px;

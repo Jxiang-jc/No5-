@@ -108,17 +108,34 @@
                             )
                             $('.z_limit').append($container);
 
-                            for (var i = 0; i < $('.fl').length; i++) {
-                                //获取商品信息，并写入对象
-                                var goods = {
-                                    imgurl: $('.imgLimit').eq(i)[0].src,
-                                    name: $('.goodsContent').eq(i).text(),
-                                    price: $('.price').eq(i).text(),
-                                    purchase: $('.purchased').eq(i).text()
-                                }
-                                goodslist.push(goods);
+                            //获取img,一定要等img出来以后才能获取它的src
+                            let $img = $('.imgLimit');                                 
 
-                                Cookie.set('goodslist', JSON.stringify(goodslist));
+                            //原生js的方法
+                            if ($img.length===4) {
+                                console.log(555)
+                                showImg();
+                            } else {
+                                $img.load(function(){
+                                    console.log(666)
+                                    showImg();
+                                })
+                            }
+                        
+
+                            function showImg() {
+                                for (var i = 0; i < $('.goodsBox').length; i++) {
+                                    //获取商品信息，并写入对象
+                                    var goods = {
+                                        imgurl: $('.imgLimit').eq(i)[0].src,
+                                        name: $('.goodsContent').eq(i).text(),
+                                        price: $('.price').eq(i).text(),
+                                        purchase: $('.purchased').eq(i).text()
+                                    }
+                                    goodslist.push(goods);
+
+                                    Cookie.set('goodslist', JSON.stringify(goodslist));
+                                }
                             }
 
                             resolve();
@@ -152,6 +169,8 @@
                     )
                     $('.z_limit').append($container);
 
+
+
                     resolve();
 
                 }
@@ -163,7 +182,7 @@
 
 
                     //1.指定结束时间
-                    var endTime = new Date('2018/9/1,00:00:00');
+                    var endTime = new Date('2018/9/1,23:00:00');
                     // console.log(endTime);//Sat Sep 01 2018 00:00:00 GMT+0800 (中国标准时间)
 
                     function showTime() {
@@ -181,11 +200,15 @@
 
                             // console.log(666)
                         }
-                        
+
+                        // console.log(curTime.getMinutes(), curTime.getSeconds())
+
                         //每过24小时,清除一次cookie信息.
-                        if (curTime.getHours() === 22) {
+                        if (curTime.getHours() === 23 && curTime.getMinutes() == 0 && curTime.getSeconds() == 0) {
                             //清除cookie,重新更新页面
                             Cookie.remove('goodslist');
+                            console.log(curTime.getMinutes(), curTime.getSeconds())
+
                         }
 
 

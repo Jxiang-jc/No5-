@@ -55,9 +55,9 @@
 /* tab下 */
 .sale-box_b { padding-top: 20px; }
 
-.sale-box_b .container { padding: 0; padding-bottom: 23px; border-bottom: 1px solid #f1f1f1; }
+.sale-box_b .container { padding: 0; border-bottom: 1px solid #f1f1f1; }
 
-.sale-box_b .container .salebox-1 { width: 240px; border-right: 1px solid #f1f1f1; overflow: hidden; float: left; }
+.sale-box_b .container .salebox-1 { width: 240px; border-right: 1px solid #f1f1f1; overflow: hidden; float: left; margin-bottom: 23px; }
 
 .sale-box_b .container .salebox-1 dd { padding-left: 12px; }
 
@@ -114,6 +114,16 @@
 .sale-box_b .container .salebox-4 dl dd a { color: #666; font-size: 14px; text-decoration: none; }
 
 .sale-box_b .container .salebox-4 dl:first-child { padding-bottom: 10px; border-bottom: 1px solid #ddd; }
+
+.sale-box_b .container .stars { float: left; width: 228px; height: 418px; overflow: hidden; margin-right: 15px; }
+
+.sale-box_b .container .stars .whotui { display: block; padding: 5px 0; }
+
+.sale-box_b .container .stars .whotui a { color: #666; }
+
+.sale-box_b .container .stars .neir { text-overflow: ellipsis; overflow: hidden; width: 228px; }
+
+.sale-box_b .container .lastdl { margin-right: 0; }
 
 /* weekSale的公共样式 */
 .sale-box_b .container .weekSale .good-price { font-size: 18px; color: #f00; height: 22px; line-height: 22px; }

@@ -10,6 +10,7 @@
         sendAjax();
         weekAjax();
 
+
         function sendAjax(){
             $.ajax({
                 url:'../api/listPage.php',
@@ -30,7 +31,7 @@
                     ul.innerHTML = res.data.map(item=>{
                         return `<li class="data-${item.id}">
                             <a href="#" class="jump"><img src="${item.imgurl}"></a>
-                            <p class="content"><a href="#">${item.name}</a></p>
+                            <p class="content"><a href="#" class="name">${item.name}</a></p>
                             <div><span class="price">${item.price}</span><span class="zhekou">${item.zhekou}</span></div>
                             <button class="pushCar btn">加入购物车</button><button class="collect btn">收藏</button>
 
@@ -58,29 +59,26 @@
                             $page.append($page_a);
                         }
                         $('.page_below').append($page);
+                    //获取a标签-
+                    var $links = $('.cplist .jump');
+                    // console.log($links);
+                    for(let j = 0;j<$links.length;j++){
+                        $links.eq(j).on('click',function(){
+                            // 通过索引值获取商品信息
+                            let goods = res.data[j].id;
+                            
 
-/*-----------------------------------跳转详情页面----------------------------------*/
-                        //获取a标签-
-                        var $links = $('.cplist .jump');
-                        // console.log($links);
-                        for(let j = 0;j<$links.length;j++){
-                            $links.eq(j).on('click',function(){
-                                // 通过索引值获取商品信息
-                                let goods = res.data[j].id;
-                                
+                            var params = '';
+                            for(var key in goods){
+                                params += key + '=' + goods[key] + '&';
+                            }
+                            // 去除多余的&
+                            params = params.slice(0,-1);
 
-                                var params = '';
-                                for(var key in goods){
-                                    params += key + '=' + goods[key] + '&';
-                                }
-                                // 去除多余的&
-                                params = params.slice(0,-1);
-
-                                // 在js中跳到goods.html
-                                location.href = 'goods.html?id=' + goods ;
-
-                            })
-                        }
+                            // 在js中跳到goods.html
+                            location.href = 'goods.html?id=' + goods ;
+                        })
+                    }
                 }
             })
         }
@@ -113,7 +111,7 @@
                     }
                     arr = arr.slice(0,_rank);
                     ary = ary.slice(0,_read);
-                    // console.log(ary,arr);
+                    console.log(ary,arr);
 
                     // 创建ul
                     // 一周销量排行榜
@@ -140,27 +138,61 @@
                     }).join('');
                     ul_2.classList.add('ul_2');
                     console.log(ul_2)
-                    $('.liuLanBox').append(ul_2);
-
-
-                    
+                    $('.liuLanBox').append(ul_2);             
                 }
             })
-
-
         }
 
-            $(document).on('click','a',function(){
+/*----------------------------------跳转详情页面--------------------------------*/
 
-                if($(this).closest('div').hasClass('z_page')){
+        $(document).on('click','a',function(){
 
-                    _pageNo = $(this).text();
-                    window.scrollTo(0,0);
-                    sendAjax();
-                }
+            if($(this).closest('div').hasClass('z_page')){
+
+                _pageNo = $(this).text();
+                window.scrollTo(0,0);
+                sendAjax();
+            }
+        })
+
+/*--------------------------------添加cookie,写进购物车------------------------------------------*/
+        var listPage = Cookie.get('listPage');
+
+        if(listPage === ''){
+            listPage = []
+        }else{
+            listPage = JSON.parse(listPage);//listPage必须为json字符串
+        }
+
+
+        $(document).on('click','.pushCar',function(e){
+            let currentLi = $(this).closest('li')[0];
+            var guid = currentLi.getAttribute('data-guid')
+            console.log($currentLi);
+
+            var currentGoods = listPage.filter(function(g){
+                return g.guid = guid; 
             })
+            console.log(currentGoods)
 
-            
+            if(currentGoods.length>0){
+                //存在,数量+1
+                currentGoods.qty++
+            }else{
+                //不存在,添加商品
+                var goods = {
+                    guid : guid,
+                    imgurl : $currentLi.find('img')[0].src,
+                    name : $currentLi.find('.name').text(),
+                    price : $currentLi.find('.price').text(),
+                    qty:1
+                }
+                currentGoods.push(goods);
+            }
+            Cookie.set('currentGoods',JSON.stringify(currentGoods));
+
+        })
+ 
     })
 })();
 

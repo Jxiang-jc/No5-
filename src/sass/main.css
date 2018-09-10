@@ -179,7 +179,6 @@
 
 .sale-box_b .container {
   padding: 0;
-  padding-bottom: 23px;
   border-bottom: 1px solid #f1f1f1;
 }
 
@@ -188,6 +187,7 @@
   border-right: 1px solid #f1f1f1;
   overflow: hidden;
   float: left;
+  margin-bottom: 23px;
 }
 
 .sale-box_b .container .salebox-1 dd {
@@ -328,6 +328,20 @@
 .sale-box_b .container .salebox-4 dl:first-child {
   padding-bottom: 10px;
   border-bottom: 1px solid #ddd;
+}
+
+.sale-box_b .container .stars {
+  float: left;
+  width: 228px;
+  height: 418px;
+  overflow: hidden;
+  margin: 0 5px;
+}
+
+.sale-box_b .container .stars a {
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
 }
 
 /* weekSale的公共样式 */
